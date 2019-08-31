@@ -1,0 +1,246 @@
+/* ==========================================================================
+   Instructors
+   ========================================================================== */
+.instructors {
+    display: none;
+}
+
+
+/* ==========================================================================
+   Calvin
+   ========================================================================== */
+.calvin-monday {
+    top: 429px;
+    left: 86px;
+    height: 146px;
+}
+
+.calvin-tuesday {
+    top: 429px;
+    left: 289px;
+    height: 146px;
+}
+
+/* ==========================================================================
+   Steph
+   ========================================================================== */
+.steph-mw-1 {
+    top: 125px;
+    left: 85px;
+    height: 70px;
+}
+
+.steph-monday {
+    top: 201px;
+    left: 85px;
+    height: 70px;
+}
+
+.steph-mw-2 {
+    top: 125px;
+    left: 491px;
+    height: 70px;
+}
+
+/* ==========================================================================
+   Bill
+   ========================================================================== */
+.bill-mw-1 {
+   top: 353px;
+   left: 91px;
+   height: 70px;
+}
+
+.bill-mw-2 {
+   top: 353px;
+   left: 496px;
+   height: 70px;
+}
+
+.bill-thursday-1 {
+    top: 163px;
+    left: 695px;
+    height: 146px;
+}
+
+.bill-thursday-2 {
+    left: 695px;
+    top: 429px;
+    height: 107px;
+}
+
+.bill-hybrid {
+    background: linear-gradient(135deg, #b9e3fb 0%,#ffffff 100%);
+}
+
+
+/* ==========================================================================
+   Kjrsten
+   ========================================================================== */
+
+.kjrsten-th-1-1 {
+    top: 201px;
+    left: 288px;
+    height: 70px;
+}
+
+.kjrsten-th-1-2 {
+    top: 201px;
+    left: 699px;
+    height: 70px;
+}
+
+.kjrsten-th-2-1 {
+    top: 125px;
+    left: 288px;
+    height: 70px;
+}
+.kjrsten-th-2-2 {
+    top: 125px;
+    left: 699px;
+    height: 70px;
+}
+
+/*.kjrsten-mw-2-1 {
+    top: 277px;
+    left: 89px;
+    height: 70px;
+}*/
+
+.kjrsten-mw-2-2 {
+    top: 277px;
+    left: 491px;
+    height: 107px;
+}
+
+.kjrsten-monday {
+    top: 429px;
+    left: 91px;
+    height: 146px;
+}
+
+.kjrsten-wednesday {
+    top: 429px;
+    left: 491px;
+    height: 146px;
+}
+
+.kjrsten-hybrid {
+    background: linear-gradient(135deg, #d3d8fb 0%,#ffffff 100%);
+}
+
+/* ==========================================================================
+   Dennis
+   ========================================================================== */
+
+
+.dennis-tuesday {
+    top: 277px;
+    left: 289px;
+    height: 146px;
+}
+
+.dennis-thursday {
+    top: 429px;
+    left: 700px;
+    height: 146px;
+}
+
+
+
+/* ==========================================================================
+   Carl
+   ========================================================================== */
+
+.carl-monday-1 {
+    top: 277px;
+    left: 96px;
+    height: 146px;
+}
+
+.carl-monday-2 {
+    top: 429px;
+    left: 96px;
+    height: 146px;
+}
+
+.carl-tuesday {
+    top: 429px;
+    left: 294px;
+    height: 146px;
+}
+
+.carl-wednesday-1 {
+    top: 277px;
+    left: 501px;
+    height: 146px;
+}
+
+.carl-wednesday-2 {
+    top: 429px;
+    left: 501px;
+    height: 146px;
+}
+
+.carl-thursday {
+    top: 429px;
+    left: 705px;
+    height: 146px;
+}
+
+
+
+/* ==========================================================================
+   Sam
+   ========================================================================== */
+
+.sam-th-1 {
+    top: 353px;
+    left: 294px;
+    height: 70px;
+}
+
+.sam-th-2 {
+    /*display: none;*/
+    top: 353px;
+    left: 705px;
+    height: 70px;
+}
+
+.sam-tuesday {
+    top: 429px;
+    left: 299px;
+    height: 107px;
+}
+
+.sam-wednesday-1 {
+    top: 125px;
+    left: 496px;
+    height: 107px;
+}
+
+.sam-wednesday-2 {
+    top: 277px;
+    left: 506px;
+    height: 107px;
+}
+
+.sam-thursday {
+    top: 429px;
+    left: 705px;
+    height: 107px;
+}
+
+.sam-friday {
+    top: 87px;
+    left: 899px;
+    height: 70px;
+}
+
+.sam-hybrid {
+    background: linear-gradient(135deg, #eacafb 0%,#ffffff 100%);
+}
+
+.sam-online {
+    background: linear-gradient(45deg, #eacafb 0%,#ffffff 80%);
+}

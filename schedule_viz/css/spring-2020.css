@@ -1,0 +1,232 @@
+/* ==========================================================================
+   Instructors
+   ========================================================================== */
+.instructors {
+    display: none;
+}
+
+
+.college-hour {
+    background-color: lightgray;
+    color: gray;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* ==========================================================================
+   Steph
+   ========================================================================== */
+
+/* ==========================================================================
+   Bill
+   ========================================================================== */
+.bill-thursday {
+    top: 125px;
+    left: 695px;
+    height: 107px;
+}
+
+.bill-thursday-2 {
+   top: 429px;
+   left: 695px;
+   height: 107px;
+}
+
+.bill-hybrid {
+    background: linear-gradient(135deg, #b9e3fb 0%,#ffffff 100%);
+}
+
+
+/* ==========================================================================
+   Kjrsten
+   ========================================================================== */
+
+.kjrsten-monday-1 {
+    top: 125px;
+    left: 85px;
+    height: 107px;
+}
+
+.kjrsten-monday-2 {
+    top: 277px;
+    left: 85px;
+    height: 107px;
+}
+
+.kjrsten-wednesday-1 {
+    top: 277px;
+    left: 491px;
+    height: 107px;
+}
+
+/*.kjrsten-mw-1-2 {
+    top: 277px;
+    left: 491px;
+    height: 70px;
+}*/
+
+.kjrsten-tuesday-1 {
+    top: 277px;
+    left: 288px;
+    height: 107px;
+}
+
+.kjrsten-tuesday-2 {
+    left: 292px;
+    top: 429px;
+    height: 107px;
+}
+
+.kjrsten-wednesday {
+    top: 429px;
+    left: 492px;
+    height: 107px;
+}
+
+.kjrsten-thursday-2 {
+    left: 700px;
+    top: 429px;
+    height: 107px;
+}
+
+.kjrsten-hybrid {
+    background: linear-gradient(135deg, #d3d8fb 0%,#ffffff 100%);
+}
+
+/* ==========================================================================
+   Will
+   ========================================================================== */
+
+.will-mw-1 {
+    top: 277px;
+    left: 495px;
+    height: 107px;
+}
+
+.will-monday-1 {
+    top: 201px;
+    left: 89px;
+    height: 107px;
+}
+
+.will-tuesday-1 {
+    top: 277px;
+    left: 292px;
+    height: 107px;
+}
+
+.will-wednesday-1 {
+    top: 429px;
+    left: 492px;
+    height: 107px;
+}
+
+.will-thursday-1 {
+    top: 201px;
+    left: 699px;
+    height: 107px;
+}
+
+.will-thursday-2 {
+    top: 429px;
+    left: 705px;
+    height: 107px;
+}
+
+.will-hybrid {
+    background: linear-gradient(135deg, #fdbaba 0%,#ffffff 100%);
+}
+
+
+/* ==========================================================================
+   Carl
+   ========================================================================== */
+
+.carl-monday-1 {
+    top: 277px;
+    left: 93px;
+    height: 107px;
+}
+
+.carl-monday-2 {
+    top: 429px;
+    left: 85px;
+    height: 107px;
+}
+
+.carl-tuesday {
+    top: 429px;
+    left: 296px;
+    height: 107px;
+}
+
+.carl-wednesday-1 {
+    top: 277px;
+    left: 499px;
+    height: 107px;
+}
+
+.carl-wednesday-2 {
+    top: 429px;
+    left: 496px;
+    height: 107px;
+}
+
+.carl-thursday {
+    top: 201px;
+    left: 704px;
+    height: 107px;
+}
+
+.carl-hybrid {
+    background: linear-gradient(135deg, #c4efbc 0%,#ffffff 100%);
+}
+
+
+/* ==========================================================================
+   Sam
+   ========================================================================== */
+.sam-monday-1 {
+    top: 125px;
+    left: 93px;
+    height: 107px;
+}
+
+.sam-monday-2 {
+    top: 277px;
+    left: 97px;
+    height: 107px;
+}
+
+.sam-tuesday-1 {
+    top: 125px;
+    left: 292px;
+    height: 107px;
+}
+
+.sam-tuesday-2 {
+    top: 277px;
+    left: 296px;
+    height: 107px;
+}
+
+.sam-wednesday-1 {
+    top: 429px;
+    left: 500px;
+    height: 107px;
+}
+
+.sam-friday {
+    top: 87px;
+    left: 899px;
+    height: 70px;
+}
+
+.sam-hybrid {
+    background: linear-gradient(135deg, #eacafb 0%,#ffffff 100%);
+}
+
+.sam-online {
+    background: linear-gradient(45deg, #eacafb 0%,#ffffff 80%);
+}

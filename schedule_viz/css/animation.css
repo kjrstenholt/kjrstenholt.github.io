@@ -1,0 +1,70 @@
+
+body {
+    background-color: #888888;
+    box-sizing: border-box;
+    padding: 50px;
+}
+.wrapper {
+    padding: 100px;
+    background-color: floralwhite;
+}
+
+.box {
+    background-color: red;
+    border-radius: 0;
+    width: 100px;
+    height: 100px;
+    border: 10px solid black;
+}
+#box4 {
+    position: relative;
+    left: 300px;
+}
+
+
+
+/* TRANSITION */
+
+#box1 {
+     transition: all 1.5s ease;
+}
+
+#box1:hover {
+    background-color: white;
+    border-radius: 80px;
+}
+
+
+
+/* TRANSFORM */
+
+#box2 {
+    transform: rotate(25deg);
+}
+
+
+/* ANIMATE TRANSFORM */
+
+#box3 {
+    transition: transform 2s ease;
+}
+
+#box3:hover {
+    transform: rotate(25deg);
+}
+
+
+/* ANIMATION */
+
+#box4 {
+    animation: my_animation 2s infinite;
+}
+
+@keyframes my_animation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(2);
+    }
+}
