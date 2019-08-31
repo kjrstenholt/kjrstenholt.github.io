@@ -1,0 +1,82 @@
+body {
+    font-family: "Questrial", Helvetica, Arial, sans-serif;
+}
+
+
+/** CSS Card Flip from CodePen **/
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  background: #00a5f7;
+  text-align: center;
+}
+
+.flex-wrapper {
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  flex-direction: row;
+  -o-box-orient: horizontal;
+  -o-box-pack: center;
+  justify-content: center;
+  -o-box-align: center;
+  align-items: center;
+}
+
+.container {
+  width: 300px;
+  height: 350px;
+  position: relative;
+  -webkit-perspective: 800px;
+  -ms-perspective: 800px;
+  perspective: 800px;
+  margin: 10px;
+}
+.card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  transition: -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+.card div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 6px;
+  background: #fff;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -o-box-pack: center;
+  justify-content: center;
+  -o-box-align: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #47525d;
+}
+.card .back {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.card.flipped {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.card img {
+	max-width: 100%;
+	max-height: 100%;
+}
