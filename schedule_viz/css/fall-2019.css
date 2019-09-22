@@ -5,6 +5,12 @@
     display: none;
 }
 
+.college-hour {
+    background-color: lightgray;
+    color: gray;
+    font-size: 12px;
+    font-weight: bold;
+}
 
 /* ==========================================================================
    Calvin
