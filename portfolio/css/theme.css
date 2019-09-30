@@ -1,0 +1,14 @@
+/* Material Theming */
+
+:root {
+  --mdc-theme-primary: midnightblue;
+}
+
+h1{
+	margin: 50px;
+}
+
+img {
+	max-width: 50%;
+	margin: 50px;
+}
