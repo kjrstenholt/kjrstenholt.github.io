@@ -1,0 +1,17 @@
+img {
+	box-sizing: border border-box;
+	border: 1px solid lightgray;
+}
+
+.flexy {
+ display: flex;
+ flex-flow: column nowrap;
+}
+
+.pdflink {
+	margin-top:auto;
+}
+
+.spacer {
+	height: 40px;
+}
