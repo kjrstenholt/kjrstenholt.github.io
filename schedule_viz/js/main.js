@@ -9,15 +9,15 @@ $( document ).ready(function() {
 
 //Toggle visibility of each faculty member on checkbox change
 
-$('#calvin').click(function() {
-    $(".calvin_wrapper").toggle(this.checked);
-    $(".calvin_wrapper .class-box").show();
+$('#lucie').click(function() {
+    $(".lucie_wrapper").toggle(this.checked);
+    $(".lucie_wrapper .class-box").show();
 });
 
-$('#steph').click(function() {
-    $(".steph_wrapper").toggle(this.checked);
-    $(".steph_wrapper .class-box").show();
-});
+// $('#steph').click(function() {
+//     $(".steph_wrapper").toggle(this.checked);
+//     $(".steph_wrapper .class-box").show();
+// });
 
 $('#bill').click(function() {
     $(".bill_wrapper").toggle(this.checked);

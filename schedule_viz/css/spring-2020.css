@@ -23,7 +23,7 @@
    ========================================================================== */
 .bill-thursday {
     top: 429px;
-    left: 700px;
+    left: 696px;
     height: 107px;
 }
 
@@ -84,21 +84,15 @@
 
 
 /* ==========================================================================
-   Calvin
+   Lucie
    ========================================================================== */
-.calvin-monday {
+.lucie-thursday {
    top: 429px;
-   left: 85px;
+   left: 700px;
    height: 107px;
 }
 
-.calvin-thursday {
-   top: 429px;
-   left: 696px;
-   height: 107px;
-}
-
-.calvin-hybrid {
+.lucie-hybrid {
     background: linear-gradient(135deg, #ffe584 0%,#ffffff 100%);
 }
 
@@ -113,6 +107,12 @@
     height: 107px;
 }
 
+.dennis-monday-2 {
+    top: 429px;
+    left: 85px;
+    height: 107px;
+ }
+ 
 .dennis-tuesday {
     top: 125px;
     left: 288px;

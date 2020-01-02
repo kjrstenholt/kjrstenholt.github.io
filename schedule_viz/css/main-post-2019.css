@@ -236,15 +236,15 @@ td {
 
 
 /* ==========================================================================
-   Calvin
+   Lucie
    ========================================================================== */
-.calvin_wrapper {
+.lucie_wrapper {
     /*display: none;*/
     z-index: 5;
 }
 
-.calvin_wrapper div,
-.calvin-label:after {
+.lucie_wrapper div,
+.lucie-label:after {
     background-color: #ffe584;
 }
 
