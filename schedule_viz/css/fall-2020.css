@@ -84,6 +84,12 @@
     height: 60px;
 }
 
+.dennis-friday-2 {
+    top: 193px;
+    left: 289px;
+    height: 60px;
+}
+
 .dennis-hybrid {
     background: linear-gradient(135deg, #fdbaba 0%,#ffffff 100%);
 }
@@ -168,11 +174,6 @@
     height: 60px;
 }
 
-.sam-friday-2 {
-    top: 400px;
-    left: 697px;
-    height: 60px;
-}
 
 .sam-hybrid {
     background: linear-gradient(135deg, #eacafb 0%,#ffffff 100%);
