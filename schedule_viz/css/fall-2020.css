@@ -14,6 +14,18 @@
         overflow-y: visible;
     }
 
+    .class-box.pending::after {
+
+        content: " ";
+        width: 4px;
+        height: 50px;
+        background-color: red;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 10px;
+    
+    }
     
     /* ==========================================================================
    Instructors
@@ -51,14 +63,20 @@
     height: 60px;
 }
 
-.kjrsten-thursday-2 {
+.kjrsten-thursday-15 {
     top: 263px;
     left: 86px;   
     height: 60px;
 }
 
-.kjrsten-thursday-3 {
+.kjrsten-thursday-2 {
     top: 333px;
+    left: 86px;   
+    height: 60px;
+}
+
+.kjrsten-thursday-3 {
+    top: 403px;
     left: 86px;   
     height: 60px;
 }
@@ -90,6 +108,24 @@
     height: 60px;
 }
 
+.dennis-friday-3 {
+    top: 263px;
+    left: 289px;
+    height: 60px;
+}
+
+.dennis-friday-4 {
+    top: 333px;
+    left: 289px;
+    height: 60px;
+}
+
+.dennis-friday-5 {
+    top: 403px;
+    left: 289px;
+    height: 60px;
+}
+
 .dennis-hybrid {
     background: linear-gradient(135deg, #fdbaba 0%,#ffffff 100%);
 }
@@ -105,26 +141,32 @@
     height: 60px;
 }
 
-.carl-tuesday {
+.carl-monday-2 {
     top: 123px;
     left: 493px;
     height: 60px;
 }
 
-.carl-wednesday-1 {
+.carl-tuesday {
     top: 193px;
     left: 493px;
     height: 60px;
 }
 
-.carl-wednesday-2 {
+.carl-wednesday-1 {
     top: 263px;
     left: 493px;
     height: 60px;
 }
 
-.carl-wednesday-3 {
+.carl-wednesday-2 {
     top: 333px;
+    left: 493px;
+    height: 60px;
+}
+
+.carl-wednesday-3 {
+    top: 403px;
     left: 493px;
     height: 60px;
 }
@@ -170,6 +212,12 @@
 
 .sam-friday-1 {
     top: 333px;
+    left: 697px;
+    height: 60px;
+}
+
+.sam-friday-2 {
+    top: 403px;
     left: 697px;
     height: 60px;
 }
