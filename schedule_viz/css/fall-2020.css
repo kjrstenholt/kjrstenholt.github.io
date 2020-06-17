@@ -204,20 +204,26 @@
     height: 60px;
 }
 
-.sam-wednesday-1 {
+.sam-tuesday-4 {
     top: 263px;
     left: 697px;
     height: 60px;
 }
 
-.sam-friday-1 {
+.sam-wednesday-1 {
     top: 333px;
     left: 697px;
     height: 60px;
 }
 
-.sam-friday-2 {
+.sam-friday-1 {
     top: 403px;
+    left: 697px;
+    height: 60px;
+}
+
+.sam-friday-2 {
+    top: 473px;
     left: 697px;
     height: 60px;
 }
