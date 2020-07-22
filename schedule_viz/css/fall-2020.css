@@ -51,32 +51,38 @@
     height: 60px;
 }
 
-.kjrsten-wednesday {
-    top: 123px;
+.kjrsten-tuesday-2 {
+    top: 122px;
     left: 86px;   
     height: 60px;
 }
 
-.kjrsten-thursday-1 {
+.kjrsten-wednesday {
     top: 193px;
     left: 86px;   
     height: 60px;
 }
 
-.kjrsten-thursday-15 {
+.kjrsten-thursday-1 {
     top: 263px;
     left: 86px;   
     height: 60px;
 }
 
+.kjrsten-thursday-15 {
+    top: 322px;
+    left: 86px;   
+    height: 60px;
+}
+
 .kjrsten-thursday-2 {
-    top: 333px;
+    top: 403px;
     left: 86px;   
     height: 60px;
 }
 
 .kjrsten-thursday-3 {
-    top: 403px;
+    top: 473px;
     left: 86px;   
     height: 60px;
 }
@@ -109,19 +115,19 @@
 }
 
 .dennis-friday-3 {
-    top: 263px;
+    top: 252px;
     left: 289px;
     height: 60px;
 }
 
-.dennis-friday-4 {
+/* .dennis-friday-4 {
     top: 333px;
     left: 289px;
     height: 60px;
-}
+} */
 
 .dennis-friday-5 {
-    top: 403px;
+    top: 333px;
     left: 289px;
     height: 60px;
 }
@@ -142,7 +148,7 @@
 }
 
 .carl-monday-2 {
-    top: 123px;
+    top: 112px;
     left: 493px;
     height: 60px;
 }
@@ -193,7 +199,7 @@
 }
 
 .sam-tuesday-2 {
-    top: 123px;
+    top: 112px;
     left: 697px;
     height: 60px;
 }
@@ -205,7 +211,7 @@
 }
 
 .sam-tuesday-4 {
-    top: 263px;
+    top: 252px;
     left: 697px;
     height: 60px;
 }
@@ -223,7 +229,7 @@
 }
 
 .sam-friday-2 {
-    top: 473px;
+    top: 462px;
     left: 697px;
     height: 60px;
 }
