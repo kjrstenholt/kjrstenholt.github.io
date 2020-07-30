@@ -64,25 +64,25 @@
 }
 
 .kjrsten-thursday-1 {
-    top: 263px;
+    top: 123px;
     left: 86px;   
     height: 60px;
 }
 
 .kjrsten-thursday-15 {
-    top: 322px;
+    top: 182px;
     left: 86px;   
     height: 60px;
 }
 
 .kjrsten-thursday-2 {
-    top: 403px;
+    top: 252px;
     left: 86px;   
     height: 60px;
 }
 
 .kjrsten-thursday-3 {
-    top: 473px;
+    top: 323px;
     left: 86px;   
     height: 60px;
 }
@@ -244,5 +244,40 @@ OVERRIDE COLOR for Staff/Staff designation
 */
 .staff-color {
     background: linear-gradient(135deg, #c7c7c7 0%,#ffffff 100%);
+}
+
+/* ==========================================================================
+   Lucie
+   ========================================================================== */
+
+.lucie-1 {
+    top: 53px;
+    left: 901px;
+    height: 60px;
+}
+
+.lucie-2 {
+    top: 123px;
+    left: 901px;
+    height: 60px;
+}
+
+.lucie-hybrid {
+    background: linear-gradient(135deg, #ffe584 0%,#ffffff 100%);
+}
+
+
+/* ==========================================================================
+   Kristine
+   ========================================================================== */
+
+.kristine-1 {
+    top: 333px;
+    left: 901px;
+    height: 60px;
+}
+
+.kristine-hybrid {
+    background: linear-gradient(135deg, #b9e3fb 0%,#ffffff 100%);
 }
 
