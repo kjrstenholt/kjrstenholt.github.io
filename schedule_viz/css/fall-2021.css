@@ -11,7 +11,7 @@
     }
 
     .class-box{
-        overflow-y: scroll;
+        overflow-y: visible;
     }
 
     .class-box.pending::after {
@@ -52,25 +52,25 @@
 }
 
 .kjrsten-tuesday-2 {
-    top: 122px;
+    top: 112px;
     left: 86px;   
     height: 60px;
 }
 
 .kjrsten-thursday-1 {
-    top: 192px;
+    top: 182px;
     left: 86px;   
     height: 60px;
 }
 
 .kjrsten-thursday-15 {
-    top: 251px;
+    top: 241px;
     left: 86px;   
     height: 60px;
 }
 
 .kjrsten-thursday-2 {
-    top: 321px;
+    top: 311px;
     left: 86px;   
     height: 60px;
 }
@@ -166,13 +166,13 @@
 }
 
 .carl-wednesday-3 {
-    top: 333px;
+    top: 403px;
     left: 493px;
     height: 60px;
 }
 
 .carl-wednesday-4 {
-    top: 403px;
+    top: 400px;
     left: 493px;
     height: 60px;
 }
@@ -193,53 +193,46 @@
 }
 
 .sam-tuesday-2 {
-    top: 122px;
+    top: 112px;
     left: 697px;
     height: 60px;
 }
 
 .sam-tuesday-25 {
-    top: 191px;
-    left: 697px;
-    height: 60px;
-}
-
-
-.sam-tuesday-26 {
-    top: 250px;
+    top: 171px;
     left: 697px;
     height: 60px;
 }
 
 .sam-tuesday-3 {
-    top: 319px;
+    top: 245px;
     left: 697px;
     height: 60px;
 }
 
-/* .sam-tuesday-4 {
-    top: 333px;
+.sam-tuesday-4 {
+    top: 304px;
     left: 697px;
     height: 60px;
-} */
+}
 
 .sam-wednesday-1 {
-    top: 388px;
+    top: 383px;
     left: 697px;
     height: 60px;
 }
 
 .sam-friday-1 {
-    top: 457px;
+    top: 453px;
     left: 697px;
     height: 60px;
 }
 
-/* .sam-friday-2 {
-    top: 624px;
+.sam-friday-2 {
+    top: 512px;
     left: 697px;
     height: 60px;
-} */
+}
 
 
 .sam-hybrid {
@@ -250,7 +243,7 @@
 OVERRIDE COLOR for Staff/Staff designation
 */
 .staff-color {
-    background: linear-gradient(135deg, #c7c7c7 0%,#ffffff 100%)!important;
+    background: linear-gradient(135deg, #c7c7c7 0%,#ffffff 100%);
 }
 
 /* ==========================================================================
@@ -266,12 +259,6 @@ OVERRIDE COLOR for Staff/Staff designation
 .lucie-2 {
     top: 123px;
     left: 901px;
-    height: 60px;
-}
-
-.lucie-3 {
-    left: 901px;
-    top: 194px;
     height: 60px;
 }
 
