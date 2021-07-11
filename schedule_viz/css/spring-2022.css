@@ -11,7 +11,7 @@
  }
 
  .class-box{
-     overflow-y: visible;
+     overflow-y: scroll;
  }
 
  .class-box.pending::after {
@@ -52,25 +52,25 @@ Kjrsten
 }
 
 .kjrsten-tuesday-2 {
- top: 112px;
+ top: 122px;
  left: 86px;   
  height: 60px;
 }
 
 .kjrsten-thursday-1 {
- top: 182px;
+ top: 192px;
  left: 86px;   
  height: 60px;
 }
 
 .kjrsten-thursday-15 {
- top: 241px;
+ top: 251px;
  left: 86px;   
  height: 60px;
 }
 
 .kjrsten-thursday-2 {
- top: 311px;
+ top: 321px;
  left: 86px;   
  height: 60px;
 }
@@ -166,13 +166,13 @@ Carl
 }
 
 .carl-wednesday-3 {
- top: 403px;
+ top: 333px;
  left: 493px;
  height: 60px;
 }
 
 .carl-wednesday-4 {
- top: 400px;
+ top: 403px;
  left: 493px;
  height: 60px;
 }
@@ -193,46 +193,53 @@ Sam
 }
 
 .sam-tuesday-2 {
- top: 112px;
+ top: 122px;
  left: 697px;
  height: 60px;
 }
 
 .sam-tuesday-25 {
- top: 171px;
+ top: 191px;
+ left: 697px;
+ height: 60px;
+}
+
+
+.sam-tuesday-26 {
+ top: 250px;
  left: 697px;
  height: 60px;
 }
 
 .sam-tuesday-3 {
- top: 245px;
+ top: 319px;
  left: 697px;
  height: 60px;
 }
 
-.sam-tuesday-4 {
- top: 304px;
+/* .sam-tuesday-4 {
+ top: 333px;
  left: 697px;
  height: 60px;
-}
+} */
 
 .sam-wednesday-1 {
- top: 383px;
+ top: 388px;
  left: 697px;
  height: 60px;
 }
 
 .sam-friday-1 {
- top: 453px;
+ top: 457px;
  left: 697px;
  height: 60px;
 }
 
-.sam-friday-2 {
- top: 512px;
+/* .sam-friday-2 {
+ top: 624px;
  left: 697px;
  height: 60px;
-}
+} */
 
 
 .sam-hybrid {
@@ -243,7 +250,7 @@ Sam
 OVERRIDE COLOR for Staff/Staff designation
 */
 .staff-color {
- background: linear-gradient(135deg, #c7c7c7 0%,#ffffff 100%);
+ background: linear-gradient(135deg, #c7c7c7 0%,#ffffff 100%)!important;
 }
 
 /* ==========================================================================
@@ -262,6 +269,12 @@ Lucie
  height: 60px;
 }
 
+.lucie-3 {
+ left: 901px;
+ top: 194px;
+ height: 60px;
+}
+
 .lucie-hybrid {
  background: linear-gradient(135deg, #ffe584 0%,#ffffff 100%);
 }
@@ -273,12 +286,6 @@ Kristine
 
 .kristine-1 {
  top: 333px;
- left: 901px;
- height: 60px;
-}
-
-.kristine-2 {
- top: 412px;
  left: 901px;
  height: 60px;
 }
