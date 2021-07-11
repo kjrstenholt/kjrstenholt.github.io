@@ -1,0 +1,289 @@
+/* ==========================================================================
+   COVID overrides - online only schedule
+   ========================================================================== */
+
+   .instructors {
+    display: inline-block;
+}
+
+ .covid .calendar_grid td {
+     color: white!important;
+ }
+
+ .class-box{
+     overflow-y: visible;
+ }
+
+ .class-box.pending::after {
+
+     content: " ";
+     width: 4px;
+     height: 50px;
+     background-color: red;
+     display: inline-block;
+     position: absolute;
+     top: 0;
+     right: 10px;
+ 
+ }
+ 
+ /* ==========================================================================
+Instructors
+========================================================================== */
+
+
+/* .college-hour {
+ background-color: lightgray;
+ color: gray;
+ font-size: 12px;
+ font-weight: bold;
+} */
+
+
+
+/* ==========================================================================
+Kjrsten
+========================================================================== */
+
+.kjrsten-tuesday-1 {
+ top: 53px;
+ left: 86px;   
+ height: 60px;
+}
+
+.kjrsten-tuesday-2 {
+ top: 112px;
+ left: 86px;   
+ height: 60px;
+}
+
+.kjrsten-thursday-1 {
+ top: 182px;
+ left: 86px;   
+ height: 60px;
+}
+
+.kjrsten-thursday-15 {
+ top: 241px;
+ left: 86px;   
+ height: 60px;
+}
+
+.kjrsten-thursday-2 {
+ top: 311px;
+ left: 86px;   
+ height: 60px;
+}
+
+.kjrsten-thursday-3 {
+ top: 382px;
+ left: 86px;   
+ height: 60px;
+}
+.kjrsten-hybrid {
+ background: linear-gradient(135deg, #d3d8fb 0%,#ffffff 100%);
+}
+
+
+
+/* ==========================================================================
+Dennis
+========================================================================== */
+
+.dennis-tuesday {
+ top: 53px;
+ left: 289px;
+ height: 60px;
+}
+
+.dennis-wednesday {
+ top: 123px;
+ left: 289px;
+ height: 60px;
+}
+
+.dennis-friday-2 {
+ top: 193px;
+ left: 289px;
+ height: 60px;
+}
+
+.dennis-friday-3 {
+ top: 252px;
+ left: 289px;
+ height: 60px;
+}
+
+/* .dennis-friday-4 {
+ top: 333px;
+ left: 289px;
+ height: 60px;
+} */
+
+.dennis-friday-5 {
+ top: 333px;
+ left: 289px;
+ height: 60px;
+}
+
+.dennis-hybrid {
+ background: linear-gradient(135deg, #fdbaba 0%,#ffffff 100%);
+}
+
+
+/* ==========================================================================
+Carl
+========================================================================== */
+
+.carl-monday-1 {
+ top: 53px;
+ left: 493px;
+ height: 60px;
+}
+
+.carl-monday-2 {
+ top: 112px;
+ left: 493px;
+ height: 60px;
+}
+
+.carl-tuesday {
+ top: 193px;
+ left: 493px;
+ height: 60px;
+}
+
+.carl-wednesday-1 {
+ top: 263px;
+ left: 493px;
+ height: 60px;
+}
+
+.carl-wednesday-2 {
+ top: 333px;
+ left: 493px;
+ height: 60px;
+}
+
+.carl-wednesday-3 {
+ top: 403px;
+ left: 493px;
+ height: 60px;
+}
+
+.carl-wednesday-4 {
+ top: 400px;
+ left: 493px;
+ height: 60px;
+}
+
+.carl-hybrid {
+ background: linear-gradient(135deg, #c4efbc 0%,#ffffff 100%);
+}
+
+
+/* ==========================================================================
+Sam
+========================================================================== */
+
+.sam-tuesday-1 {
+ top: 53px;
+ left: 697px;
+ height: 60px;
+}
+
+.sam-tuesday-2 {
+ top: 112px;
+ left: 697px;
+ height: 60px;
+}
+
+.sam-tuesday-25 {
+ top: 171px;
+ left: 697px;
+ height: 60px;
+}
+
+.sam-tuesday-3 {
+ top: 245px;
+ left: 697px;
+ height: 60px;
+}
+
+.sam-tuesday-4 {
+ top: 304px;
+ left: 697px;
+ height: 60px;
+}
+
+.sam-wednesday-1 {
+ top: 383px;
+ left: 697px;
+ height: 60px;
+}
+
+.sam-friday-1 {
+ top: 453px;
+ left: 697px;
+ height: 60px;
+}
+
+.sam-friday-2 {
+ top: 512px;
+ left: 697px;
+ height: 60px;
+}
+
+
+.sam-hybrid {
+ background: linear-gradient(135deg, #eacafb 0%,#ffffff 100%);
+}
+
+/*
+OVERRIDE COLOR for Staff/Staff designation
+*/
+.staff-color {
+ background: linear-gradient(135deg, #c7c7c7 0%,#ffffff 100%);
+}
+
+/* ==========================================================================
+Lucie
+========================================================================== */
+
+.lucie-1 {
+ top: 53px;
+ left: 901px;
+ height: 60px;
+}
+
+.lucie-2 {
+ top: 123px;
+ left: 901px;
+ height: 60px;
+}
+
+.lucie-hybrid {
+ background: linear-gradient(135deg, #ffe584 0%,#ffffff 100%);
+}
+
+
+/* ==========================================================================
+Kristine
+========================================================================== */
+
+.kristine-1 {
+ top: 333px;
+ left: 901px;
+ height: 60px;
+}
+
+.kristine-2 {
+ top: 412px;
+ left: 901px;
+ height: 60px;
+}
+
+.kristine-hybrid {
+ background: linear-gradient(135deg, #b9e3fb 0%,#ffffff 100%);
+}
+
