@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Email Parser</title>
+    <style>
+        textarea {width: 80%; height: 200px;}
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $( document ).ready(function() {
+ 
+            $('button').click(function(){
+
+                var emailstring = document.getElementById('data').value;
+
+                var result = emailstring.match(/([a-zA-Z0-9._+-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
+                $("#emails").text(result);
+
+            });
+
+        });
+    </script>
+</head>
+    <body>
+        <h1>Email Parser</h1>
+        <div>
+            <h3>Enter unformatted emails:</h3>
+            <textarea id="data"></textarea><br>
+        </div>
+        <div>
+            <h3>Results:</h3>
+            <textarea id="emails"></textarea><br>
+        </div>
+        <div>
+            <button type="button">Parse Emails</button>
+        </div>
+     
+    </body>
+</html>

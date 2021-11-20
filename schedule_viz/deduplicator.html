@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="noindex,nofollow">
+    <title>deduplicator</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+        textarea {
+            width: 80%;
+            height: 200px;
+        }
+        .source-text {
+            background: #fee;
+        }
+        .target-text {
+            background: #efe;
+        }
+        .hide {
+            position: absolute;
+            left: -100px;
+        }
+        button {
+            font-size: 20px;
+            background-color: rgb(20, 139, 74);
+            color: white;
+            padding: 5px;
+        }
+        form input[type="radio"] {
+            height: 20px;
+            width: 20px;
+            position: relative;
+            top: 4px;
+            left: 4px;
+        }
+    </style>
+
+<script type="text/javascript">
+/* Contains elements from https://esqsoft.com/tools/dedupe-list.htm */
+
+$( document ).ready(function() {
+    $("button#commas").hide();
+});
+
+var mytext = "fff";
+
+    function banishCommas(mytext) {
+        //console.log("mytext = " + mytext);
+        var replaced1 = mytext.replace(/,,/g,',');
+        console.log("replaced = "+ replaced1);
+        //do it again
+        var replaced2 = replaced1.replace(/,,/g,',');
+        //tobj.value = replaced;
+        return replaced2;
+    }
+    
+    function hError(msg) {
+        var obj = document.getElementById("error");
+        if (msg.length > 0) {
+            obj.innerHTML = msg;
+            obj.style.display = "block";
+        } else {
+            obj.innerHTML = "";
+            obj.style.display = "none";
+        }
+    }
+    
+    function dedupeIt(obj) {
+        var arr = [];
+        var myhtml = "";
+        var fobj = obj.form;
+        var sobj = fobj.oSrc;
+        var tobj = fobj.oTgt;
+    
+        /* find the delimiter */
+        var d = "";
+        for (var i = 0; i < fobj.delimiter.length; i++) {
+            if (fobj.delimiter[i].checked == true) {
+                d = fobj.delimiter[i].value;
+                i = fobj.delimiter.length;
+            }
+        }
+        arr = eval("sobj.value.split(/" + d + "/);"); // array-ize the textarea data
+        arr = arr.sort();
+    
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i].match(/\n/)) {
+                arr[i] = arr[i].replace(/\n/, ""); // remove line feeds that made it into the array
+            }
+            
+            for (var j = i; j < arr.length; j++) {
+                if (i != j && arr[i] == arr[j]) {
+                    arr[j] = ""; // unset dupes
+                }
+            }
+        }
+    
+        for (var i = 0; i < arr.length; i++) {
+            //alert('['+arr[i] +'] -- '+arr[i].length);
+            if (arr[i].length < 1) arr.splice(i, 1);
+        } // remove empties -- from the compare, and residue from the HTML textarea form input
+    
+        if (arr.length < 2) {
+            hError(
+            "The length of the array is suspicious. You might have selected the wrong delimiter."
+            );
+        } else {
+            hError(""); // reset
+        }
+    
+        var char = fobj.prefaceItems.checked ? "-" : "";
+        //this control is invisible
+    
+        for (var i = 0; i < arr.length; i++) {
+            myhtml += (i > 0 ? "," + char : char) + arr[i];
+        }
+    
+        tobj.value = myhtml;
+    
+        console.log("tobj.value = "+tobj.value);   
+    
+        $("button#commas").show();
+    
+        $( "button#commas" ).click(function() {
+            tobj.value = banishCommas(tobj.value);
+        });
+
+    
+        return false;
+    }
+    </script>
+
+
+</head>
+
+<body>
+
+  <h1>deduplicator</h1>
+  <form
+    name="myform"
+    action="#"
+    id="myform"
+    onsubmit="return false"
+  >
+
+
+  <div><strong>delimiter:</strong>
+    <input
+      type="radio"
+      name="delimiter"
+      value=" "
+    />
+    space
+    <input type="radio"
+      name="delimiter"
+      value=","
+      checked=""
+   />
+    comma
+    <input
+      type="radio"
+      name="delimiter"
+      value=";"
+    />
+    semicolon
+    <input
+      type="radio"
+      name="delimiter"
+      value="\n"
+    />
+    line feed (\n)
+      <br>
+    <input class="hide" type="checkbox" name="prefaceItems" />
+    <!-- (preface items) for debugging whether the splitter worked as expected -->
+    <br>
+    <br>
+    <div><strong>source:</strong> paste your list here</div>
+            <textarea
+              class="source-text"
+              name="oSrc"
+              onfocus="this.select();"
+            ></textarea>
+    <br>
+    <br>
+    <div><strong>target:</strong> deduped, alphabetically sorted list output will appear here</div>
+            <textarea
+              class="target-text"
+              name="oTgt"
+              id="oTarget"
+              onfocus="this.select();"
+            ></textarea>
+            
+            <br>
+            <br>
+            <br>
+            <button onclick="return dedupeIt(this)">
+              dedupe!
+            </button>
+            &nbsp;
+            <button onclick="this.form.oSrc.value=''; this.form.oTgt.value='';return false;">
+              clear
+            </button>
+            &nbsp;
+            <button id="commas">
+                banish extra commas
+            </button>
+
+        </div>
+
+    <div id="error" class="error"></div>
+  </form>
+
+</body>
+</html>   
