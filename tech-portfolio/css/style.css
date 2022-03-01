@@ -1,6 +1,73 @@
+@font-face {
+	font-family: "bebas-kai";
+	src: url("../fonts/BebasKai.woff2");
+}
+
+:root {
+	--brand-purple: rgb(111, 87, 165);
+}
+  
+.brand-purple {
+	color: var(--brand-purple);
+}
+
+/**
+ * Enable smooth scrolling on the whole document
+ */
+ html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: lavender;
+}
+
 img {
 	box-sizing: border border-box;
-	border: 3px solid lightgray;
+	border: 3px solid #bdbdea;
+}
+
+a, a:hover, a:visited {
+	color: inherit; /* original colors for links too */
+	text-decoration: inherit; /* no underline */
+}
+
+h1 {
+	font-family: 'bebas-kai';
+	font-weight: normal;
+	font-size: 3rem;
+} 
+
+strong {
+	font-size: larger;
+}
+
+.kj-header {
+	border: 0;
+	width: 5rem;
+	position: absolute;
+	top: 6px;
+	left: -62px;
+}
+
+.kj-header-contents {
+	padding-left: 30px;
+	padding-bottom: 30px;
+}
+
+.kj-header-contents a {
+	border-radius: 4px;
+	color: white;
+	background-color: var(--brand-purple);
+	padding: 3px 6px;
+	font-weight: normal;
+}
+
+a.resume-link {
+	background-color: transparent;
+	color: var(--brand-purple);
+	padding-left: 0;
+	font-weight: bolder;
 }
 
 .flexy {
@@ -12,17 +79,28 @@ img {
 	margin-top:auto;
 }
 
+.pdflink a {
+	font-weight: bold;
+	color: var(--brand-purple);
+}
+
 .spacer {
 	height: 60px;
 }
 
+.section-marker {
+	position: relative;
+	top: -105px;
+}
+
 .white-header {
-	border-bottom: 3px solid lightgray;
-	background-color: white;
+	border-bottom: 3px solid #bdbdea;
+	background-color: lavender;
 	z-index: 100;
 }
 
 .main-content {
-	margin-top: 150px;
+	margin-top: 180px;
 	margin-bottom: 100px;	
 }
+
