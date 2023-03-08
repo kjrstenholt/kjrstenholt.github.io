@@ -1,0 +1,269 @@
+/* ==========================================================================
+   Online only schedule PLUS Hybrid sessions
+
+   ========================================================================== */
+
+   .instructors {
+    display: inline-block;
+}
+
+ .covid .calendar_grid td {
+     color: white!important;
+ }
+
+ .class-box{
+     overflow-y: scroll;
+ }
+
+ .class-box.pending::after {
+
+     content: " ";
+     width: 4px;
+     height: 50px;
+     background-color: red;
+     display: inline-block;
+     position: absolute;
+     top: 0;
+     right: 10px;
+ 
+ }
+ 
+ /* ==========================================================================
+Instructors
+========================================================================== */
+
+
+/* .college-hour {
+ background-color: lightgray;
+ color: gray;
+ font-size: 12px;
+ font-weight: bold;
+} */
+
+
+
+/* ==========================================================================
+Kjrsten
+========================================================================== */
+
+.kjrsten-tuesday-1 {
+ top: 53px;
+ left: 86px;   
+ height: 60px;
+}
+
+.kjrsten-tuesday-2 {
+ top: 122px;
+ left: 86px;   
+ height: 60px;
+}
+
+.kjrsten-thursday-1 {
+ top: 192px;
+ left: 86px;   
+ height: 90px;
+}
+
+.kjrsten-thursday-15 {
+ top: 281px;
+ left: 86px;   
+ height: 60px;
+}
+
+.kjrsten-thursday-2 {
+ top: 351px;
+ left: 86px;   
+ height: 60px;
+}
+
+.kjrsten-thursday-3 {
+ top: 402px;
+ left: 86px;   
+ height: 60px;
+}
+
+  .kjrsten-wed-2 {
+    top: 420px;
+    left: 86px;
+  }
+
+
+.kjrsten-hybrid {
+ background: linear-gradient(135deg, #d3d8fb 0%,#ffffff 100%);
+}
+
+
+
+/* ==========================================================================
+Dennis
+========================================================================== */
+
+.dennis-tuesday {
+ top: 53px;
+ left: 289px;
+ height: 60px;
+}
+
+.dennis-wednesday {
+ top: 123px;
+ left: 289px;
+ height: 60px;
+}
+
+.dennis-friday-2 {
+ top: 193px;
+ left: 289px;
+ height: 90px;
+}
+
+.dennis-friday-3 {
+ top: 282px;
+ left: 289px;
+ height: 60px;
+}
+
+.dennis-friday-5 {
+ top: 351px;
+ left: 289px;
+ height: 60px;
+}
+
+.dennis-hybrid {
+ background: linear-gradient(135deg, #fdbaba 0%,#ffffff 100%);
+}
+
+
+/* ==========================================================================
+Carl
+========================================================================== */
+
+.carl-monday-1 {
+ top: 53px;
+ left: 493px;
+ height: 60px;
+}
+
+.carl-monday-2 {
+ top: 112px;
+ left: 493px;
+ height: 60px;
+}
+
+.carl-tuesday {
+ top: 193px;
+ left: 493px;
+ height: 60px;
+}
+
+.carl-wednesday-1 {
+ top: 263px;
+ left: 493px;
+ height: 60px;
+}
+
+.carl-wednesday-2 {
+ top: 333px;
+ left: 493px;
+ height: 60px;
+}
+
+.carl-wednesday-3 {
+ top: 333px;
+ left: 493px;
+ height: 60px;
+}
+
+.carl-wednesday-4 {
+ top: 403px;
+ left: 493px;
+ height: 60px;
+}
+
+.carl-wednesday-5 {
+    top: 462px;
+    left: 493px;
+    height: 60px;
+}
+
+.carl-hybrid {
+ background: linear-gradient(135deg, #c4efbc 0%,#ffffff 100%);
+}
+
+
+/* ==========================================================================
+Sam
+========================================================================== */
+
+.sam-tuesday-1 {
+ top: 53px;
+ left: 697px;
+ height: 60px;
+}
+
+.sam-tuesday-2 {
+ top: 122px;
+ left: 697px;
+ height: 60px;
+}
+
+.sam-tuesday-25 {
+ top: 191px;
+ left: 697px;
+ height: 60px;
+}
+
+
+.sam-tuesday-26 {
+ top: 250px;
+ left: 697px;
+ height: 60px;
+}
+
+.sam-tuesday-3 {
+ top: 319px;
+ left: 697px;
+ height: 60px;
+}
+
+.sam-wednesday-1 {
+ top: 388px;
+ left: 697px;
+ height: 60px;
+}
+
+.sam-friday-1 {
+ top: 457px;
+ left: 697px;
+ height: 60px;
+}
+
+.sam-hybrid {
+ background: linear-gradient(135deg, #eacafb 0%,#ffffff 100%);
+}
+
+/* ==========================================================================
+Beth
+========================================================================== */
+.beth-hybrid {
+    background: linear-gradient(135deg, #f8cb78 0%,#ffffff 100%);
+   }
+
+.beth-wed-1 {
+    top: 53px;
+    left: 901px;
+    height: 90px;
+}
+
+.beth-tuesday-1 {
+    top: 53px;
+    left: 901px;
+    height: 60px;
+}
+
+/*
+OVERRIDE COLOR for Staff/Staff designation
+*/
+.staff-color {
+ background: linear-gradient(135deg, #c7c7c7 0%,#ffffff 100%)!important;
+}
+
