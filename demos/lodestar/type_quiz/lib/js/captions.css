@@ -1,0 +1,133 @@
+
+
+.captionbox{
+	
+	display:inline-flex;
+	flex-wrap: wrap;
+	align-items:flex-start;
+	margin:20px;
+}
+
+.captionpad{
+font-size:.75em;
+}	
+
+.captionSpacer{
+  background: none;
+  width: 100%;
+  margin: 1px;
+  flex: 1 0 25%;
+}
+
+.mr_speech-bubble {
+	position: relative;
+	min-width: 100px;
+	background: #00aabb;
+	border-radius: .4em;
+	padding: 15px;
+	
+	
+}
+
+.mr_speech-bubble:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-right-color: #00aabb;
+	border-left: 0;
+	margin-top: -20px;
+	margin-left: -20px;
+}
+
+.tl_speech-bubble {
+	position: relative;
+	background:  #e7e700F0;
+	border: 4px solid lightgray;
+	border-radius: .4em;
+	padding: 15px;
+	width: 50%;
+  	margin: 1px;
+  	flex: 1 0 32%;
+}
+
+.tl_speech-bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 33%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top-color:  lightgray;
+	border-bottom: 0;
+	border-right: 0;
+	margin-left: -10px;
+	margin-bottom: -20px;
+}
+
+.tc_speech-bubble {
+	position: relative;
+	background: #e7e700;
+	border: 4px solid lightgray;
+	border-radius: .4em;
+	padding: 15px;
+	
+}
+
+.tc_speech-bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top-color: lightgray;
+	border-bottom: 0;
+	margin-left: -20px;
+	margin-bottom: -20px;
+}
+
+.tr_speech-bubble {
+	position: relative;
+	background: #e7e700;
+	border: 4px solid lightgray;
+	border-radius: .4em;
+	padding: 15px;
+}
+
+.tr_speech-bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 75%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top-color: lightgray;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -10px;
+	margin-bottom: -20px;
+}
+
+.bc_speech-bubble {
+	position: relative;
+	background: #e7e70055;
+	border: none;
+	border-radius: .4em;
+	padding: 5px;
+	text-align: center;
+}
+
+
+
+.captionbox img{
+	width: 100% !important;
+	height: auto !important;
+	flex: 1 0 50%;
+}

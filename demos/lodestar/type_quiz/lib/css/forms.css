@@ -1,0 +1,89 @@
+.formsPage{
+padding-bottom: 100px;
+}
+
+.formsContent{
+	
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	height: 100%;	
+}
+
+.formsPage .tile {
+	border: 1px solid black;
+	min-height: 100px;
+	min-width: 150px;
+	margin:1px;
+	flex-grow: 1;
+	width: 20%;
+}
+
+.formsPage .title{
+	text-align: center;
+	background-color: #4d4d4d;
+	color: white;
+	font-size: 16px;
+    text-indent: 10px;
+    border-bottom: 2px;
+	padding: 5px;
+	padding-bottom: 20px;
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+     user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */ 
+}
+
+.formsPage .textEntry{
+	padding: 5px;
+	padding-bottom: 20px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	max-height:200px;
+	min-height: 40px;
+	white-space: pre-line; whitespace trimmed to single whitespace or
+	white-space: pre-wrap; all whitespace preserved
+
+}
+
+/*
+The following is an example of how css rules can be targeted to a formsPage tile by id.  When setting up the form, the author
+provides each form element (tile) with an id.
+
+*/
+
+.formsPage #KP_ID{
+	order: 1;
+}
+
+.formsPage #KA_ID{
+	order: 2;
+}
+.formsPage #VP_ID{
+	order: 3;
+}
+
+.formsPage #CR_ID{
+	order: 4;
+}
+.formsPage #CS_ID{
+	order: 5;
+}
+.formsPage #KR_ID{
+	order: 6;
+}
+.formsPage #CH_ID{
+	order: 7;
+}
+.formsPage #CST_ID{
+	order: 8;
+
+}
+.formsPage #RS_ID{
+	order: 9;
+	flex-grow: 2;
+	margin-bottom:100px;
+}

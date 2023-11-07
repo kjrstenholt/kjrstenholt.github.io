@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <preview>
+    <thumbnail>thumbnail.jpg</thumbnail>
+    <title>Default</title>
+    <description><![CDATA[This interface provides a palette used in the coloring of pages and fields.]]></description>
+    <specialNotes />
+  </preview>
+  <interaction>
+    <!--  This is the title put in the header. Not all interfaces will have a geader, in fact, the default one will not. 	-->
+    <title />
+    <backgroundcolorChip>#FFFFFFFF</backgroundcolorChip>
+    <extraLightcolorChip>#FFFFFFFF</extraLightcolorChip>
+    <lightcolorChip>#F2F2F2FF</lightcolorChip>
+    <mediumcolorChip>#666666FF</mediumcolorChip>
+    <darkcolorChip>#384351CC</darkcolorChip>
+  </interaction>
+</interface>

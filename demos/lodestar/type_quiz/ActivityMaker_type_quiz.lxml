@@ -1,0 +1,3899 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interactions starPageVersion="22">
+  <interaction allowAnimationEditor="1" allowCMI5="1" allowInteractiveImages="1" allowThemes="1" allowAdvancedThemes="1" allowLayouts="1" layoutVersion="2" allowDesigns="1" allowCaptions="1" allowPalettes="1" allowWidgets="LS_JET_0001;LS_JET_0002;LS_JET_0006;LS_JET_0007;LS_JET_0008;LS_JET_0009;LS_JET_0010;LS_JET_0012;LS_JET_0014;LS_JET_0015;LS_JET_0016;LS_JET_0017;LS_JET_0018;LS_JET_0019;LS_JET_0020;;LS_JET_0021" code="os.swf" codebase="ActivityMaker Mobile" dataFile="base\main.xml" launchFile="index.htm" name="ActivityMaker Mobile" source="ActivityMaker_Mobile.lxml" type="Flash" version="3.0" projectName="ActivityMaker_Build_28">
+    <translations>
+      <translation input="base\print.xsl" output="print.htm" />
+      <translation input="base\sec508Redirect.xsl" output="base\sec508.htm" />
+      <translation input="base\print.xsl" output="sec508.htm" />
+      <translation input="layout\theme.xsl" inputtree="theme\default.xml" output="lib\css\jetbuilder.css" />
+      <translation input="layout\layout.xsl" inputtree="layout\default.xml" output="lib\css\layout.css" />
+    </translations>
+    <settings>
+      <input name="Transition" type="JetCustomOptionComboBox" values="none,fade,slide,clip,highlight,puff,blind,bounce" items="none,fade,slide,clip,highlight,puff,blind,bounce" description="Transitions between pages"><![CDATA[1]]></input>
+      <input name="Transition Time" type="JetOptionTextArea" description="Transition time between pages (in milliseconds)"><![CDATA[1000]]></input>
+      <input name="Table of Contents" type="JetCustomOptionComboBox" values="none,side menu, dropdown, non sliding side menu,split panel menu" items="none,Menu Style 1, Drop down, Menu Style 2, Menu Style 3" description="Style of table of contents"><![CDATA[4]]></input>
+      <input name="displayADA" type="JetCustomOptionComboBox" values="true, false" items="true, false" description="Display ADA Icon"><![CDATA[0]]></input>
+      <input name="displayPrint" type="JetCustomOptionComboBox" values="true, false" items="true, false" description="Display Print Icon"><![CDATA[1]]></input>
+      <input name="displayPagination" type="JetCustomOptionComboBox" values="true, false" items="true, false" description="Display Page Numbers"><![CDATA[0]]></input>
+      <input name="displayNAV" type="JetCustomOptionComboBox" values="true, false" items="true, false" description="Display Navigation Buttons"><![CDATA[0]]></input>
+      <input name="displayTranscript" type="JetCustomOptionComboBox" values="true, false" items="true, false" description="Display Transcript Icon"><![CDATA[0]]></input>
+      <input name="displayNotes" type="JetCustomOptionComboBox" values="true, false" items="true, false" description="Display Notes Icon."><![CDATA[1]]></input>
+      <input name="displayAccessibilityPage" type="JetCustomOptionComboBox" values="true, false" items="true, false" description="Display Page Level Accessibility Icon"><![CDATA[1]]></input>
+      <input name="passThreshold" type="JetCustomOptionComboBox" values="None,10%,20%,30%,40%,50%,60%,70%,80%,90%,100%" items="None,10%,20%,30%,40%,50%,60%,70%,80%,90%,100%" description="Set Pass Threshold"><![CDATA[8]]></input>
+      <input name="completionCondition" type="JetCustomOptionComboBox" values="No conditions,Only if passing" items="No conditions,Only if passing" description="Set Condition of Completion"><![CDATA[1]]></input>
+      <input name="displayScormWarning" type="JetCustomOptionComboBox" values="true, false" items="true, false" description="Display Warning if not connected to LMS"><![CDATA[1]]></input>
+      <input name="displayMeter" type="JetCustomOptionComboBox" values="true, false" items="true, false" description="Display Interview Page Meter"><![CDATA[0]]></input>
+      <input name="lockCMI5" type="JetCustomOptionComboBox" values="true, false" items="true, false" description="Lock CMI5 until LMS communicates"><![CDATA[1]]></input>
+    </settings>
+    <parameters>
+      <information columns="40" commonName="SplashPage" encoded="0" htmlPage="http://www.lodestarlearning.com/help/en/activityMaker_8_2/html/index.html" name="ActivityMaker Help" promptsize="100" rows="20" />
+      <cparameter columns="10" commonName="Presenter Profile Page" encoded="0" encryptionType="1" name="Presenter_Profile_Page">
+        <!--  General Page Elements -->
+        <!-- Stage -->
+        <optionStore name="Stage">
+          <options>
+            <option type="-1">
+              <rule type="bgColor" value="ffffff" />
+              <rule type="fgColor" value="000000" />
+              <rule type="bgAlpha" value="40" />
+              <rule type="visibility" value="1" />
+              <rule type="x" value="100" />
+              <rule type="y" value="80" />
+              <rule type="enabled" value="false" />
+              <rule type="height" value="367" />
+              <rule type="width" value="653" />
+              <rule type="image" value="stage_default.jpg" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="StageOptions">
+          <options>
+            <option type="-1">
+              <rule type="visibility" value="1" />
+              <rule type="bgColor" value="FFFF00" />
+              <rule type="fgColor" value="000000" />
+              <rule type="font_face" value="Arial" />
+              <rule type="x" value="20" />
+              <rule type="y" value="330" />
+              <rule type="width" value="300" />
+              <rule type="height" value="20" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="TotalPoints">
+          <options>
+            <option type="-1">
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="totalpoints" />
+              <rule type="x" value="800" />
+              <rule type="y" value="430" />
+              <rule type="bgColor" value="E7E7E7" />
+              <rule type="fgColor" value="000000" />
+              <rule type="width" value="250" />
+              <rule type="height" value="30" />
+              <rule type="tooltip" value="Used for reporting points to the Report Page and to the Learning Management System." />
+              <rule type="validator" value="[{&quot;isnumeric&quot;:&quot;true&quot;}, {&quot;nonempty&quot;:&quot;true&quot;}]" />
+            </option>
+            <option type="1">
+              <rule type="y" value="360" />
+            </option>
+            <option type="2">
+              <rule type="visibility" value="1" />
+              <rule type="y" value="480" />
+            </option>
+            <option type="3">
+              <rule type="x" value="800" />
+              <rule type="y" value="400" />
+            </option>
+            <option type="4">
+              <rule type="visibility" value="0" />
+            </option>
+            <option type="5">
+              <rule type="visibility" value="0" />
+            </option>
+            <option type="6">
+              <rule type="visibility" value="0" />
+            </option>
+            <option type="7">
+              <rule type="visibility" value="0" />
+            </option>
+            <option type="8">
+              <rule type="y" value="300" />
+            </option>
+            <option type="9">
+              <rule type="visibility" value="0" />
+            </option>
+            <option type="12">
+              <rule type="y" value="370" />
+            </option>
+            <option type="13">
+              <rule type="visibility" value="0" />
+            </option>
+            <option type="14">
+              <rule type="y" value="330" />
+            </option>
+            <option type="15">
+              <rule type="visibility" value="0" />
+            </option>
+            <option type="16">
+              <rule type="visibility" value="0" />
+              <rule type="y" value="480" />
+            </option>
+            <option type="17">
+              <rule type="y" value="330" />
+            </option>
+            <option type="18">
+              <rule type="visibility" value="0" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="TotalPoints_Label">
+          <options>
+            <option type="-1">
+              <rule type="visibility" value="1" />
+              <rule type="bgColor" value="ffffff" />
+              <rule type="fgColor" value="000000" />
+              <rule type="x" value="800" />
+              <rule type="y" value="400" />
+              <rule type="width" value="250" />
+              <rule type="height" value="30" />
+              <rule type="text" value="Point Value:" />
+            </option>
+            <option type="1">
+              <rule type="y" value="330" />
+            </option>
+            <option type="2">
+              <rule type="visibility" value="1" />
+              <rule type="y" value="450" />
+            </option>
+            <option type="3">
+              <rule type="x" value="800" />
+              <rule type="y" value="370" />
+            </option>
+            <option type="4">
+              <rule type="visibility" value="0" />
+            </option>
+            <option type="5">
+              <rule type="visibility" value="0" />
+            </option>
+            <option type="6">
+              <rule type="visibility" value="0" />
+            </option>
+            <option type="7">
+              <rule type="visibility" value="0" />
+            </option>
+            <option type="8">
+              <rule type="y" value="270" />
+            </option>
+            <option type="9">
+              <rule type="visibility" value="0" />
+            </option>
+            <option type="12">
+              <rule type="y" value="340" />
+            </option>
+            <option type="13">
+              <rule type="visibility" value="0" />
+            </option>
+            <option type="14">
+              <rule type="y" value="300" />
+            </option>
+            <option type="15">
+              <rule type="visibility" value="0" />
+            </option>
+            <option type="16">
+              <rule type="visibility" value="0" />
+              <rule type="y" value="450" />
+            </option>
+            <option type="17">
+              <rule type="y" value="300" />
+            </option>
+            <option type="18">
+              <rule type="visibility" value="0" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="Title">
+          <options>
+            <option type="-1">
+              <rule type="visibility" value="1" />
+              <rule type="bgColor" value="E7E7E7" />
+              <rule type="font_size" value="14" />
+              <rule type="x" value="800" />
+              <rule type="y" value="250" />
+              <rule type="width" value="250" />
+              <rule type="height" value="30" />
+              <rule type="align" value="center" />
+              <rule type="sessionVar" value="Titles" />
+              <rule type="sessionVarType" value="set" />
+              <rule type="embedFonts" value="1" />
+              <rule type="tag" value="index" />
+              <rule type="tooltip" value="Used in table of contents and to help you identify this page." />
+              <rule type="validator" value="[{&quot;nonempty&quot;:&quot;true&quot;}]" />
+            </option>
+            <option type="2">
+              <rule type="y" value="130" />
+            </option>
+            <option type="3">
+              <rule type="x" value="800" />
+              <rule type="y" value="295" />
+            </option>
+            <option type="6">
+              <rule type="y" value="150" />
+            </option>
+            <option type="7">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="1010" />
+            </option>
+            <option type="8">
+              <rule type="visibility" value="1" />
+              <rule type="y" value="150" />
+            </option>
+            <option type="9">
+              <rule type="visibility" value="1" />
+              <rule type="y" value="105" />
+            </option>
+            <option type="13">
+              <rule type="width" value="230" />
+              <rule type="x" value="820" />
+            </option>
+            <option type="14">
+              <rule type="y" value="200" />
+            </option>
+            <option type="15">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="800" />
+            </option>
+            <option type="16">
+              <rule type="y" value="130" />
+            </option>
+            <option type="17">
+              <rule type="y" value="150" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="Title_Label">
+          <options>
+            <option type="-1">
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="font_face" value="Arial" />
+              <rule type="html" value="1" />
+              <rule type="style" value="1" />
+              <rule type="visibility" value="1" />
+              <rule type="font_size" value="14" />
+              <rule type="x" value="800" />
+              <rule type="y" value="220" />
+              <rule type="width" value="150" />
+              <rule type="height" value="30" />
+              <rule type="align" value="center" />
+              <rule type="sessionVar" value="Titles" />
+              <rule type="sessionVarType" value="set" />
+              <rule type="embedFonts" value="1" />
+              <rule type="text" value="Page ID:" />
+              <rule type="tooltip" value="Every page has a unique identifier, but author can type in a label as well. Used in Table of Contents." />
+            </option>
+            <option type="2">
+              <rule type="y" value="100" />
+            </option>
+            <option type="3">
+              <rule type="x" value="800" />
+              <rule type="y" value="265" />
+            </option>
+            <option type="6">
+              <rule type="y" value="120" />
+            </option>
+            <option type="7">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="1010" />
+            </option>
+            <option type="8">
+              <rule type="y" value="120" />
+            </option>
+            <option type="9">
+              <rule type="y" value="75" />
+            </option>
+            <option type="13">
+              <rule type="width" value="130" />
+              <rule type="x" value="820" />
+            </option>
+            <option type="14">
+              <rule type="y" value="170" />
+            </option>
+            <option type="15">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="800" />
+            </option>
+            <option type="16">
+              <rule type="y" value="100" />
+            </option>
+            <option type="17">
+              <rule type="y" value="120" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="CustomScoreVariableName">
+          <options>
+            <option type="-1">
+              <rule type="visibility" value="0" />
+              <rule type="bgColor" value="E7E7E7" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="font_face" value="Arial" />
+              <rule type="font_size" value="14" />
+              <rule type="html" value="0" />
+              <rule type="embedFonts" value="1" />
+            </option>
+            <option type="5">
+              <rule type="x" value="320" />
+              <rule type="y" value="190" />
+              <rule type="height" value="30" />
+              <rule type="width" value="200" />
+              <rule type="visibility" value="1" />
+              <rule type="html" value="0" />
+              <rule type="tag" value="customScoreVariableName" />
+              <rule type="tooltip" value="Type in the name of the custom variable." />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="HTMLTextArea_1">
+          <options>
+            <option type="-1">
+              <rule type="font_face" value="Arial" />
+              <rule type="font_size" value="14" />
+              <rule type="visibility" value="0" />
+              <rule type="x" value="0" />
+              <rule type="y" value="0" />
+              <rule type="height" value="1000" />
+              <rule type="width" value="940" />
+              <rule type="bgColor" value="E7E7E7" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="html" value="1" />
+              <rule type="toolbar" value="0" />
+              <rule type="embedFonts" value="1" />
+              <rule type="scrollbars" value="1" />
+              <rule type="tooltip" value="Type in any content here." />
+            </option>
+            <option type="2">
+              <rule type="visibility" value="1" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="tag" value="textBlock" />
+              <rule type="x" value="20" />
+              <rule type="y" value="20" />
+              <rule type="height" value="-1" />
+              <rule type="width" value="755" />
+              <rule type="toolbar" value="0" />
+              <rule type="player_x" value="50" />
+              <rule type="player_y" value="20" />
+              <rule type="player_height" value="410" />
+              <rule type="player_width" value="840" />
+            </option>
+            <option type="9">
+              <rule type="visibility" value="1" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="bgColor" value="E7E7E7" />
+              <rule type="font_size" value="14" />
+              <rule type="x" value="20" />
+              <rule type="y" value="225" />
+              <rule type="player_x" value="20" />
+              <rule type="player_y" value="20" />
+              <rule type="player_width" value="870" />
+              <rule type="width" value="720" />
+              <rule type="height" value="200" />
+              <rule type="align" value="center" />
+              <rule type="embedFonts" value="1" />
+              <rule type="tag" value="instructions" />
+              <rule type="contentClass" value="textBlock" />
+            </option>
+            <option type="13">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="20" />
+              <rule type="y" value="100" />
+              <rule type="height" value="330" />
+              <rule type="width" value="775" />
+              <rule type="toolbar" value="1" />
+              <rule type="player_x" value="70" />
+              <rule type="player_y" value="70" />
+            </option>
+            <option type="15">
+              <rule type="visibility" value="1" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="tag" value="textBlock" />
+              <rule type="x" value="20" />
+              <rule type="y" value="20" />
+              <rule type="height" value="450" />
+              <rule type="width" value="770" />
+              <rule type="toolbar" value="0" />
+              <rule type="player_x" value="50" />
+              <rule type="player_y" value="20" />
+              <rule type="player_height" value="410" />
+              <rule type="player_width" value="840" />
+            </option>
+            <option type="16">
+              <rule type="visibility" value="1" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="tag" value="textBlock" />
+              <rule type="x" value="20" />
+              <rule type="y" value="20" />
+              <rule type="height" value="-1" />
+              <rule type="width" value="755" />
+              <rule type="toolbar" value="0" />
+              <rule type="player_x" value="50" />
+              <rule type="player_y" value="0" />
+              <rule type="player_height" value="410" />
+              <rule type="player_width" value="840" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="HTMLTextArea_2">
+          <options>
+            <option type="-1">
+              <rule type="font_face" value="Arial" />
+              <rule type="font_size" value="14" />
+              <rule type="visibility" value="0" />
+              <rule type="x" value="120" />
+              <rule type="y" value="100" />
+              <rule type="height" value="330" />
+              <rule type="width" value="610" />
+              <rule type="bgColor" value="E7E7E7" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="html" value="1" />
+              <rule type="toolbar" value="0" />
+              <rule type="scrollbars" value="1" />
+              <rule type="embedFonts" value="1" />
+              <rule type="tooltip" value="Type in any content here." />
+            </option>
+            <option type="9">
+              <rule type="visibility" value="0" />
+              <rule type="player_visibility" value="1" />
+              <rule type="tag" value="longAnswer" />
+              <rule type="embedFonts" value="1" />
+              <rule type="html" value="1" />
+              <rule type="toolbar" value="1" />
+              <rule type="scrollbars" value="1" />
+              <rule type="x" value="150" />
+              <rule type="y" value="400" />
+              <rule type="height" value="0" />
+              <rule type="width" value="0" />
+              <rule type="player_x" value="20" />
+              <rule type="player_y" value="200" />
+              <rule type="player_height" value="200" />
+              <rule type="player_width" value="870" />
+              <rule type="simpleEditor" value="1" />
+              <rule type="bgAlpha" value="1" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="Instructions_Label">
+          <options>
+            <option type="-1">
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="font_face" value="Arial" />
+              <rule type="html" value="1" />
+              <rule type="style" value="1" />
+              <rule type="visibility" value="0" />
+              <rule type="font_size" value="14" />
+              <rule type="x" value="120" />
+              <rule type="y" value="100" />
+              <rule type="width" value="100" />
+              <rule type="height" value="30" />
+              <rule type="align" value="center" />
+              <rule type="sessionVar" value="Titles" />
+              <rule type="sessionVarType" value="set" />
+              <rule type="embedFonts" value="1" />
+              <rule type="text" value="Instructions:" />
+            </option>
+            <option type="0">
+              <rule type="visibility" value="1" />
+              <rule type="player_visibility" value="1" />
+              <rule type="font_size" value="14" />
+              <rule type="x" value="20" />
+              <rule type="y" value="20" />
+              <rule type="width" value="500" />
+              <rule type="height" value="30" />
+              <rule type="align" value="center" />
+              <rule type="embedFonts" value="1" />
+            </option>
+            <option type="1">
+              <rule type="visibility" value="1" />
+              <rule type="player_visibility" value="0" />
+              <rule type="font_size" value="14" />
+              <rule type="x" value="675" />
+              <rule type="y" value="10" />
+              <rule type="width" value="300" />
+              <rule type="height" value="20" />
+              <rule type="align" value="center" />
+              <rule type="embedFonts" value="1" />
+            </option>
+            <option type="9">
+              <rule type="visibility" value="1" />
+              <rule type="player_visibility" value="1" />
+              <rule type="font_size" value="14" />
+              <rule type="x" value="20" />
+              <rule type="y" value="190" />
+              <rule type="width" value="500" />
+              <rule type="height" value="30" />
+              <rule type="align" value="center" />
+              <rule type="embedFonts" value="1" />
+            </option>
+            <option type="12">
+              <rule type="visibility" value="1" />
+              <rule type="player_visibility" value="1" />
+              <rule type="font_size" value="14" />
+              <rule type="x" value="20" />
+              <rule type="y" value="20" />
+              <rule type="width" value="500" />
+              <rule type="height" value="30" />
+              <rule type="align" value="center" />
+              <rule type="embedFonts" value="1" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="Instructions">
+          <options>
+            <option type="-1">
+              <rule type="visibility" value="0" />
+              <rule type="bgColor" value="E7E7E7" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="font_face" value="Arial" />
+              <rule type="font_size" value="14" />
+              <rule type="html" value="0" />
+              <rule type="embedFonts" value="1" />
+              <rule type="tooltip" value="Type in instructions here." />
+            </option>
+            <option type="0">
+              <rule type="visibility" value="1" />
+              <rule type="font_size" value="14" />
+              <rule type="x" value="20" />
+              <rule type="y" value="70" />
+              <rule type="width" value="638" />
+              <rule type="height" value="50" />
+              <rule type="align" value="center" />
+              <rule type="embedFonts" value="1" />
+              <rule type="tag" value="instructions" />
+            </option>
+            <option type="12">
+              <rule type="visibility" value="1" />
+              <rule type="font_size" value="14" />
+              <rule type="x" value="20" />
+              <rule type="y" value="70" />
+              <rule type="width" value="638" />
+              <rule type="height" value="50" />
+              <rule type="align" value="center" />
+              <rule type="embedFonts" value="1" />
+              <rule type="tag" value="instructions" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="TextArea_1">
+          <options>
+            <option type="-1">
+              <rule type="branch_icon_visibility" value="0" />
+              <rule type="visibility" value="0" />
+              <rule type="bgColor" value="E7E7E7" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="font_face" value="Arial" />
+              <rule type="font_size" value="14" />
+              <rule type="html" value="0" />
+              <rule type="embedFonts" value="1" />
+            </option>
+            <option type="6">
+              <rule type="visibility" value="1" />
+              <rule type="player_visibility" value="1" />
+              <rule type="tag" value="IFRAME" />
+              <rule type="embedFonts" value="1" />
+              <rule type="html" value="1" />
+              <rule type="scrollbars" value="1" />
+              <rule type="x" value="20" />
+              <rule type="y" value="210" />
+              <rule type="height" value="300" />
+              <rule type="width" value="600" />
+              <rule type="bgAlpha" value="1" />
+              <rule type="tooltip" value="Paste in embed code." />
+            </option>
+            <option type="9">
+              <rule type="visibility" value="1" />
+              <rule type="player_visibility" value="1" />
+              <rule type="tag" value="heading" />
+              <rule type="embedFonts" value="1" />
+              <rule type="html" value="1" />
+              <rule type="scrollbars" value="1" />
+              <rule type="x" value="20" />
+              <rule type="y" value="80" />
+              <rule type="height" value="50" />
+              <rule type="width" value="600" />
+              <rule type="bgAlpha" value="1" />
+              <rule type="tooltip" value="Used for the final formatted report or journal." />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="TextArea_2">
+          <options>
+            <option type="-1">
+              <rule type="branch_icon_visibility" value="0" />
+              <rule type="visibility" value="0" />
+              <rule type="x" value="300" />
+              <rule type="y" value="260" />
+              <rule type="bgColor" value="E7E7E7" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="font_face" value="Arial" />
+              <rule type="font_size" value="14" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+            </option>
+            <option type="3">
+              <rule type="x" value="140" />
+              <rule type="y" value="150" />
+              <rule type="player_y" value="130" />
+              <rule type="player_x" value="20" />
+              <rule type="height" value="100" />
+              <rule type="width" value="460" />
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="stem" />
+              <rule type="tooltip" value="Type in your question here." />
+            </option>
+            <option type="5">
+              <rule type="x" value="320" />
+              <rule type="y" value="280" />
+              <rule type="height" value="30" />
+              <rule type="width" value="60" />
+              <rule type="visibility" value="1" />
+              <rule type="html" value="0" />
+              <rule type="tag" value="scoreThreshold" />
+              <rule type="validator" value="[{&quot;isnumeric&quot;:&quot;true&quot;}]" />
+            </option>
+            <option type="7">
+              <rule type="bgColor" value="FFFFFF" />
+              <rule type="x" value="245" />
+              <rule type="y" value="70" />
+              <rule type="player_y" value="17" />
+              <rule type="height" value="70" />
+              <rule type="width" value="635" />
+              <rule type="visibility" value="1" />
+              <rule type="html" value="1" />
+              <rule type="tag" value="stem" />
+              <rule type="toolbar" value="1" />
+              <rule type="tooltip" value="Type in your question here." />
+            </option>
+            <option type="10">
+              <rule type="x" value="120" />
+              <rule type="y" value="120" />
+              <rule type="height" value="100" />
+              <rule type="width" value="640" />
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="stem" />
+              <rule type="tooltip" value="Type in your question here." />
+              <rule type="player_x" value="50" />
+              <rule type="player_y" value="108" />
+              <rule type="player_height" value="25" />
+              <rule type="player_width" value="640" />
+              <rule type="html" value="0" />
+            </option>
+            <option type="11">
+              <rule type="x" value="120" />
+              <rule type="y" value="120" />
+              <rule type="height" value="100" />
+              <rule type="width" value="640" />
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="stem" />
+              <rule type="tooltip" value="Type in your question here." />
+              <rule type="player_x" value="50" />
+              <rule type="player_y" value="108" />
+              <rule type="player_height" value="25" />
+              <rule type="player_width" value="640" />
+              <rule type="html" value="0" />
+            </option>
+            <option type="12">
+              <rule type="x" value="800" />
+              <rule type="y" value="485" />
+              <rule type="height" value="25" />
+              <rule type="width" value="40" />
+              <rule type="visibility" value="1" />
+              <rule type="player_visibility" value="1" />
+              <rule type="tag" value="rowHeight" />
+              <rule type="tooltip" value="Type in height of rows." />
+              <rule type="player_x" value="50" />
+              <rule type="player_y" value="208" />
+              <rule type="player_height" value="25" />
+              <rule type="player_width" value="640" />
+              <rule type="html" value="0" />
+            </option>
+            <option type="14">
+              <rule type="x" value="140" />
+              <rule type="y" value="200" />
+              <rule type="player_y" value="180" />
+              <rule type="player_x" value="120" />
+              <rule type="height" value="50" />
+              <rule type="width" value="500" />
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="stem" />
+              <rule type="tooltip" value="Type in your question here." />
+            </option>
+            <option type="15">
+              <rule type="bgColor" value="FFFFFF" />
+              <rule type="x" value="20" />
+              <rule type="y" value="520" />
+              <rule type="player_y" value="127" />
+              <rule type="height" value="70" />
+              <rule type="width" value="635" />
+              <rule type="visibility" value="1" />
+              <rule type="html" value="1" />
+              <rule type="tag" value="stem" />
+              <rule type="tooltip" value="Type in your prompt here." />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="TextArea_3">
+          <options>
+            <option type="-1">
+              <rule type="branch_icon_visibility" value="0" />
+              <rule type="visibility" value="0" />
+              <rule type="bgColor" value="E7E7E7" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="font_face" value="Arial" />
+              <rule type="font_size" value="14" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+              <rule type="validator" value="[{&quot;showbranch&quot;:&quot;true&quot;}]" />
+            </option>
+            <option type="3">
+              <rule type="x" value="140" />
+              <rule type="y" value="300" />
+              <rule type="player_x" value="20" />
+              <rule type="player_y" value="260" />
+              <rule type="height" value="25" />
+              <rule type="width" value="300" />
+              <rule type="visibility" value="1" />
+              <rule type="bgAlpha" value="1" />
+              <rule type="tag" value="expression" />
+            </option>
+            <option type="5">
+              <rule type="branch_icon_visibility" value="1" />
+              <rule type="x" value="250" />
+              <rule type="y" value="330" />
+              <rule type="height" value="60" />
+              <rule type="width" value="50" />
+              <rule type="visibility" value="0" />
+              <rule type="player_visibility" value="1" />
+              <rule type="html" value="0" />
+              <rule type="branch" value="show_options" />
+              <rule type="tag" value="passOptions" />
+              <rule type="tooltip" value="Right click on the text box to see branch options for passing score." />
+              <rule type="validator" value="[{&quot;showgatebranch&quot;:&quot;true&quot;}]" />
+            </option>
+            <option type="7">
+              <rule type="bgColor" value="FFFFFF" />
+              <rule type="x" value="245" />
+              <rule type="y" value="180" />
+              <rule type="player_y" value="127" />
+              <rule type="height" value="70" />
+              <rule type="width" value="635" />
+              <rule type="visibility" value="1" />
+              <rule type="html" value="1" />
+              <rule type="branch" value="show_options" />
+              <rule type="tag" value="distractor" />
+              <rule type="tooltip" value="Type in your option here." />
+            </option>
+            <option type="10">
+              <rule type="x" value="180" />
+              <rule type="y" value="235" />
+              <rule type="height" value="50" />
+              <rule type="width" value="470" />
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="distractor_1" />
+              <rule type="branch" value="show_options" />
+              <rule type="player_x" value="100" />
+              <rule type="player_y" value="160" />
+              <rule type="player_height" value="50" />
+              <rule type="player_width" value="670" />
+              <rule type="html" value="0" />
+              <rule type="validator" value="[{&quot;showbranch&quot;:&quot;true&quot;}]" />
+            </option>
+            <option type="11">
+              <rule type="x" value="180" />
+              <rule type="y" value="235" />
+              <rule type="height" value="50" />
+              <rule type="width" value="470" />
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="distractor_1" />
+              <rule type="player_x" value="100" />
+              <rule type="player_y" value="160" />
+              <rule type="player_height" value="50" />
+              <rule type="player_width" value="670" />
+              <rule type="html" value="0" />
+              <rule type="validator" value="[{&quot;showbranch&quot;:&quot;true&quot;}]" />
+            </option>
+            <option type="14">
+              <rule type="x" value="140" />
+              <rule type="y" value="300" />
+              <rule type="player_x" value="120" />
+              <rule type="player_y" value="260" />
+              <rule type="height" value="25" />
+              <rule type="width" value="300" />
+              <rule type="visibility" value="1" />
+              <rule type="bgAlpha" value="1" />
+              <rule type="tag" value="expression" />
+            </option>
+            <option type="15">
+              <rule type="bgColor" value="FFFFFF" />
+              <rule type="x" value="20" />
+              <rule type="y" value="670" />
+              <rule type="player_y" value="127" />
+              <rule type="height" value="70" />
+              <rule type="width" value="635" />
+              <rule type="visibility" value="1" />
+              <rule type="html" value="1" />
+              <rule type="branch" value="show_options" />
+              <rule type="tag" value="distractor" />
+              <rule type="tooltip" value="Type in your option here." />
+            </option>
+            <option type="17">
+              <rule type="bgColor" value="ffffff" />
+              <rule type="visibility" value="1" />
+              <rule type="player_visibility" value="1" />
+              <rule type="x" value="300" />
+              <rule type="y" value="420" />
+              <rule type="width" value="200" />
+              <rule type="height" value="30" />
+              <rule type="font_face" value="Arial" />
+              <rule type="style" value="0" />
+              <rule type="font_size" value="14" />
+              <rule type="tag" value="start_time" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="TextArea_4">
+          <options>
+            <option type="-1">
+              <rule type="branch_icon_visibility" value="0" />
+              <rule type="visibility" value="0" />
+              <rule type="bgColor" value="E7E7E7" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="font_face" value="Arial" />
+              <rule type="font_size" value="14" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+            </option>
+            <option type="3">
+              <rule type="x" value="140" />
+              <rule type="y" value="400" />
+              <rule type="height" value="25" />
+              <rule type="width" value="460" />
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="Feedback" />
+              <rule type="text" value="Type Answer Here" />
+            </option>
+            <option type="5">
+              <rule type="branch_icon_visibility" value="1" />
+              <rule type="x" value="250" />
+              <rule type="y" value="410" />
+              <rule type="height" value="60" />
+              <rule type="width" value="50" />
+              <rule type="visibility" value="0" />
+              <rule type="player_visibility" value="1" />
+              <rule type="html" value="0" />
+              <rule type="branch" value="show_options" />
+              <rule type="tag" value="failOptions" />
+              <rule type="tooltip" value="Right click on the text box to see branch options for failing score." />
+              <rule type="validator" value="[{&quot;showgatebranch&quot;:&quot;true&quot;}]" />
+            </option>
+            <option type="7">
+              <rule type="bgColor" value="FFFFFF" />
+              <rule type="x" value="245" />
+              <rule type="y" value="290" />
+              <rule type="player_y" value="242" />
+              <rule type="height" value="70" />
+              <rule type="width" value="635" />
+              <rule type="visibility" value="1" />
+              <rule type="html" value="1" />
+              <rule type="branch" value="show_options" />
+              <rule type="tag" value="distractor" />
+              <rule type="tooltip" value="Type in your option here." />
+            </option>
+            <option type="10">
+              <rule type="x" value="180" />
+              <rule type="y" value="290" />
+              <rule type="height" value="50" />
+              <rule type="width" value="470" />
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="distractor_2" />
+              <rule type="branch" value="show_options" />
+              <rule type="player_x" value="100" />
+              <rule type="player_y" value="205" />
+              <rule type="player_height" value="50" />
+              <rule type="player_width" value="670" />
+              <rule type="html" value="0" />
+              <rule type="validator" value="[{&quot;showbranch&quot;:&quot;true&quot;}]" />
+            </option>
+            <option type="11">
+              <rule type="x" value="180" />
+              <rule type="y" value="290" />
+              <rule type="height" value="50" />
+              <rule type="width" value="470" />
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="distractor_2" />
+              <rule type="player_x" value="100" />
+              <rule type="player_y" value="205" />
+              <rule type="player_height" value="50" />
+              <rule type="player_width" value="670" />
+              <rule type="html" value="0" />
+            </option>
+            <option type="14">
+              <rule type="x" value="140" />
+              <rule type="y" value="400" />
+              <rule type="height" value="25" />
+              <rule type="width" value="500" />
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="Prompt" />
+              <rule type="text" value="Type Answer Here" />
+            </option>
+            <option type="15">
+              <rule type="bgColor" value="FFFFFF" />
+              <rule type="x" value="20" />
+              <rule type="y" value="780" />
+              <rule type="player_y" value="242" />
+              <rule type="height" value="70" />
+              <rule type="width" value="635" />
+              <rule type="visibility" value="1" />
+              <rule type="html" value="1" />
+              <rule type="branch" value="show_options" />
+              <rule type="tag" value="distractor" />
+              <rule type="tooltip" value="Type in your option here." />
+            </option>
+            <option type="17">
+              <rule type="bgColor" value="ffffff" />
+              <rule type="visibility" value="1" />
+              <rule type="player_visibility" value="1" />
+              <rule type="x" value="300" />
+              <rule type="y" value="460" />
+              <rule type="width" value="200" />
+              <rule type="height" value="30" />
+              <rule type="font_face" value="Arial" />
+              <rule type="style" value="0" />
+              <rule type="font_size" value="14" />
+              <rule type="tag" value="end_time" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="TextArea_5">
+          <options>
+            <option type="-1">
+              <rule type="branch_icon_visibility" value="0" />
+              <rule type="visibility" value="0" />
+              <rule type="bgColor" value="E7E7E7" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="font_face" value="Arial" />
+              <rule type="font_size" value="14" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+            </option>
+            <option type="5">
+              <rule type="x" value="250" />
+              <rule type="y" value="485" />
+              <rule type="height" value="60" />
+              <rule type="width" value="435" />
+              <rule type="visibility" value="1" />
+              <rule type="html" value="0" />
+              <rule type="tag" value="variables" />
+              <rule type="tooltip" value="Type in a comma-separated list of variables to reset." />
+            </option>
+            <option type="7">
+              <rule type="bgColor" value="FFFFFF" />
+              <rule type="x" value="245" />
+              <rule type="y" value="400" />
+              <rule type="player_y" value="360" />
+              <rule type="height" value="70" />
+              <rule type="width" value="635" />
+              <rule type="visibility" value="1" />
+              <rule type="html" value="1" />
+              <rule type="branch" value="show_options" />
+              <rule type="tag" value="distractor" />
+              <rule type="tooltip" value="Type in your option here." />
+            </option>
+            <option type="10">
+              <rule type="x" value="180" />
+              <rule type="y" value="345" />
+              <rule type="height" value="50" />
+              <rule type="width" value="470" />
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="distractor_3" />
+              <rule type="branch" value="show_options" />
+              <rule type="player_x" value="100" />
+              <rule type="player_y" value="250" />
+              <rule type="player_height" value="50" />
+              <rule type="player_width" value="670" />
+              <rule type="html" value="0" />
+              <rule type="validator" value="[{&quot;showbranch&quot;:&quot;true&quot;}]" />
+            </option>
+            <option type="11">
+              <rule type="x" value="180" />
+              <rule type="y" value="345" />
+              <rule type="height" value="50" />
+              <rule type="width" value="470" />
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="distractor_3" />
+              <rule type="player_x" value="100" />
+              <rule type="player_y" value="250" />
+              <rule type="player_height" value="50" />
+              <rule type="player_width" value="670" />
+              <rule type="html" value="0" />
+            </option>
+            <option type="15">
+              <rule type="bgColor" value="FFFFFF" />
+              <rule type="x" value="20" />
+              <rule type="y" value="890" />
+              <rule type="player_y" value="360" />
+              <rule type="height" value="70" />
+              <rule type="width" value="635" />
+              <rule type="visibility" value="1" />
+              <rule type="html" value="1" />
+              <rule type="branch" value="show_options" />
+              <rule type="tag" value="distractor" />
+              <rule type="tooltip" value="Type in your option here." />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="TextArea_6">
+          <options>
+            <option type="-1">
+              <rule type="branch_icon_visibility" value="0" />
+              <rule type="visibility" value="0" />
+              <rule type="bgColor" value="E7E7E7" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="font_face" value="Arial" />
+              <rule type="font_size" value="14" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+            </option>
+            <option type="7">
+              <rule type="bgColor" value="FFFFFF" />
+              <rule type="x" value="905" />
+              <rule type="y" value="198" />
+              <rule type="height" value="25" />
+              <rule type="width" value="82" />
+              <rule type="visibility" value="1" />
+              <rule type="html" value="1" />
+              <rule type="tag" value="points" />
+              <rule type="tooltip" value="Type the points earned for this choice." />
+              <rule type="validator" value="[{&quot;isnumeric&quot;:&quot;true&quot;}, {&quot;nonempty&quot;:&quot;true&quot;}]" />
+            </option>
+            <option type="10">
+              <rule type="x" value="180" />
+              <rule type="y" value="400" />
+              <rule type="height" value="50" />
+              <rule type="width" value="470" />
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="distractor_4" />
+              <rule type="branch" value="show_options" />
+              <rule type="player_x" value="100" />
+              <rule type="player_y" value="295" />
+              <rule type="player_height" value="50" />
+              <rule type="player_width" value="670" />
+              <rule type="html" value="0" />
+              <rule type="validator" value="[{&quot;showbranch&quot;:&quot;true&quot;}]" />
+            </option>
+            <option type="11">
+              <rule type="x" value="180" />
+              <rule type="y" value="400" />
+              <rule type="height" value="50" />
+              <rule type="width" value="470" />
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="distractor_4" />
+              <rule type="player_x" value="100" />
+              <rule type="player_y" value="295" />
+              <rule type="player_height" value="50" />
+              <rule type="player_width" value="670" />
+              <rule type="html" value="0" />
+            </option>
+            <option type="15">
+              <rule type="bgColor" value="FFFFFF" />
+              <rule type="x" value="710" />
+              <rule type="y" value="695" />
+              <rule type="height" value="25" />
+              <rule type="width" value="82" />
+              <rule type="visibility" value="1" />
+              <rule type="html" value="1" />
+              <rule type="tag" value="points" />
+              <rule type="tooltip" value="Type the points earned for this choice." />
+              <rule type="validator" value="[{&quot;isnumeric&quot;:&quot;true&quot;}, {&quot;nonempty&quot;:&quot;true&quot;}]" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="TextArea_7">
+          <options>
+            <option type="-1">
+              <rule type="branch_icon_visibility" value="0" />
+              <rule type="visibility" value="0" />
+              <rule type="bgColor" value="E7E7E7" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="font_face" value="Arial" />
+              <rule type="font_size" value="14" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+            </option>
+            <option type="7">
+              <rule type="bgColor" value="FFFFFF" />
+              <rule type="x" value="905" />
+              <rule type="y" value="315" />
+              <rule type="height" value="25" />
+              <rule type="width" value="82" />
+              <rule type="visibility" value="1" />
+              <rule type="html" value="1" />
+              <rule type="tag" value="points" />
+              <rule type="tooltip" value="Type the points earned for this choice." />
+              <rule type="validator" value="[{&quot;isnumeric&quot;:&quot;true&quot;}, {&quot;nonempty&quot;:&quot;true&quot;}]" />
+            </option>
+            <option type="10">
+              <rule type="x" value="180" />
+              <rule type="y" value="455" />
+              <rule type="height" value="50" />
+              <rule type="width" value="470" />
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="distractor_5" />
+              <rule type="branch" value="show_options" />
+              <rule type="player_x" value="100" />
+              <rule type="player_y" value="340" />
+              <rule type="player_height" value="50" />
+              <rule type="player_width" value="670" />
+              <rule type="html" value="0" />
+              <rule type="validator" value="[{&quot;showbranch&quot;:&quot;true&quot;}]" />
+            </option>
+            <option type="11">
+              <rule type="x" value="180" />
+              <rule type="y" value="455" />
+              <rule type="height" value="50" />
+              <rule type="width" value="470" />
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="distractor_5" />
+              <rule type="player_x" value="100" />
+              <rule type="player_y" value="340" />
+              <rule type="player_height" value="50" />
+              <rule type="player_width" value="670" />
+              <rule type="html" value="0" />
+            </option>
+            <option type="15">
+              <rule type="bgColor" value="FFFFFF" />
+              <rule type="x" value="710" />
+              <rule type="y" value="805" />
+              <rule type="height" value="25" />
+              <rule type="width" value="82" />
+              <rule type="visibility" value="1" />
+              <rule type="html" value="1" />
+              <rule type="tag" value="points" />
+              <rule type="tooltip" value="Type the points earned for this choice." />
+              <rule type="validator" value="[{&quot;isnumeric&quot;:&quot;true&quot;}, {&quot;nonempty&quot;:&quot;true&quot;}]" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="TextArea_8">
+          <options>
+            <option type="-1">
+              <rule type="branch_icon_visibility" value="0" />
+              <rule type="visibility" value="0" />
+              <rule type="bgColor" value="E7E7E7" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="font_face" value="Arial" />
+              <rule type="font_size" value="14" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+            </option>
+            <option type="7">
+              <rule type="bgColor" value="FFFFFF" />
+              <rule type="x" value="905" />
+              <rule type="y" value="420" />
+              <rule type="height" value="25" />
+              <rule type="width" value="82" />
+              <rule type="visibility" value="1" />
+              <rule type="html" value="1" />
+              <rule type="tag" value="points" />
+              <rule type="tooltip" value="Type the points earned for this choice." />
+              <rule type="validator" value="[{&quot;isnumeric&quot;:&quot;true&quot;}, {&quot;nonempty&quot;:&quot;true&quot;}]" />
+            </option>
+            <option type="10">
+              <rule type="x" value="180" />
+              <rule type="y" value="510" />
+              <rule type="height" value="50" />
+              <rule type="width" value="470" />
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="distractor_6" />
+              <rule type="branch" value="show_options" />
+              <rule type="player_x" value="100" />
+              <rule type="player_y" value="385" />
+              <rule type="player_height" value="50" />
+              <rule type="player_width" value="670" />
+              <rule type="html" value="0" />
+              <rule type="validator" value="[{&quot;showbranch&quot;:&quot;true&quot;}]" />
+            </option>
+            <option type="11">
+              <rule type="x" value="180" />
+              <rule type="y" value="510" />
+              <rule type="height" value="50" />
+              <rule type="width" value="470" />
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="distractor_6" />
+              <rule type="player_x" value="100" />
+              <rule type="player_y" value="385" />
+              <rule type="player_height" value="50" />
+              <rule type="player_width" value="670" />
+              <rule type="html" value="0" />
+            </option>
+            <option type="15">
+              <rule type="bgColor" value="FFFFFF" />
+              <rule type="x" value="710" />
+              <rule type="y" value="915" />
+              <rule type="height" value="25" />
+              <rule type="width" value="82" />
+              <rule type="visibility" value="1" />
+              <rule type="html" value="1" />
+              <rule type="tag" value="points" />
+              <rule type="tooltip" value="Type the points earned for this choice." />
+              <rule type="validator" value="[{&quot;isnumeric&quot;:&quot;true&quot;}, {&quot;nonempty&quot;:&quot;true&quot;}]" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="TextArea_9">
+          <options>
+            <option type="-1">
+              <rule type="branch_icon_visibility" value="0" />
+              <rule type="visibility" value="0" />
+              <rule type="bgColor" value="E7E7E7" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="font_face" value="Arial" />
+              <rule type="font_size" value="14" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+            </option>
+            <option type="10">
+              <rule type="x" value="180" />
+              <rule type="y" value="565" />
+              <rule type="height" value="50" />
+              <rule type="width" value="470" />
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="distractor_7" />
+              <rule type="branch" value="show_options" />
+              <rule type="player_x" value="100" />
+              <rule type="player_y" value="430" />
+              <rule type="player_height" value="50" />
+              <rule type="player_width" value="670" />
+              <rule type="html" value="0" />
+              <rule type="validator" value="[{&quot;showbranch&quot;:&quot;true&quot;}]" />
+            </option>
+            <option type="11">
+              <rule type="x" value="180" />
+              <rule type="y" value="565" />
+              <rule type="height" value="50" />
+              <rule type="width" value="470" />
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="distractor_7" />
+              <rule type="player_x" value="100" />
+              <rule type="player_y" value="430" />
+              <rule type="player_height" value="50" />
+              <rule type="player_width" value="670" />
+              <rule type="html" value="0" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="TextArea_10">
+          <options>
+            <option type="-1">
+              <rule type="branch_icon_visibility" value="0" />
+              <rule type="visibility" value="0" />
+              <rule type="bgColor" value="E7E7E7" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="font_face" value="Arial" />
+              <rule type="font_size" value="14" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="InaccessibleTextArea">
+          <options>
+            <option type="-1">
+              <rule type="visibility" value="0" />
+              <rule type="bgColor" value="E7E7E7" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="font_face" value="Arial" />
+              <rule type="font_size" value="14" />
+              <rule type="html" value="0" />
+              <rule type="embedFonts" value="1" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="Label_1">
+          <options>
+            <option type="-1">
+              <rule type="visibility" value="0" />
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="font_face" value="Arial" />
+              <rule type="font_size" value="14" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+            </option>
+            <option type="1">
+              <rule type="x" value="675" />
+              <rule type="y" value="30" />
+              <rule type="height" value="50" />
+              <rule type="width" value="260" />
+              <rule type="visibility" value="1" />
+              <rule type="player_visibility" value="0" />
+              <rule type="text" value="Type in words and hints. Compile." />
+              <rule type="tag" value="instructions" />
+            </option>
+            <option type="3">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="140" />
+              <rule type="y" value="120" />
+              <rule type="width" value="200" />
+              <rule type="height" value="20" />
+              <rule type="align" value="center" />
+              <rule type="embedFonts" value="1" />
+              <rule type="text" value="Question:" />
+            </option>
+            <option type="4">
+              <rule type="x" value="800" />
+              <rule type="y" value="390" />
+              <rule type="height" value="25" />
+              <rule type="width" value="75" />
+              <rule type="visibility" value="1" />
+              <rule type="text" value="On Submit" />
+            </option>
+            <option type="5">
+              <rule type="x" value="120" />
+              <rule type="y" value="280" />
+              <rule type="height" value="25" />
+              <rule type="width" value="200" />
+              <rule type="visibility" value="1" />
+              <rule type="html" value="0" />
+              <rule type="font_face" value="Arial" />
+              <rule type="font_size" value="12" />
+              <rule type="text" value="Pass Only If Score Is &gt;= " />
+            </option>
+            <option type="6">
+              <rule type="bgColor" value="ffffff" />
+              <rule type="visibility" value="1" />
+              <rule type="player_visibility" value="1" />
+              <rule type="x" value="20" />
+              <rule type="y" value="100" />
+              <rule type="width" value="500" />
+              <rule type="height" value="100" />
+              <rule type="font_face" value="Arial" />
+              <rule type="style" value="0" />
+              <rule type="font_size" value="14" />
+              <rule type="text" value="Paste in the entire embed code from Powtoon, VoiceThread, InsightMaker and other tools." />
+            </option>
+            <option type="7">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="245" />
+              <rule type="y" value="50" />
+              <rule type="width" value="200" />
+              <rule type="height" value="20" />
+              <rule type="align" value="center" />
+              <rule type="embedFonts" value="1" />
+              <rule type="text" value="Character Says:" />
+            </option>
+            <option type="9">
+              <rule type="x" value="800" />
+              <rule type="y" value="250" />
+              <rule type="height" value="25" />
+              <rule type="width" value="75" />
+              <rule type="visibility" value="1" />
+              <rule type="text" value="On Submit" />
+            </option>
+            <option type="10">
+              <rule type="x" value="160" />
+              <rule type="y" value="235" />
+              <rule type="height" value="25" />
+              <rule type="width" value="30" />
+              <rule type="visibility" value="1" />
+              <rule type="text" value="a)" />
+              <rule type="tag" value="a)" />
+            </option>
+            <option type="11">
+              <rule type="x" value="160" />
+              <rule type="y" value="235" />
+              <rule type="height" value="25" />
+              <rule type="width" value="30" />
+              <rule type="visibility" value="1" />
+              <rule type="text" value="a)" />
+              <rule type="tag" value="a)" />
+            </option>
+            <option type="13">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="20" />
+              <rule type="player_x" value="90" />
+              <rule type="player_y" value="100" />
+              <rule type="player_height" value="0" />
+              <rule type="player_width" value="0" />
+              <rule type="y" value="20" />
+              <rule type="height" value="100" />
+              <rule type="width" value="500" />
+              <rule type="text" value="This page causes the current score to be reported. Optionally, type in a message you want students to see.  The score will be automatically appended to the message. Select Terminate if no further scoring." />
+            </option>
+            <option type="14">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="140" />
+              <rule type="y" value="170" />
+              <rule type="width" value="200" />
+              <rule type="height" value="20" />
+              <rule type="align" value="center" />
+              <rule type="embedFonts" value="1" />
+              <rule type="text" value="Question:" />
+            </option>
+            <option type="15">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="20" />
+              <rule type="y" value="495" />
+              <rule type="width" value="200" />
+              <rule type="height" value="20" />
+              <rule type="align" value="center" />
+              <rule type="embedFonts" value="1" />
+              <rule type="text" value="Prompt:" />
+            </option>
+            <option type="17">
+              <rule type="bgColor" value="ffffff" />
+              <rule type="visibility" value="1" />
+              <rule type="player_visibility" value="1" />
+              <rule type="x" value="200" />
+              <rule type="y" value="100" />
+              <rule type="width" value="500" />
+              <rule type="height" value="100" />
+              <rule type="font_face" value="Arial" />
+              <rule type="style" value="0" />
+              <rule type="font_size" value="14" />
+              <rule type="text" value="Paste in .mp4 video URL or a YouTube URL found in browser address bar. To import video and captions, click on the appropriate buttons below. Be sure the first field is left blank." />
+            </option>
+            <option type="18">
+              <rule type="x" value="120" />
+              <rule type="y" value="250" />
+              <rule type="height" value="100" />
+              <rule type="width" value="500" />
+              <rule type="visibility" value="1" />
+              <rule type="html" value="0" />
+              <rule type="font_face" value="Arial" />
+              <rule type="font_size" value="12" />
+              <rule type="text" value="This option disables the forward button for the preceding page.  The student will not see this page.  It is simply a control page to disable navigation beyond this point." />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="Label_2">
+          <options>
+            <option type="-1">
+              <rule type="visibility" value="0" />
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="font_face" value="Arial" />
+              <rule type="font_size" value="14" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+            </option>
+            <option type="3">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="140" />
+              <rule type="y" value="270" />
+              <rule type="width" value="200" />
+              <rule type="height" value="20" />
+              <rule type="align" value="center" />
+              <rule type="embedFonts" value="1" />
+              <rule type="text" value="Short Answer:" />
+            </option>
+            <option type="5">
+              <rule type="x" value="120" />
+              <rule type="y" value="330" />
+              <rule type="font_size" value="12" />
+              <rule type="height" value="50" />
+              <rule type="width" value="100" />
+              <rule type="visibility" value="1" />
+              <rule type="html" value="0" />
+              <rule type="text" value="Pass Message/Branch Options" />
+              <rule type="tooltip" value="Right Click on the text box to see branch options for passing score." />
+            </option>
+            <option type="7">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="245" />
+              <rule type="y" value="160" />
+              <rule type="width" value="200" />
+              <rule type="height" value="20" />
+              <rule type="align" value="center" />
+              <rule type="embedFonts" value="1" />
+              <rule type="text" value="User Response #1:" />
+            </option>
+            <option type="8">
+              <rule type="x" value="120" />
+              <rule type="y" value="250" />
+              <rule type="height" value="100" />
+              <rule type="width" value="500" />
+              <rule type="visibility" value="1" />
+              <rule type="html" value="0" />
+              <rule type="font_face" value="Arial" />
+              <rule type="font_size" value="12" />
+              <rule type="text" value="This option enables the project to collect the long answer responses and present them in a one-page, styled report." />
+            </option>
+            <option type="9">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="20" />
+              <rule type="y" value="40" />
+              <rule type="width" value="200" />
+              <rule type="height" value="20" />
+              <rule type="align" value="center" />
+              <rule type="embedFonts" value="1" />
+              <rule type="text" value="Heading" />
+            </option>
+            <option type="10">
+              <rule type="x" value="160" />
+              <rule type="y" value="290" />
+              <rule type="height" value="25" />
+              <rule type="width" value="30" />
+              <rule type="visibility" value="1" />
+              <rule type="text" value="b)" />
+              <rule type="tag" value="b)" />
+            </option>
+            <option type="11">
+              <rule type="x" value="160" />
+              <rule type="y" value="290" />
+              <rule type="height" value="25" />
+              <rule type="width" value="30" />
+              <rule type="visibility" value="1" />
+              <rule type="text" value="b)" />
+              <rule type="tag" value="b)" />
+            </option>
+            <option type="14">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="140" />
+              <rule type="y" value="270" />
+              <rule type="width" value="200" />
+              <rule type="height" value="20" />
+              <rule type="align" value="center" />
+              <rule type="embedFonts" value="1" />
+              <rule type="text" value="Short Answer:" />
+            </option>
+            <option type="15">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="20" />
+              <rule type="y" value="640" />
+              <rule type="width" value="200" />
+              <rule type="height" value="20" />
+              <rule type="align" value="center" />
+              <rule type="embedFonts" value="1" />
+              <rule type="text" value="User Response #1:" />
+            </option>
+            <option type="17">
+              <rule type="bgColor" value="ffffff" />
+              <rule type="visibility" value="1" />
+              <rule type="player_visibility" value="1" />
+              <rule type="x" value="200" />
+              <rule type="y" value="420" />
+              <rule type="width" value="80" />
+              <rule type="height" value="30" />
+              <rule type="font_face" value="Arial" />
+              <rule type="style" value="0" />
+              <rule type="font_size" value="14" />
+              <rule type="text" value="Start (secs):" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="Label_3">
+          <options>
+            <option type="-1">
+              <rule type="visibility" value="0" />
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="font_face" value="Arial" />
+              <rule type="font_size" value="14" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+            </option>
+            <option type="3">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="140" />
+              <rule type="y" value="370" />
+              <rule type="width" value="400" />
+              <rule type="height" value="20" />
+              <rule type="align" value="center" />
+              <rule type="embedFonts" value="1" />
+              <rule type="text" value="Feedback to students (e.g. the right answer)" />
+            </option>
+            <option type="5">
+              <rule type="x" value="120" />
+              <rule type="y" value="419" />
+              <rule type="font_size" value="12" />
+              <rule type="height" value="50" />
+              <rule type="width" value="100" />
+              <rule type="visibility" value="1" />
+              <rule type="html" value="0" />
+              <rule type="text" value="Fail Message/Branch Options" />
+              <rule type="tooltip" value="Right Click on the text box to see branch options for failing score." />
+            </option>
+            <option type="7">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="245" />
+              <rule type="y" value="270" />
+              <rule type="width" value="200" />
+              <rule type="height" value="20" />
+              <rule type="align" value="center" />
+              <rule type="embedFonts" value="1" />
+              <rule type="text" value="User Response #2:" />
+            </option>
+            <option type="10">
+              <rule type="x" value="160" />
+              <rule type="y" value="345" />
+              <rule type="height" value="25" />
+              <rule type="width" value="30" />
+              <rule type="visibility" value="1" />
+              <rule type="text" value="c)" />
+              <rule type="tag" value="c)" />
+            </option>
+            <option type="11">
+              <rule type="x" value="160" />
+              <rule type="y" value="345" />
+              <rule type="height" value="25" />
+              <rule type="width" value="30" />
+              <rule type="visibility" value="1" />
+              <rule type="text" value="c)" />
+              <rule type="tag" value="c)" />
+            </option>
+            <option type="14">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="140" />
+              <rule type="y" value="370" />
+              <rule type="width" value="400" />
+              <rule type="height" value="20" />
+              <rule type="align" value="center" />
+              <rule type="embedFonts" value="1" />
+              <rule type="text" value="Short Prompt: (e.g. 'Type Answer Here')" />
+            </option>
+            <option type="15">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="20" />
+              <rule type="y" value="750" />
+              <rule type="width" value="200" />
+              <rule type="height" value="20" />
+              <rule type="align" value="center" />
+              <rule type="embedFonts" value="1" />
+              <rule type="text" value="User Response #2:" />
+            </option>
+            <option type="17">
+              <rule type="bgColor" value="ffffff" />
+              <rule type="visibility" value="1" />
+              <rule type="player_visibility" value="1" />
+              <rule type="x" value="200" />
+              <rule type="y" value="460" />
+              <rule type="width" value="80" />
+              <rule type="height" value="30" />
+              <rule type="font_face" value="Arial" />
+              <rule type="style" value="0" />
+              <rule type="font_size" value="14" />
+              <rule type="text" value="End (secs):" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="Label_4">
+          <options>
+            <option type="-1">
+              <rule type="visibility" value="0" />
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="font_face" value="Arial" />
+              <rule type="font_size" value="14" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+            </option>
+            <option type="5">
+              <rule type="x" value="250" />
+              <rule type="y" value="280" />
+              <rule type="height" value="25" />
+              <rule type="width" value="250" />
+              <rule type="visibility" value="0" />
+              <rule type="html" value="0" />
+              <rule type="font_face" value="Arial" />
+              <rule type="font_size" value="12" />
+              <rule type="text" value="Use Percentage" />
+            </option>
+            <option type="7">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="245" />
+              <rule type="y" value="380" />
+              <rule type="width" value="200" />
+              <rule type="height" value="20" />
+              <rule type="align" value="center" />
+              <rule type="embedFonts" value="1" />
+              <rule type="text" value="User Response #3:" />
+            </option>
+            <option type="10">
+              <rule type="x" value="160" />
+              <rule type="y" value="400" />
+              <rule type="height" value="25" />
+              <rule type="width" value="30" />
+              <rule type="visibility" value="1" />
+              <rule type="text" value="d)" />
+              <rule type="tag" value="d)" />
+            </option>
+            <option type="11">
+              <rule type="x" value="160" />
+              <rule type="y" value="400" />
+              <rule type="height" value="25" />
+              <rule type="width" value="30" />
+              <rule type="visibility" value="1" />
+              <rule type="text" value="d)" />
+              <rule type="tag" value="d)" />
+            </option>
+            <option type="15">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="20" />
+              <rule type="y" value="860" />
+              <rule type="width" value="200" />
+              <rule type="height" value="20" />
+              <rule type="align" value="center" />
+              <rule type="embedFonts" value="1" />
+              <rule type="text" value="User Response #3:" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="Label_5">
+          <options>
+            <option type="-1">
+              <rule type="visibility" value="0" />
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="font_face" value="Arial" />
+              <rule type="font_size" value="14" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+            </option>
+            <option type="5">
+              <rule type="x" value="120" />
+              <rule type="y" value="485" />
+              <rule type="font_size" value="12" />
+              <rule type="height" value="50" />
+              <rule type="width" value="100" />
+              <rule type="visibility" value="1" />
+              <rule type="html" value="0" />
+              <rule type="text" value="Reset comma-separated list of Variables" />
+            </option>
+            <option type="7">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="905" />
+              <rule type="y" value="178" />
+              <rule type="width" value="200" />
+              <rule type="height" value="20" />
+              <rule type="align" value="center" />
+              <rule type="embedFonts" value="1" />
+              <rule type="text" value="Meter Value:" />
+            </option>
+            <option type="10">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="120" />
+              <rule type="y" value="70" />
+              <rule type="height" value="50" />
+              <rule type="width" value="640" />
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="font_face" value="Arial" />
+              <rule type="font_size" value="14" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+              <rule type="text" value="Question Stem:" />
+            </option>
+            <option type="11">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="120" />
+              <rule type="y" value="70" />
+              <rule type="height" value="50" />
+              <rule type="width" value="640" />
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="font_face" value="Arial" />
+              <rule type="font_size" value="14" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+              <rule type="text" value="Question Stem:" />
+            </option>
+            <option type="15">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="710" />
+              <rule type="y" value="670" />
+              <rule type="width" value="200" />
+              <rule type="height" value="20" />
+              <rule type="align" value="center" />
+              <rule type="embedFonts" value="1" />
+              <rule type="text" value="Point Value:" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="Label_6">
+          <options>
+            <option type="-1">
+              <rule type="visibility" value="0" />
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="font_face" value="Arial" />
+              <rule type="font_size" value="14" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+            </option>
+            <option type="7">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="905" />
+              <rule type="y" value="295" />
+              <rule type="width" value="200" />
+              <rule type="height" value="20" />
+              <rule type="align" value="center" />
+              <rule type="embedFonts" value="1" />
+              <rule type="text" value="Meter Value:" />
+            </option>
+            <option type="10">
+              <rule type="x" value="160" />
+              <rule type="y" value="455" />
+              <rule type="height" value="25" />
+              <rule type="width" value="30" />
+              <rule type="visibility" value="1" />
+              <rule type="text" value="e)" />
+              <rule type="tag" value="e)" />
+            </option>
+            <option type="11">
+              <rule type="x" value="160" />
+              <rule type="y" value="455" />
+              <rule type="height" value="25" />
+              <rule type="width" value="30" />
+              <rule type="visibility" value="1" />
+              <rule type="text" value="e)" />
+              <rule type="tag" value="e)" />
+            </option>
+            <option type="12">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="800" />
+              <rule type="y" value="465" />
+              <rule type="width" value="200" />
+              <rule type="height" value="20" />
+              <rule type="align" value="center" />
+              <rule type="embedFonts" value="1" />
+              <rule type="text" value="Row Height:" />
+            </option>
+            <option type="15">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="710" />
+              <rule type="y" value="780" />
+              <rule type="width" value="200" />
+              <rule type="height" value="20" />
+              <rule type="align" value="center" />
+              <rule type="embedFonts" value="1" />
+              <rule type="text" value="Point Value:" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="Label_7">
+          <options>
+            <option type="-1">
+              <rule type="visibility" value="0" />
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="font_face" value="Arial" />
+              <rule type="font_size" value="14" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+            </option>
+            <option type="7">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="905" />
+              <rule type="y" value="400" />
+              <rule type="width" value="200" />
+              <rule type="height" value="20" />
+              <rule type="align" value="center" />
+              <rule type="embedFonts" value="1" />
+              <rule type="text" value="Meter Value:" />
+            </option>
+            <option type="10">
+              <rule type="x" value="160" />
+              <rule type="y" value="510" />
+              <rule type="height" value="25" />
+              <rule type="width" value="30" />
+              <rule type="visibility" value="1" />
+              <rule type="text" value="f)" />
+              <rule type="tag" value="f)" />
+            </option>
+            <option type="11">
+              <rule type="x" value="160" />
+              <rule type="y" value="510" />
+              <rule type="height" value="25" />
+              <rule type="width" value="30" />
+              <rule type="visibility" value="1" />
+              <rule type="text" value="f)" />
+              <rule type="tag" value="f)" />
+            </option>
+            <option type="12">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="800" />
+              <rule type="y" value="70" />
+              <rule type="width" value="200" />
+              <rule type="height" value="20" />
+              <rule type="align" value="center" />
+              <rule type="embedFonts" value="1" />
+              <rule type="text" value="Background Tile:" />
+            </option>
+            <option type="15">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="710" />
+              <rule type="y" value="890" />
+              <rule type="width" value="200" />
+              <rule type="height" value="20" />
+              <rule type="align" value="center" />
+              <rule type="embedFonts" value="1" />
+              <rule type="text" value="Point Value:" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="Label_8">
+          <options>
+            <option type="-1">
+              <rule type="visibility" value="0" />
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="font_face" value="Arial" />
+              <rule type="font_size" value="14" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+            </option>
+            <option type="10">
+              <rule type="x" value="160" />
+              <rule type="y" value="565" />
+              <rule type="height" value="25" />
+              <rule type="width" value="30" />
+              <rule type="visibility" value="1" />
+              <rule type="text" value="g)" />
+              <rule type="tag" value="g)" />
+            </option>
+            <option type="11">
+              <rule type="x" value="160" />
+              <rule type="y" value="565" />
+              <rule type="height" value="25" />
+              <rule type="width" value="30" />
+              <rule type="visibility" value="1" />
+              <rule type="text" value="g)" />
+              <rule type="tag" value="g)" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="Label_NodesManager_Checked">
+          <options>
+            <option type="-1">
+              <rule type="visibility" value="0" />
+              <rule type="x" value="850" />
+              <rule type="y" value="107" />
+              <rule type="text" value="Correct Answer" />
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="font_face" value="Arial" />
+              <rule type="font_size" value="10" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+              <rule type="width" value="200" />
+              <rule type="height" value="20" />
+            </option>
+            <option type="2">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="850" />
+              <rule type="y" value="300" />
+            </option>
+            <option type="10">
+              <rule type="visibility" value="1" />
+            </option>
+            <option type="11">
+              <rule type="visibility" value="1" />
+            </option>
+            <option type="14">
+              <rule type="visibility" value="1" />
+            </option>
+            <option type="16">
+              <rule type="visibility" value="0" />
+              <rule type="x" value="850" />
+              <rule type="y" value="300" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="Label_NodesManager_UnChecked">
+          <options>
+            <option type="-1">
+              <rule type="visibility" value="0" />
+              <rule type="x" value="850" />
+              <rule type="y" value="137" />
+              <rule type="text" value="Incorrect Answer" />
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="font_face" value="Arial" />
+              <rule type="font_size" value="10" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+              <rule type="width" value="200" />
+              <rule type="height" value="20" />
+            </option>
+            <option type="2">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="850" />
+              <rule type="y" value="330" />
+            </option>
+            <option type="10">
+              <rule type="visibility" value="1" />
+            </option>
+            <option type="11">
+              <rule type="visibility" value="1" />
+            </option>
+            <option type="14">
+              <rule type="visibility" value="1" />
+            </option>
+            <option type="16">
+              <rule type="visibility" value="0" />
+              <rule type="x" value="850" />
+              <rule type="y" value="330" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="calcJetOptionNodesManagerButton">
+          <options>
+            <option type="-1">
+              <rule type="visibility" value="0" />
+              <rule type="x" value="1065" />
+              <rule type="y" value="12" />
+              <rule type="tooltip" value="Page Level Script/Branch Options Executed on Page Show" />
+              <rule type="tag" value="calcNodeOptions" />
+              <rule type="validator" value="[{&quot;shownodelevelbranch&quot;:&quot;true&quot;}]" />
+            </option>
+            <option type="1">
+              <rule type="visibility" value="0" />
+              <rule type="x" value="1065" />
+              <rule type="y" value="12" />
+            </option>
+            <option type="2">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="1065" />
+              <rule type="y" value="12" />
+            </option>
+            <option type="6">
+              <rule type="visibility" value="0" />
+              <rule type="x" value="1065" />
+              <rule type="y" value="12" />
+            </option>
+            <option type="7">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="1065" />
+              <rule type="y" value="12" />
+            </option>
+            <option type="9">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="1065" />
+              <rule type="y" value="12" />
+            </option>
+            <option type="10">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="1065" />
+              <rule type="y" value="12" />
+            </option>
+            <option type="11">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="1065" />
+              <rule type="y" value="12" />
+            </option>
+            <option type="15">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="1065" />
+              <rule type="y" value="12" />
+            </option>
+            <option type="16">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="1065" />
+              <rule type="y" value="12" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="checkedJetOptionNodesManagerButton">
+          <options>
+            <option type="9">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="870" />
+              <rule type="y" value="250" />
+              <rule type="tooltip" value="Branching Options Triggered on Submit" />
+            </option>
+            <option type="-1">
+              <rule type="visibility" value="0" />
+              <rule type="x" value="800" />
+              <rule type="y" value="100" />
+              <rule type="tooltip" value="Page Level Branching Options For Correct Answer" />
+              <rule type="tag" value="checkedNodeOptions" />
+              <rule type="validator" value="[{&quot;shownodelevelbranch&quot;:&quot;true&quot;}]" />
+            </option>
+            <option type="2">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="800" />
+              <rule type="y" value="295" />
+            </option>
+            <option type="4">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="870" />
+              <rule type="y" value="390" />
+              <rule type="tooltip" value="Branching Options Triggered on Submit" />
+            </option>
+            <option type="9">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="870" />
+              <rule type="y" value="250" />
+              <rule type="tooltip" value="Branching Options Triggered on Submit" />
+            </option>
+            <option type="10">
+              <rule type="visibility" value="1" />
+            </option>
+            <option type="11">
+              <rule type="visibility" value="1" />
+            </option>
+            <option type="14">
+              <rule type="visibility" value="1" />
+            </option>
+            <option type="16">
+              <rule type="visibility" value="0" />
+              <rule type="x" value="800" />
+              <rule type="y" value="295" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="uncheckedJetOptionNodesManagerButton">
+          <options>
+            <option type="-1">
+              <rule type="visibility" value="0" />
+              <rule type="x" value="800" />
+              <rule type="y" value="130" />
+              <rule type="tooltip" value="Page Level Branching Options For IncorrectAnswer" />
+              <rule type="tag" value="uncheckedNodeOptions" />
+              <rule type="validator" value="[{&quot;shownodelevelbranch&quot;:&quot;true&quot;}]" />
+            </option>
+            <option type="2">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="800" />
+              <rule type="y" value="325" />
+            </option>
+            <option type="10">
+              <rule type="visibility" value="1" />
+            </option>
+            <option type="11">
+              <rule type="visibility" value="1" />
+            </option>
+            <option type="14">
+              <rule type="visibility" value="1" />
+            </option>
+            <option type="16">
+              <rule type="visibility" value="0" />
+              <rule type="x" value="800" />
+              <rule type="y" value="325" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="Audio">
+          <options>
+            <option type="-1">
+              <rule type="visibility" value="0" />
+              <rule type="tag" value="audio" />
+              <rule type="x" value="915" />
+              <rule type="y" value="10" />
+              <rule type="player_x" value="650" />
+              <rule type="player_y" value="20" />
+              <rule type="player_width" value="225" />
+              <rule type="player_height" value="80" />
+              <rule type="xx" value="644" />
+              <rule type="yy" value="50" />
+            </option>
+            <option type="2">
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="audio" />
+            </option>
+            <option type="3">
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="audio" />
+            </option>
+            <option type="7">
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="audio" />
+            </option>
+            <option type="10">
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="audio" />
+              <rule type="player_y" value="20" />
+            </option>
+            <option type="11">
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="audio" />
+              <rule type="player_y" value="20" />
+            </option>
+            <option type="15">
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="audio" />
+            </option>
+            <option type="16">
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="audio" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="NodeSelector">
+          <options>
+            <option type="-1">
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="audio" />
+              <rule type="x" value="965" />
+              <rule type="y" value="10" />
+              <rule type="width" value="25" />
+              <rule type="height" value="25" />
+            </option>
+            <option type="5">
+              <rule type="visibility" value="0" />
+            </option>
+            <option type="18">
+              <rule type="visibility" value="0" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="AccessibilitySelector">
+          <options>
+            <option type="-1">
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="accessibility" />
+              <rule type="x" value="1015" />
+              <rule type="y" value="10" />
+            </option>
+            <option type="5">
+              <rule type="visibility" value="0" />
+            </option>
+            <option type="18">
+              <rule type="visibility" value="0" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="HelpSelector">
+          <options>
+            <option type="-1">
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="helpText" />
+              <rule type="x" value="865" />
+              <rule type="y" value="10" />
+              <rule type="helpText" value="No Help Available" />
+            </option>
+            <option type="0">
+              <rule type="helpText" value="Challenger Page randomly displays a state for each phase or category as well as all of the user response options for that category.  Authors are highly encouraged to learn more about Challenger Pages in Help &gt; General LodeStar Help. || Palette:  Uses Background chip for background, Medium for Category buttons." />
+            </option>
+            <option type="1">
+              <rule type="x" value="1065" />
+              <rule type="y" value="10" />
+              <rule type="helpText" value="Crossword converts a word list into a crossword that students must solve.||To set up a crossword, enter in a word and a hint, which will be displayed to the students. Click on '+' to add new words. Click on 'Compile' to generate the crossword.|| Palette:  Uses Light chip for background." />
+            </option>
+            <option type="2">
+              <rule type="helpText" value="The Fill-in-the-Blanks Page converts text formatted with a strike-through to fill-in-the-blanks.  It also displays text, images, and even MathML and embedded objects from Web 2.0 applications.||Optionally, insert widgets into pages. Widgets allow you to add multiple choice questions, short answer questions and more to the page. Look for the Widget Button (sprocket) on the HTML Editor tool bar. || Palette: Does not use Palette.  Uses Theme." />
+            </option>
+			<option type="3">
+              <rule type="helpText" value="The Flashcard page displays text and an image.  Use Short Answer field to provide the right answer.  Regular Expressions are supported. When a flashcard is correctly answered, it is removed from the flow.|| Palette: Uses Light chip for background." />
+            </option>
+            <option type="4">
+              <rule type="helpText" value="This is an advanced page type, which is not recommended without training. To fully learn about a forms page, please consult the FAQ.  The forms page creates an interactive form that is connected to long answer pages by id. The title field holds the title that appears on an interactive form.  The abbreviation is used when there is no room for the full title. The ID field holds an HTML  ID that is used to connect the form to the forms.css (stylesheet) and to a long answer page. Match the long answer page ID to this ID.|| Palette: Uses Light chip for background, Medium for form headings." />
+            </option>
+            <option type="5">
+              <rule type="helpText" value="A Gate will branch the program flow based on the performance of the student.||Click on the 'Pass' options button to set the branch options for a student who has matched or exceeded the pass score.  Click on the 'Fail' button to set the branch options for a student who hasn't succeeded.|| Palette: Gate is never visible to learner." />
+            </option>
+            <option type="6">
+              <rule type="helpText" value="The IFrame page allows you to paste in an embed code and then properly display the iFrame so that it is adaptive to a variety of screen sizes, including mobile. || Palette: Not used." />
+            </option>
+            <option type="7">
+              <rule type="helpText" value="The Interview page presents student with information, such as an interview question, that the student must respond to by selecting one of three responses.  The responses are judged.||Type in what the character says.  Type in three responses that are presented to students as options. Type in a value (in points) that students will receive for each option. The highest value will become the total score for this page.|| Palette: Uses Extra Light for background, Light for answer options." />
+            </option>
+            <option type="8">
+              <rule type="helpText" value="The Journal page combines and presents all of the student entries from the long answer pages.||Student responses will be automatically collated and presented. || Palette: Uses Light Chip for background." />
+            </option>
+            <option type="9">
+              <rule type="helpText" value="The Long Answer page presents students with a text area in which to key in a long response (a paragraph, for example).||Long answer responses are reported to the learning management system (SCORM report)and collated on the Journal Page. Students can then copy the Journal Page, paste into a Word document and submit to instructor.||Use the 'Heading' field to organize the responses in the Journal Page. || Palette: Uses Light Chip for background." />
+            </option>
+            <option type="10">
+              <rule type="helpText" value="The Multiple Choice Page supports a question stem and 1 to 5 options or distractors.||Each distractor can be supplied with feedback text and, optionally, a branching option.||Indicate which answers are correct by checking the 'correct' checkboxes. Enter in a point value.||This page type supports True and False (just use two distractors), multiple choice and multiple select. || Palette:  Uses Extra Light for background, Light for Answer Options." />
+            </option>
+            <option type="11">
+              <rule type="helpText" value="The Multiple Select Page supports a question stem and 1 to 5 options or distractors.||Each distractor can be supplied with feedback text.||Indicate which answers are correct by checking the 'correct' checkboxes. Enter in a point value.||This page type supports True and False (just use two distractors), multiple choice and multiple select.|| Palette:  Uses Extra Light for background, Light for Answer Options." />
+            </option>
+            <option type="12">
+              <rule type="helpText" value="The Organizer Page has many uses.  The simplest use is to fill in items that students must order (chronologically, geographically, logically, etc.)||Enter in text. Indicate correct order by filling in a number for position. Ignore the other fields.||Organizer will randomize the items so that students can order them. || Palette: Uses Extra light for background, Light for draggable items." />
+            </option>
+            <option type="13">
+              <rule type="helpText" value="The Report Page causes information to be sent to the Learning Management System related to the student's performance.||Enter in additional information that you would like students to see. || Palette: Does not use palette.  Color controlled by Theme." />
+            </option>
+            <option type="14">
+              <rule type="helpText" value="The Short Answer Page challenges students to type in a short answer in response to a question.||Enter in the question and the correct answer.  You may use a vertical bar to separate options.||If you are familiar with regular expressions, you can check the Reg Ex box and use regular expressions.  The template help (Help &gt; Template Help)gives you more information on regular expressions. || Palette: Uses Extra Light for answer field, Light for background." />
+            </option>
+            <option type="15">
+              <rule type="helpText" value="The Simple Sim page presents student with information, such as an interview question, that the student must respond to by selecting one of three responses.  The responses are judged.||Type in a prompt.  Type in three responses that are presented to students as options. Type in a value (in points) that students will receive for each option. The highest value will become the total score for this page.|| Palette: Uses Dark chip for panel background." />
+            </option>
+            <option type="16">
+              <rule type="helpText" value="The Text Page displays text, images, and even MathML and embedded objects from Web 2.0 applications.||Optionally, insert widgets into pages. Widgets allow you to add multiple choice questions, short answer questions and, in the future, other types of widgets to the page. Look for the Widget Button on the HTML Editor tool bar. || Palette: Does not use palette.  Page color is controlled by Theme (for all pages) or by HTML Editor Image Tool." />
+            </option>
+            <option type="17">
+              <rule type="helpText" value="The Video Page supports YouTube videos, MediaSpace, and imported MP4 files.||For YouTube and MediaSpace videos paste in the URL in the first field. (Consult the General Help for MediaSpace directions).  Otherwise click the 'Import Video' button. You can also import a captions file.|| Palette: Does not use palette" />
+            </option>
+            <option type="18">
+              <rule type="helpText" value="The Wall Page stops the student from navigating to the next section of content.  Students must 'branch' to the other side of the wall from any of the page types that support branching such as the Question Page or Gate.|| Palette:  Walls are not visible to learner." />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="ImageArea_1">
+          <options>
+            <option type="-1">
+              <rule type="visibility" value="0" />
+              <rule type="tag" value="image" />
+            </option>
+            <option type="3">
+              <rule type="visibility" value="1" />
+              <rule type="player_visibility" value="1" />
+              <rule type="x" value="800" />
+              <rule type="y" value="65" />
+              <rule type="player_x" value="500" />
+              <rule type="player_y" value="75" />
+              <rule type="height" value="185" />
+              <rule type="width" value="246" />
+            </option>
+            <option type="7">
+              <rule type="visibility" value="1" />
+              <rule type="x" value="25" />
+              <rule type="y" value="20" />
+              <rule type="player_y" value="22" />
+              <rule type="height" value="450" />
+              <rule type="width" value="185" />
+            </option>
+            <option type="12">
+              <rule type="visibility" value="1" />
+              <rule type="player_visibility" value="1" />
+              <rule type="x" value="800" />
+              <rule type="y" value="90" />
+              <rule type="player_x" value="50" />
+              <rule type="player_y" value="20" />
+              <rule type="height" value="125" />
+              <rule type="width" value="125" />
+            </option>
+            <option type="15">
+              <rule type="visibility" value="0" />
+              <rule type="x" value="25" />
+              <rule type="y" value="20" />
+              <rule type="player_y" value="22" />
+              <rule type="height" value="450" />
+              <rule type="width" value="185" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="ImageArea_2">
+          <options>
+            <option type="-1">
+              <rule type="visibility" value="0" />
+              <rule type="tag" value="image" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="ImageArea_3">
+          <options>
+            <option type="-1">
+              <rule type="visibility" value="0" />
+              <rule type="tag" value="image" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="ImageArea_4">
+          <options>
+            <option type="-1">
+              <rule type="visibility" value="0" />
+              <rule type="tag" value="image" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="ImageArea_Q">
+          <options>
+            <option type="-1">
+              <rule type="visibility" value="0" />
+              <rule type="x" value="20" />
+              <rule type="y" value="270" />
+              <rule type="height" value="160" />
+              <rule type="width" value="610" />
+              <rule type="bgColor" value="E7E7E7" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="tag" value="image" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="Checkbox_TOC">
+          <options>
+            <option type="-1">
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="font_face" value="Arial" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+              <rule type="x" value="800" />
+              <rule type="y" value="290" />
+              <rule type="height" value="40" />
+              <rule type="width" value="150" />
+              <rule type="visibility" value="1" />
+              <rule type="player_visibility" value="0" />
+              <rule type="tooltip" value="Check if you want page id to appear in table of contents." />
+            </option>
+            <option type="2">
+              <rule type="y" value="170" />
+            </option>
+            <option type="3">
+              <rule type="visibility" value="0" />
+            </option>
+            <option type="5">
+              <rule type="visibility" value="0" />
+            </option>
+            <option type="7">
+              <rule type="visibility" value="0" />
+            </option>
+            <option type="8">
+              <rule type="y" value="190" />
+            </option>
+            <option type="9">
+              <rule type="y" value="145" />
+            </option>
+            <option type="13">
+              <rule type="visibility" value="0" />
+            </option>
+            <option type="14">
+              <rule type="y" value="240" />
+            </option>
+            <option type="15">
+              <rule type="visibility" value="0" />
+            </option>
+            <option type="16">
+              <rule type="y" value="170" />
+            </option>
+            <option type="17">
+              <rule type="y" value="190" />
+            </option>
+            <option type="18">
+              <rule type="visibility" value="0" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="Checkbox_Resource">
+          <options>
+            <option type="-1">
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="visibility" value="0" />
+              <rule type="font_face" value="Arial" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+              <rule type="x" value="800" />
+              <rule type="y" value="315" />
+              <rule type="height" value="40" />
+              <rule type="width" value="250" />
+              <rule type="player_visibility" value="0" />
+              <rule type="tooltip" value="Check if you want page to be linked to resource tab." />
+            </option>
+            <option type="2">
+              <rule type="visibility" value="1" />
+              <rule type="y" value="195" />
+            </option>
+            <option type="4">
+              <rule type="visibility" value="0" />
+              <rule type="y" value="335" />
+            </option>
+            <option type="6">
+              <rule type="visibility" value="1" />
+              <rule type="y" value="195" />
+            </option>
+            <option type="16">
+              <rule type="visibility" value="1" />
+              <rule type="y" value="195" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="Checkbox_FIB">
+          <options>
+            <option type="-1">
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="visibility" value="0" />
+              <rule type="font_face" value="Arial" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+              <rule type="x" value="800" />
+              <rule type="y" value="315" />
+              <rule type="height" value="40" />
+              <rule type="width" value="250" />
+              <rule type="player_visibility" value="0" />
+              <rule type="tooltip" value="Check if you want this page to be processed for fill-in-the-blanks." />
+              <rule type="tag" value="FIB" />
+            </option>
+            <option type="2">
+              <rule type="visibility" value="1" />
+              <rule type="player_visibility" value="1" />
+              <rule type="y" value="220" />
+              <rule type="tag" value="FIB" />
+            </option>
+            <option type="16">
+              <rule type="visibility" value="0" />
+              <rule type="player_visibility" value="1" />
+              <rule type="y" value="220" />
+              <rule type="tag" value="FIB" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="Checkbox_Flow">
+          <options>
+            <option type="-1">
+              <rule type="tag" value="flowstatus" />
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="visibility" value="0" />
+              <rule type="font_face" value="Arial" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+              <rule type="x" value="800" />
+              <rule type="y" value="500" />
+              <rule type="height" value="40" />
+              <rule type="width" value="150" />
+              <rule type="visibility" value="1" />
+              <rule type="player_visibility" value="1" />
+              <rule type="tooltip" value="Check if you want to remove page from navigation flow." />
+            </option>
+            <option type="1">
+              <rule type="y" value="400" />
+            </option>
+            <option type="2">
+              <rule type="y" value="380" />
+            </option>
+            <option type="3">
+              <rule type="x" value="800" />
+              <rule type="y" value="470" />
+            </option>
+            <option type="5">
+              <rule type="visibility" value="0" />
+              <rule type="player_visibility" value="0" />
+            </option>
+            <option type="6">
+              <rule type="visibility" value="1" />
+              <rule type="player_visibility" value="0" />
+              <rule type="x" value="800" />
+              <rule type="y" value="325" />
+            </option>
+            <option type="7">
+              <rule type="visibility" value="1" />
+              <rule type="player_visibility" value="1" />
+              <rule type="x" value="1010" />
+              <rule type="y" value="300" />
+            </option>
+            <option type="8">
+              <rule type="y" value="350" />
+            </option>
+            <option type="9">
+              <rule type="y" value="175" />
+            </option>
+            <option type="12">
+              <rule type="y" value="410" />
+            </option>
+            <option type="13">
+              <rule type="visibility" value="0" />
+              <rule type="player_visibility" value="0" />
+            </option>
+            <option type="14">
+              <rule type="y" value="400" />
+            </option>
+            <option type="15">
+              <rule type="visibility" value="1" />
+              <rule type="player_visibility" value="1" />
+              <rule type="x" value="800" />
+              <rule type="y" value="300" />
+            </option>
+            <option type="16">
+              <rule type="y" value="380" />
+            </option>
+            <option type="17">
+              <rule type="y" value="400" />
+            </option>
+            <option type="18">
+              <rule type="visibility" value="0" />
+              <rule type="player_visibility" value="0" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="Checkbox_HideScroll">
+          <options>
+            <option type="-1">
+              <rule type="tag" value="scrollstatus" />
+              <rule type="x" value="800" />
+              <rule type="width" value="200" />
+              <rule type="visibility" value="0" />
+              <rule type="player_visibility" value="0" />
+              <rule type="tooltip" value="Check if you want to hide scrollbars for this page." />
+            </option>
+            <option type="2">
+              <rule type="y" value="425" />
+              <rule type="visibility" value="1" />
+              <rule type="player_visibility" value="1" />
+            </option>
+            <option type="16">
+              <rule type="y" value="425" />
+              <rule type="visibility" value="1" />
+              <rule type="player_visibility" value="1" />
+            </option>
+            <option type="17">
+              <rule type="y" value="445" />
+              <rule type="visibility" value="1" />
+              <rule type="player_visibility" value="1" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="Checkbox_Randomize">
+          <options>
+            <option type="-1">
+              <rule type="tag" value="randomstatus" />
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="visibility" value="0" />
+              <rule type="font_face" value="Arial" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+              <rule type="x" value="800" />
+              <rule type="y" value="530" />
+              <rule type="height" value="40" />
+              <rule type="width" value="250" />
+              <rule type="visibility" value="0" />
+              <rule type="player_visibility" value="0" />
+              <rule type="tooltip" value="Check if you want the question distractors (options) randomized" />
+            </option>
+            <option type="10">
+              <rule type="visibility" value="1" />
+              <rule type="player_visibility" value="1" />
+            </option>
+            <option type="11">
+              <rule type="visibility" value="1" />
+              <rule type="player_visibility" value="1" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="Checkbox_DDCA">
+          <options>
+            <option type="-1">
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="visibility" value="0" />
+              <rule type="font_face" value="Arial" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+              <rule type="x" value="800" />
+              <rule type="y" value="265" />
+              <rule type="height" value="40" />
+              <rule type="width" value="250" />
+              <rule type="visibility" value="0" />
+              <rule type="player_visibility" value="0" />
+              <rule type="tooltip" value="Check to not reveal correct answer." />
+            </option>
+            <option type="2">
+              <rule type="visibility" value="0" />
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="x" value="800" />
+              <rule type="y" value="220" />
+              <rule type="height" value="40" />
+              <rule type="width" value="250" />
+              <rule type="font_face" value="Arial" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+              <rule type="tag" value="hideAnswer" />
+            </option>
+            <option type="10">
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="x" value="800" />
+              <rule type="y" value="315" />
+              <rule type="height" value="40" />
+              <rule type="width" value="250" />
+              <rule type="visibility" value="1" />
+              <rule type="player_visibility" value="1" />
+              <rule type="font_face" value="Arial" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+              <rule type="tag" value="hideAnswer" />
+            </option>
+            <option type="11">
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="x" value="800" />
+              <rule type="y" value="315" />
+              <rule type="height" value="40" />
+              <rule type="width" value="250" />
+              <rule type="visibility" value="1" />
+              <rule type="player_visibility" value="1" />
+              <rule type="font_face" value="Arial" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+              <rule type="tag" value="hideAnswer" />
+            </option>
+            <option type="16">
+              <rule type="visibility" value="0" />
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="x" value="800" />
+              <rule type="y" value="220" />
+              <rule type="height" value="40" />
+              <rule type="width" value="250" />
+              <rule type="font_face" value="Arial" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+              <rule type="tag" value="hideAnswer" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="Checkbox_MC">
+          <options>
+            <option type="-1">
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="visibility" value="0" />
+              <rule type="font_face" value="Arial" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+              <rule type="x" value="800" />
+              <rule type="y" value="290" />
+              <rule type="height" value="40" />
+              <rule type="width" value="250" />
+              <rule type="visibility" value="0" />
+              <rule type="player_visibility" value="0" />
+              <rule type="tooltip" value="Display as Multiple Choice with Radio Buttons" />
+              <rule type="tag" value="MC" />
+            </option>
+            <option type="2">
+              <rule type="visibility" value="0" />
+            </option>
+            <option type="10">
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="x" value="800" />
+              <rule type="y" value="340" />
+              <rule type="height" value="40" />
+              <rule type="width" value="250" />
+              <rule type="visibility" value="0" />
+              <rule type="player_visibility" value="1" />
+              <rule type="font_face" value="Arial" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+              <rule type="tag" value="MC" />
+            </option>
+            <option type="11">
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="x" value="800" />
+              <rule type="y" value="340" />
+              <rule type="height" value="40" />
+              <rule type="width" value="250" />
+              <rule type="visibility" value="0" />
+              <rule type="player_visibility" value="1" />
+              <rule type="font_face" value="Arial" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+              <rule type="tag" value="MS" />
+            </option>
+            <option type="16">
+              <rule type="visibility" value="0" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="Checkbox_DSCAB">
+          <options>
+            <option type="-1">
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="visibility" value="0" />
+              <rule type="font_face" value="Arial" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+              <rule type="x" value="800" />
+              <rule type="y" value="280" />
+              <rule type="height" value="40" />
+              <rule type="width" value="250" />
+              <rule type="visibility" value="0" />
+              <rule type="player_visibility" value="0" />
+              <rule type="tooltip" value="Don't show check answer button." />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="IgnoreXPosition">
+          <options>
+            <option type="-1">
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="visibility" value="0" />
+              <rule type="font_face" value="Arial" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+              <rule type="x" value="800" />
+              <rule type="y" value="120" />
+              <rule type="height" value="40" />
+              <rule type="width" value="150" />
+              <rule type="visibility" value="0" />
+              <rule type="player_visibility" value="0" />
+              <rule type="tag" value="IgnoreXPosition" />
+              <rule type="tooltip" value="Don't judge x position." />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="IgnoreYPosition">
+          <options>
+            <option type="-1">
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="visibility" value="0" />
+              <rule type="font_face" value="Arial" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+              <rule type="x" value="800" />
+              <rule type="y" value="150" />
+              <rule type="height" value="40" />
+              <rule type="width" value="150" />
+              <rule type="player_visibility" value="0" />
+              <rule type="tag" value="IgnoreYPosition" />
+              <rule type="tooltip" value="Don't judge y position." />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="Checkbox_Percentage">
+          <options>
+            <option type="-1">
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="visibility" value="0" />
+              <rule type="font_face" value="Arial" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+              <rule type="x" value="800" />
+              <rule type="y" value="280" />
+              <rule type="height" value="40" />
+              <rule type="width" value="250" />
+              <rule type="visibility" value="0" />
+              <rule type="player_visibility" value="0" />
+              <rule type="tooltip" value="Use percentage rather than raw score." />
+              <rule type="tag" value="usePercentage" />
+            </option>
+            <option type="5">
+              <rule type="x" value="450" />
+              <rule type="y" value="280" />
+              <rule type="height" value="25" />
+              <rule type="width" value="250" />
+              <rule type="visibility" value="1" />
+              <rule type="html" value="0" />
+              <rule type="font_face" value="Arial" />
+              <rule type="tag" value="usePercentage" />
+              <rule type="player_visibility" value="1" />
+              <rule type="tooltip" value="Use percentage rather than raw score. For 80%, simply type 80" />
+              <rule type="font_size" value="12" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="Checkbox_A">
+          <options>
+            <option type="-1">
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="visibility" value="0" />
+              <rule type="font_face" value="Arial" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+            </option>
+            <option type="5">
+              <rule type="x" value="120" />
+              <rule type="y" value="70" />
+              <rule type="height" value="40" />
+              <rule type="width" value="250" />
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="resetScore" />
+              <rule type="tooltip" value="Reset Score for All Questions." />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="ResetInteractivity">
+          <options>
+            <option type="-1">
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="visibility" value="0" />
+              <rule type="font_face" value="Arial" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+            </option>
+            <option type="5">
+              <rule type="x" value="120" />
+              <rule type="y" value="40" />
+              <rule type="height" value="40" />
+              <rule type="width" value="250" />
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="resetInteractivityOnly" />
+              <rule type="tooltip" value="Reset questions and interactions Only, not score." />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="TerminateOnReport">
+          <options>
+            <option type="-1">
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="visibility" value="0" />
+              <rule type="font_face" value="Arial" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+            </option>
+            <option type="13">
+              <rule type="x" value="820" />
+              <rule type="y" value="290" />
+              <rule type="height" value="40" />
+              <rule type="width" value="150" />
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="terminate" />
+              <rule type="tooltip" value="Disconnect from Learning Management System after Report." />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="Checkbox_Nav">
+          <options>
+            <option type="-1">
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="visibility" value="0" />
+              <rule type="font_face" value="Arial" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+            </option>
+            <option type="5">
+              <rule type="x" value="120" />
+              <rule type="y" value="100" />
+              <rule type="height" value="40" />
+              <rule type="width" value="250" />
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="overrideNavigation" />
+              <rule type="tooltip" value="Reset Score for All Questions." />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="Checkbox_B">
+          <options>
+            <option type="-1">
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="visibility" value="0" />
+              <rule type="font_face" value="Arial" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+            </option>
+            <option type="5">
+              <rule type="x" value="140" />
+              <rule type="y" value="130" />
+              <rule type="height" value="40" />
+              <rule type="width" value="250" />
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="allowBack" />
+              <rule type="tooltip" value="Enable/disable back button for all pages after this gate to the next gate." />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="Checkbox_C">
+          <options>
+            <option type="-1">
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="visibility" value="0" />
+              <rule type="font_face" value="Arial" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+            </option>
+            <option type="5">
+              <rule type="x" value="140" />
+              <rule type="y" value="160" />
+              <rule type="height" value="40" />
+              <rule type="width" value="200" />
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="allowNext" />
+              <rule type="tooltip" value="Enable/disable next button for all pages after this gate to the next gate." />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="Checkbox_D">
+          <options>
+            <option type="-1">
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="visibility" value="0" />
+              <rule type="font_face" value="Arial" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+            </option>
+            <option type="5">
+              <rule type="x" value="120" />
+              <rule type="y" value="220" />
+              <rule type="height" value="40" />
+              <rule type="width" value="300" />
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="passRegardlessOfScore" />
+              <rule type="tooltip" value="Disregard score just travel down passing branch option." />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="Checkbox_E">
+          <options>
+            <option type="-1">
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="visibility" value="0" />
+              <rule type="font_face" value="Arial" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+            </option>
+            <option type="5">
+              <rule type="x" value="120" />
+              <rule type="y" value="190" />
+              <rule type="height" value="40" />
+              <rule type="width" value="200" />
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="useCustomScore" />
+              <rule type="tooltip" value="See template help to learn how to create a custom variable." />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="Checkbox_1">
+          <options>
+            <option type="-1">
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="visibility" value="0" />
+              <rule type="font_face" value="Arial" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+              <rule type="tooltip" value="Check if this is a correct option." />
+            </option>
+            <option type="10">
+              <rule type="x" value="660" />
+              <rule type="y" value="235" />
+              <rule type="player_y" value="160" />
+              <rule type="height" value="40" />
+              <rule type="width" value="70" />
+              <rule type="player_height" value="25" />
+              <rule type="player_width" value="25" />
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="answer_1" />
+            </option>
+            <option type="11">
+              <rule type="x" value="660" />
+              <rule type="y" value="235" />
+              <rule type="player_y" value="160" />
+              <rule type="height" value="40" />
+              <rule type="width" value="70" />
+              <rule type="player_height" value="25" />
+              <rule type="player_width" value="25" />
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="answer_1" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="Checkbox_2">
+          <options>
+            <option type="-1">
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="visibility" value="0" />
+              <rule type="font_face" value="Arial" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+              <rule type="tooltip" value="Check if this is a correct option." />
+            </option>
+            <option type="10">
+              <rule type="x" value="660" />
+              <rule type="y" value="290" />
+              <rule type="player_y" value="205" />
+              <rule type="height" value="40" />
+              <rule type="width" value="70" />
+              <rule type="player_height" value="25" />
+              <rule type="player_width" value="25" />
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="answer_2" />
+            </option>
+            <option type="11">
+              <rule type="x" value="660" />
+              <rule type="y" value="290" />
+              <rule type="player_y" value="205" />
+              <rule type="height" value="40" />
+              <rule type="width" value="70" />
+              <rule type="player_height" value="25" />
+              <rule type="player_width" value="25" />
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="answer_2" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="Checkbox_3">
+          <options>
+            <option type="-1">
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="visibility" value="0" />
+              <rule type="font_face" value="Arial" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+              <rule type="tooltip" value="Check if this is a correct option." />
+            </option>
+            <option type="10">
+              <rule type="x" value="660" />
+              <rule type="y" value="345" />
+              <rule type="player_y" value="250" />
+              <rule type="height" value="40" />
+              <rule type="width" value="70" />
+              <rule type="player_height" value="25" />
+              <rule type="player_width" value="25" />
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="answer_3" />
+            </option>
+            <option type="11">
+              <rule type="x" value="660" />
+              <rule type="y" value="345" />
+              <rule type="player_y" value="250" />
+              <rule type="height" value="40" />
+              <rule type="width" value="70" />
+              <rule type="player_height" value="25" />
+              <rule type="player_width" value="25" />
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="answer_3" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="Checkbox_4">
+          <options>
+            <option type="-1">
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="visibility" value="0" />
+              <rule type="font_face" value="Arial" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+              <rule type="tooltip" value="Check if this is a correct option." />
+            </option>
+            <option type="10">
+              <rule type="x" value="660" />
+              <rule type="y" value="400" />
+              <rule type="player_y" value="295" />
+              <rule type="height" value="40" />
+              <rule type="width" value="70" />
+              <rule type="player_height" value="25" />
+              <rule type="player_width" value="25" />
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="answer_4" />
+            </option>
+            <option type="11">
+              <rule type="x" value="660" />
+              <rule type="y" value="400" />
+              <rule type="player_y" value="295" />
+              <rule type="height" value="40" />
+              <rule type="width" value="70" />
+              <rule type="player_height" value="25" />
+              <rule type="player_width" value="25" />
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="answer_4" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="Checkbox_5">
+          <options>
+            <option type="-1">
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="visibility" value="0" />
+              <rule type="font_face" value="Arial" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+              <rule type="tooltip" value="Check if this is a correct option." />
+            </option>
+            <option type="10">
+              <rule type="x" value="660" />
+              <rule type="y" value="455" />
+              <rule type="player_y" value="240" />
+              <rule type="height" value="40" />
+              <rule type="width" value="70" />
+              <rule type="player_height" value="25" />
+              <rule type="player_width" value="25" />
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="answer_5" />
+            </option>
+            <option type="11">
+              <rule type="x" value="660" />
+              <rule type="y" value="455" />
+              <rule type="player_y" value="240" />
+              <rule type="height" value="40" />
+              <rule type="width" value="70" />
+              <rule type="player_height" value="25" />
+              <rule type="player_width" value="25" />
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="answer_5" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="Checkbox_6">
+          <options>
+            <option type="-1">
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="visibility" value="0" />
+              <rule type="font_face" value="Arial" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+              <rule type="tooltip" value="Check if this is a correct option." />
+            </option>
+            <option type="10">
+              <rule type="x" value="660" />
+              <rule type="y" value="510" />
+              <rule type="player_y" value="240" />
+              <rule type="height" value="40" />
+              <rule type="width" value="70" />
+              <rule type="player_height" value="25" />
+              <rule type="player_width" value="25" />
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="answer_6" />
+            </option>
+            <option type="11">
+              <rule type="x" value="660" />
+              <rule type="y" value="510" />
+              <rule type="player_y" value="240" />
+              <rule type="height" value="40" />
+              <rule type="width" value="70" />
+              <rule type="player_height" value="25" />
+              <rule type="player_width" value="25" />
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="answer_6" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="Checkbox_7">
+          <options>
+            <option type="-1">
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="visibility" value="0" />
+              <rule type="font_face" value="Arial" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+              <rule type="tooltip" value="Check if this is a correct option." />
+            </option>
+            <option type="10">
+              <rule type="x" value="660" />
+              <rule type="y" value="565" />
+              <rule type="player_y" value="240" />
+              <rule type="height" value="40" />
+              <rule type="width" value="70" />
+              <rule type="player_height" value="25" />
+              <rule type="player_width" value="25" />
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="answer_7" />
+            </option>
+            <option type="11">
+              <rule type="x" value="660" />
+              <rule type="y" value="565" />
+              <rule type="player_y" value="240" />
+              <rule type="height" value="40" />
+              <rule type="width" value="70" />
+              <rule type="player_height" value="25" />
+              <rule type="player_width" value="25" />
+              <rule type="visibility" value="1" />
+              <rule type="tag" value="answer_7" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="RegEx_CheckBox">
+          <options>
+            <option type="-1">
+              <rule type="bgColor" value="ffffff" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fgColor" value="000000" />
+              <rule type="visibility" value="0" />
+              <rule type="font_face" value="Arial" />
+              <rule type="html" value="1" />
+              <rule type="embedFonts" value="1" />
+              <rule type="tooltip" value="This is an advanced option.  Check only if you want this question evaluated with a Regular Expression." />
+            </option>
+            <option type="3">
+              <rule type="x" value="475" />
+              <rule type="y" value="300" />
+              <rule type="height" value="40" />
+              <rule type="width" value="300" />
+              <rule type="visibility" value="1" />
+            </option>
+            <option type="14">
+              <rule type="x" value="475" />
+              <rule type="y" value="300" />
+              <rule type="height" value="40" />
+              <rule type="width" value="300" />
+              <rule type="visibility" value="1" />
+            </option>
+          </options>
+        </optionStore>
+        <!-- Combo -->
+        <optionStore name="Combo">
+          <options>
+            <option type="-1">
+              <rule type="visibility" value="1" />
+              <rule type="bgColor" value="FFFF00" />
+              <rule type="fgColor" value="000000" />
+              <rule type="font_face" value="Arial" />
+              <rule type="x" value="120" />
+              <rule type="y" value="10" />
+              <rule type="width" value="400" />
+              <rule type="height" value="75" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="interviewer_content_panel">
+          <options>
+            <option type="-1">
+              <rule type="visibility" value="0" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="video_panel">
+          <options>
+            <option type="-1">
+              <rule type="visibility" value="0" />
+            </option>
+            <option type="17">
+              <rule type="bgColor" value="ffffff" />
+              <rule type="visibility" value="1" />
+              <rule type="player_visibility" value="1" />
+              <rule type="x" value="200" />
+              <rule type="y" value="200" />
+              <rule type="width" value="500" />
+              <rule type="height" value="30" />
+              <rule type="font_face" value="Arial" />
+              <rule type="style" value="0" />
+              <rule type="font_size" value="14" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="crossword">
+          <options>
+            <option type="-1">
+              <rule type="visibility" value="0" />
+            </option>
+            <option type="1">
+              <rule type="visibility" value="1" />
+              <rule type="player_visibility" value="1" />
+              <rule type="x" value="50" />
+              <rule type="y" value="400" />
+              <rule type="width" value="500" />
+              <rule type="height" value="400" />
+              <rule type="font_face" value="Arial" />
+              <rule type="style" value="0" />
+              <rule type="font_size" value="14" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="crosswordDataInput">
+          <options>
+            <option type="-1">
+              <rule type="visibility" value="0" />
+            </option>
+            <option type="1">
+              <rule type="visibility" value="1" />
+              <rule type="player_visibility" value="1" />
+              <rule type="x" value="720" />
+              <rule type="y" value="75" />
+              <rule type="height" value="150" />
+              <rule type="width" value="300" />
+              <rule type="font_face" value="Arial" />
+              <rule type="style" value="0" />
+              <rule type="font_size" value="14" />
+              <rule type="fields" value="[{&quot;name&quot;:&quot;Word&quot;,&quot;type&quot;:&quot;string&quot;,&quot;length&quot;:35},{&quot;name&quot;:&quot;Hint&quot;,&quot;type&quot;:&quot;string&quot;,&quot;length&quot;:35}]" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="dataInput">
+          <options>
+            <option type="-1">
+              <rule type="visibility" value="0" />
+              <rule type="fields" value="[{&quot;name&quot;:&quot;Category&quot;,&quot;type&quot;:&quot;string&quot;,&quot;length&quot;:30}]" />
+              <rule type="textHeight" value="30" />
+            </option>
+            <option type="0">
+              <rule type="visibility" value="1" />
+              <rule type="player_visibility" value="1" />
+              <rule type="tag" value="" />
+              <rule type="embedFonts" value="1" />
+              <rule type="html" value="1" />
+              <rule type="scrollbars" value="1" />
+              <rule type="x" value="100" />
+              <rule type="y" value="150" />
+              <rule type="height" value="600" />
+              <rule type="width" value="600" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fields" value="[{&quot;name&quot;:&quot;Title&quot;,&quot;type&quot;:&quot;longstring&quot;,&quot;length&quot;:100,&quot;help&quot;:&quot;Title that appears on the tile.&quot;},{&quot;name&quot;:&quot;Category&quot;,&quot;type&quot;:&quot;lookup&quot;,&quot;length&quot;:10,&quot;help&quot;:&quot;Category of challenge item. All items in same category appear on page together.&quot;}, {&quot;name&quot;:&quot;Random_State&quot;,&quot;type&quot;:&quot;boolean&quot;,&quot;length&quot;:10,&quot;help&quot;:&quot;Primary condition upon which everything else is dependent.&quot;},{&quot;name&quot;:&quot;Dependency_On&quot;,&quot;type&quot;:&quot;CheckLookup&quot;,&quot;length&quot;:100,&quot;help&quot;:&quot;Item that this item is dependent on&quot;,&quot;options&quot;:&quot;Title&quot;},{&quot;name&quot;:&quot;Points&quot;,&quot;type&quot;:&quot;number&quot;,&quot;length&quot;:10,&quot;help&quot;:&quot;Number of Points Added if Correctly Chosen.&quot;}, {&quot;name&quot;:&quot;Correct_Response&quot;,&quot;type&quot;:&quot;combo&quot;,&quot;options&quot;:&quot;Always Correct;Never Correct;Correct if Dependency Exists;Not Applicable&quot;,&quot;length&quot;:10,&quot;help&quot;:&quot;Determines when response is correct which is always, never or if a dependency was chosen by the program or learner.&quot;}, {&quot;name&quot;:&quot;Resource&quot;,&quot;type&quot;:&quot;String&quot;,&quot;length&quot;:10,&quot;help&quot;:&quot;Page Title of Resource Associated with this Item.&quot;},{&quot;name&quot;:&quot;Feedback_A&quot;,&quot;type&quot;:&quot;String&quot;,&quot;length&quot;:100,&quot;help&quot;:&quot;Feedback if item is incorrectly selected&quot;},{&quot;name&quot;:&quot;Feedback_B&quot;,&quot;type&quot;:&quot;String&quot;,&quot;length&quot;:100,&quot;help&quot;:&quot;Feedback if item is incorrectly omitted.&quot;},{&quot;name&quot;:&quot;Optional_Image&quot;,&quot;type&quot;:&quot;image&quot;,&quot;length&quot;:10,&quot;help&quot;:&quot;Will fill in background of tile.&quot;}]" />
+            </option>
+            <option type="4">
+              <rule type="visibility" value="1" />
+              <rule type="player_visibility" value="1" />
+              <rule type="tag" value="heading" />
+              <rule type="embedFonts" value="1" />
+              <rule type="html" value="1" />
+              <rule type="scrollbars" value="1" />
+              <rule type="x" value="100" />
+              <rule type="y" value="150" />
+              <rule type="height" value="400" />
+              <rule type="width" value="600" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fields" value="[{&quot;name&quot;:&quot;Title&quot;,&quot;type&quot;:&quot;string&quot;,&quot;length&quot;:10,&quot;help&quot;:&quot;Title that appears on form when there is room.&quot;},{&quot;name&quot;:&quot;Abbreviation&quot;,&quot;type&quot;:&quot;string&quot;,&quot;length&quot;:10,&quot;help&quot;:&quot;Abbreviation that appears on form.&quot;},{&quot;name&quot;:&quot;ID&quot;,&quot;type&quot;:&quot;string&quot;,&quot;length&quot;:10,&quot;help&quot;:&quot;Type name of id that ties together both css file and the long answer page ID&quot;}]" />
+            </option>
+            <option type="12">
+              <rule type="visibility" value="1" />
+              <rule type="player_visibility" value="1" />
+              <rule type="tag" value="heading" />
+              <rule type="embedFonts" value="1" />
+              <rule type="html" value="1" />
+              <rule type="scrollbars" value="1" />
+              <rule type="x" value="100" />
+              <rule type="y" value="150" />
+              <rule type="height" value="500" />
+              <rule type="width" value="600" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="fields" value="[{&quot;name&quot;:&quot;Text&quot;,&quot;type&quot;:&quot;string&quot;,&quot;length&quot;:10,&quot;help&quot;:&quot;Text that appears on tile.&quot;},{&quot;name&quot;:&quot;Row&quot;,&quot;type&quot;:&quot;number&quot;,&quot;length&quot;:10,&quot;help&quot;:&quot;Type in number or type in * to allow any row.&quot;},{&quot;name&quot;:&quot;Position&quot;,&quot;type&quot;:&quot;number&quot;,&quot;length&quot;:10,&quot;help&quot;:&quot;Type in number.&quot;},{&quot;name&quot;:&quot;Italic&quot;,&quot;type&quot;:&quot;boolean&quot;,&quot;length&quot;:10},{&quot;name&quot;:&quot;Pinned&quot;,&quot;type&quot;:&quot;boolean&quot;,&quot;length&quot;:10,&quot;help&quot;:&quot;Type in yes to fix position and make non-draggable&quot;},{&quot;name&quot;:&quot;OptionalWidth&quot;,&quot;type&quot;:&quot;number&quot;,&quot;length&quot;:10,&quot;help&quot;:&quot;Minimum width for tile.&quot;},{&quot;name&quot;:&quot;Optional_Image&quot;,&quot;type&quot;:&quot;image&quot;,&quot;length&quot;:10,&quot;help&quot;:&quot;Minimum width for tile.&quot;}]" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="JetOptionResourceImportButton_1">
+          <options>
+            <option type="-1">
+              <rule type="visibility" value="0" />
+            </option>
+            <option type="17">
+              <rule type="visibility" value="1" />
+              <rule type="player_visibility" value="1" />
+              <rule type="tag" value="videoResource" />
+              <rule type="embedFonts" value="1" />
+              <rule type="html" value="1" />
+              <rule type="scrollbars" value="1" />
+              <rule type="x" value="200" />
+              <rule type="y" value="300" />
+              <rule type="height" value="30" />
+              <rule type="width" value="200" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="label" value="Import Video" />
+              <rule type="ext" value="*.mp4" />
+            </option>
+          </options>
+        </optionStore>
+        <optionStore name="JetOptionResourceImportButton_2">
+          <options>
+            <option type="-1">
+              <rule type="visibility" value="0" />
+            </option>
+            <option type="17">
+              <rule type="visibility" value="1" />
+              <rule type="player_visibility" value="1" />
+              <rule type="tag" value="captionResource" />
+              <rule type="embedFonts" value="1" />
+              <rule type="html" value="1" />
+              <rule type="scrollbars" value="1" />
+              <rule type="x" value="200" />
+              <rule type="y" value="340" />
+              <rule type="height" value="30" />
+              <rule type="width" value="200" />
+              <rule type="bgAlpha" value="0" />
+              <rule type="label" value="Import Captions" />
+              <rule type="ext" value="*.vtt" />
+            </option>
+          </options>
+        </optionStore>
+        <!--  Option Page Start -->
+        <optionpage bbHeight="100" bbWidth="200" bbx="-14" bby="-10" cloneable="1" node="1665630296859" orderable="1" promptSize="0">
+          <prompt />
+          <entrydata>
+            <input items="Challenger;Crossword;FIB;FlashCards;Form;Gate;IFrame;Interview;Journal;Long Answer;Multiple Choice Question;Multiple Select Question;Organizer;Report;Short Answer;SimpleSim;Text;Video;Wall;" optionStore="Combo" pageTypes="Challenger;Crossword;FIB;FlashCards;Form;Gate;IFrame;mInterview;Journal;LA;MC1;MC1;Organizer;Report;ShortAnswer;SimpleSim;mText;Video;Wall;" type="JetCustomOptionComboBox" values="Challenger;Crossword;FIB;FlashCards;Form;Gate;IFrame;Interview;Journal;Long Answer;Multiple Choice Question;Multiple Select Question;Organizer;Report;ShortAnswer;SimpleSim;Text;Video;Wall;"><![CDATA[Text]]></input>
+          </entrydata>
+          <entrydata>
+            <input optionStore="Title" type="JetOptionTextArea" />
+          </entrydata>
+          <entrydata>
+            <input optionStore="TotalPoints_Label" type="JetOptionLabel" />
+          </entrydata>
+          <entrydata>
+            <input optionStore="Label_NodesManager_Checked" type="JetOptionLabel" />
+          </entrydata>
+          <entrydata>
+            <input optionStore="Label_NodesManager_UnChecked" type="JetOptionLabel" />
+          </entrydata>
+          <entrydata>
+            <input optionStore="TotalPoints" type="JetOptionTextArea" />
+          </entrydata>
+          <entrydata>
+            <input optionStore="Title_Label" type="JetOptionLabel" />
+          </entrydata>
+          <entrydata>
+            <input name="Table of Contents" optionStore="Checkbox_TOC" type="JetOptionCheckBox">false</input>
+          </entrydata>
+          <entrydata>
+            <input name="Terminate After Report" optionStore="TerminateOnReport" type="JetOptionCheckBox" />
+          </entrydata>
+          <entrydata>
+            <input name="Do Not Display Correct Answer" optionStore="Checkbox_DDCA" type="JetOptionCheckBox" />
+          </entrydata>
+          <entrydata>
+            <input name="Use Multiple Choice Radio Buttons" optionStore="Checkbox_MC" type="JetOptionCheckBox" />
+          </entrydata>
+          <entrydata>
+            <input name="Do Not Display Check Answer Button" optionStore="Checkbox_DSCAB" type="JetOptionCheckBox" />
+          </entrydata>
+          <entrydata>
+            <input name="Use Percentage" optionStore="Checkbox_Percentage" type="JetOptionCheckBox" />
+          </entrydata>
+          <entrydata>
+            <input name="Remove from Flow" optionStore="Checkbox_Flow" type="JetOptionCheckBox">false</input>
+          </entrydata>
+          <entrydata>
+            <input name="Hide Page Scrollbar" optionStore="Checkbox_HideScroll" type="JetOptionCheckBox">false</input>
+          </entrydata>
+          <entrydata>
+            <input name="Randomize" optionStore="Checkbox_Randomize" type="JetOptionCheckBox" />
+          </entrydata>
+          <entrydata>
+            <input name="Ignore X Position" optionStore="IgnoreXPosition" type="JetOptionCheckBox" />
+          </entrydata>
+          <entrydata>
+            <input name="Ignore Y Position" optionStore="IgnoreYPosition" type="JetOptionCheckBox" />
+          </entrydata>
+          <entrydata>
+            <input optionStore="Instructions" type="JetOptionTextArea" />
+          </entrydata>
+          <entrydata>
+            <input optionStore="Instructions_Label" type="JetOptionLabel" />
+          </entrydata>
+          <entrydata>
+            <input optionStore="InteractionType_Label" type="JetOptionLabel" />
+          </entrydata>
+          <entrydata>
+            <input optionStore="HTMLTextArea_1" type="JetOptionAdvancedHTMLEditor"><![CDATA[<html dir="ltr"> 
+ <head> 
+ </head> 
+ <body style="padding-right:20px;font-family:Arial, Verdana, Helv, Helvetica, sans-serif" contenteditable="false"> 
+  <p style="text-align: left;"><font face="Arial"><br></font></p>  
+ </body>
+</html>]]></input>
+          </entrydata>
+          <entrydata>
+            <input optionStore="HTMLTextArea_2" type="JetOptionAdvancedHTMLEditor"><![CDATA[<html> 
+ <head> 
+ </head> 
+ <body style="padding-right:20px;font-family:Arial, Verdana, Helv, Helvetica, sans-serif" contenteditable="false"> 
+  <p style="text-align: left;"><font face="Arial"><br></font></p>  
+ </body>
+</html>]]></input>
+          </entrydata>
+          <entrydata>
+            <input optionStore="TextArea_1" type="JetOptionTextArea" />
+          </entrydata>
+          <entrydata>
+            <input optionStore="TextArea_2" type="JetOptionTextArea" />
+          </entrydata>
+          <entrydata>
+            <input optionStore="TextArea_3" type="JetOptionTextArea" />
+            <checkedOption />
+            <checkedValue />
+            <showFeedback />
+            <feedback />
+            <branchOptions />
+            <branchDelay />
+          </entrydata>
+          <entrydata>
+            <input optionStore="TextArea_4" type="JetOptionTextArea" />
+            <checkedOption />
+            <checkedValue />
+            <showFeedback />
+            <feedback />
+            <branchOptions />
+            <branchDelay />
+          </entrydata>
+          <entrydata>
+            <input optionStore="TextArea_5" type="JetOptionTextArea" />
+            <checkedOption />
+            <checkedValue />
+            <showFeedback />
+            <feedback />
+            <branchOptions />
+            <branchDelay />
+          </entrydata>
+          <entrydata>
+            <input optionStore="TextArea_6" type="JetOptionTextArea" />
+            <checkedOption />
+            <checkedValue />
+            <showFeedback />
+            <feedback />
+            <branchOptions />
+            <branchDelay />
+          </entrydata>
+          <entrydata>
+            <input optionStore="TextArea_7" type="JetOptionTextArea" />
+            <checkedOption />
+            <checkedValue />
+            <showFeedback />
+            <feedback />
+            <branchOptions />
+            <branchDelay />
+          </entrydata>
+          <entrydata>
+            <input optionStore="TextArea_8" type="JetOptionTextArea" />
+            <checkedOption />
+            <checkedValue />
+            <showFeedback />
+            <feedback />
+            <branchOptions />
+            <branchDelay />
+          </entrydata>
+          <entrydata>
+            <input optionStore="TextArea_9" type="JetOptionTextArea" />
+            <checkedOption />
+            <checkedValue />
+            <showFeedback />
+            <feedback />
+            <branchOptions />
+            <branchDelay />
+          </entrydata>
+          <entrydata>
+            <input optionStore="TextArea_10" type="JetOptionTextArea" />
+            <checkedOption />
+            <checkedValue />
+            <showFeedback />
+            <feedback />
+            <branchOptions />
+            <branchDelay />
+          </entrydata>
+          <entrydata>
+            <input optionStore="InaccessibleTextArea" type="JetOptionTextArea" />
+          </entrydata>
+          <entrydata>
+            <input optionStore="Label_1" type="JetOptionLabel" />
+          </entrydata>
+          <entrydata>
+            <input optionStore="Label_2" type="JetOptionLabel" />
+          </entrydata>
+          <entrydata>
+            <input optionStore="Label_3" type="JetOptionLabel" />
+          </entrydata>
+          <entrydata>
+            <input optionStore="Label_4" type="JetOptionLabel" />
+          </entrydata>
+          <entrydata>
+            <input optionStore="Label_5" type="JetOptionLabel" />
+          </entrydata>
+          <entrydata>
+            <input optionStore="Label_6" type="JetOptionLabel" />
+          </entrydata>
+          <entrydata>
+            <input optionStore="Label_7" type="JetOptionLabel" />
+          </entrydata>
+          <entrydata>
+            <input optionStore="Label_8" type="JetOptionLabel" />
+          </entrydata>
+          <entrydata>
+            <input imageHeight="300" imageWidth="400" optionStore="ImageArea_1" type="JetOptionImageArea" />
+            <imageCaption />
+            <imageSource />
+            <imageID />
+            <imageDecorator />
+            <mediaController />
+            <showMiniNav />
+            <enableMiniNav />
+          </entrydata>
+          <entrydata>
+            <input imageHeight="" imageWidth="" optionStore="ImageArea_2" type="JetOptionImageArea" />
+            <imageCaption />
+            <imageSource />
+            <imageID />
+            <imageDecorator />
+            <mediaController />
+            <showMiniNav />
+            <enableMiniNav />
+          </entrydata>
+          <entrydata>
+            <input imageHeight="" imageWidth="" optionStore="ImageArea_Q" type="JetOptionImageArea" />
+            <imageCaption />
+            <imageSource />
+            <imageID />
+            <imageDecorator />
+            <mediaController />
+            <showMiniNav />
+            <enableMiniNav />
+          </entrydata>
+          <entrydata>
+            <input imageHeight="" imageWidth="" optionStore="ImageArea_3" type="JetOptionImageArea" />
+            <imageCaption />
+            <imageSource />
+            <imageID />
+            <imageDecorator />
+            <mediaController />
+            <showMiniNav />
+            <enableMiniNav />
+          </entrydata>
+          <entrydata>
+            <input imageHeight="" imageWidth="" optionStore="ImageArea_4" type="JetOptionImageArea" />
+            <imageCaption />
+            <imageSource />
+            <imageID />
+            <imageDecorator />
+            <mediaController />
+            <showMiniNav />
+            <enableMiniNav />
+          </entrydata>
+          <entrydata>
+            <input enableAutoPlay="0" enableController="0" optionStore="Audio" type="JetOptionAudio" volume="100" />
+          </entrydata>
+          <entrydata>
+            <input optionStore="NodeSelector" type="JetOptionNodeSelector" />
+          </entrydata>
+          <entrydata>
+            <input optionStore="AccessibilitySelector" type="JetOptionAccessibilitySelector" />
+          </entrydata>
+          <entrydata>
+            <input optionStore="HelpSelector" type="JetOptionHelpSelector" />
+          </entrydata>
+          <entrydata>
+            <input name="Correct" optionStore="Checkbox_1" type="JetOptionCheckBox" />
+          </entrydata>
+          <entrydata>
+            <input name="Correct" optionStore="Checkbox_2" type="JetOptionCheckBox" />
+          </entrydata>
+          <entrydata>
+            <input name="Correct" optionStore="Checkbox_3" type="JetOptionCheckBox" />
+          </entrydata>
+          <entrydata>
+            <input name="Correct" optionStore="Checkbox_4" type="JetOptionCheckBox" />
+          </entrydata>
+          <entrydata>
+            <input name="Correct" optionStore="Checkbox_5" type="JetOptionCheckBox" />
+          </entrydata>
+          <entrydata>
+            <input name="Correct" optionStore="Checkbox_6" type="JetOptionCheckBox" />
+          </entrydata>
+          <entrydata>
+            <input name="Correct" optionStore="Checkbox_7" type="JetOptionCheckBox" />
+          </entrydata>
+          <entrydata>
+            <input name="Override Navigation" optionStore="Checkbox_Nav" type="JetOptionCheckBox" />
+          </entrydata>
+          <entrydata>
+            <input name="Reset Score" optionStore="Checkbox_A" type="JetOptionCheckBox" />
+          </entrydata>
+          <entrydata>
+            <input name="Reset Questions/Activities Only" optionStore="ResetInteractivity" type="JetOptionCheckBox" />
+          </entrydata>
+          <entrydata>
+            <input name="Allow Back Button" optionStore="Checkbox_B" type="JetOptionCheckBox" />
+          </entrydata>
+          <entrydata>
+            <input name="Allow Next Button" optionStore="Checkbox_C" type="JetOptionCheckBox" />
+          </entrydata>
+          <entrydata>
+            <input name="Reg Ex" optionStore="RegEx_CheckBox" type="JetOptionCheckBox" />
+          </entrydata>
+          <entrydata>
+            <input name="Allow Student to Pass Regardless of Score" optionStore="Checkbox_D" type="JetOptionCheckBox" />
+          </entrydata>
+          <entrydata>
+            <input name="Use Custom Score" optionStore="Checkbox_E" type="JetOptionCheckBox" />
+          </entrydata>
+          <entrydata>
+            <input name="Resources " optionStore="Checkbox_Resource" type="JetOptionCheckBox">false</input>
+          </entrydata>
+          <entrydata>
+            <input name="Fill in the Blanks" optionStore="Checkbox_FIB" type="JetOptionCheckBox">false</input>
+          </entrydata>
+          <entrydata>
+            <input name="Custom Score Variable Name" optionStore="CustomScoreVariableName" type="JetOptionTextArea" />
+          </entrydata>
+          <entrydata>
+            <input name="NodesManager" optionStore="checkedJetOptionNodesManagerButton" type="JetOptionNodesManagerButton" />
+            <checkedOption />
+            <checkedValue />
+            <showFeedback />
+            <feedback />
+            <branchOptions />
+            <branchDelay />
+          </entrydata>
+          <entrydata>
+            <input name="NodesManager" optionStore="uncheckedJetOptionNodesManagerButton" type="JetOptionNodesManagerButton" />
+            <checkedOption />
+            <checkedValue />
+            <showFeedback />
+            <feedback />
+            <branchOptions />
+            <branchDelay />
+          </entrydata>
+          <entrydata>
+            <input name="NodesManager" optionStore="calcJetOptionNodesManagerButton" type="JetOptionNodesManagerButton" />
+            <checkedOption />
+            <checkedValue />
+            <showFeedback />
+            <feedback />
+            <branchOptions />
+            <branchDelay />
+          </entrydata>
+          <entrydata>
+            <input optionStore="interviewer_content_panel" type="JetOptionImageArea" />
+          </entrydata>
+          <entrydata>
+            <input optionStore="video_panel" type="JetOptionVideoArea" />
+          </entrydata>
+          <entrydata>
+            <input optionStore="crossword" type="JetOptionCrossword" />
+          </entrydata>
+          <entrydata>
+            <input optionStore="crosswordDataInput" type="JetOptionDataInput" />
+          </entrydata>
+          <entrydata>
+            <input optionStore="dataInput" type="JetOptionDataInput" />
+          </entrydata>
+          <entrydata>
+            <input optionStore="JetOptionResourceImportButton_1" type="JetOptionResourceImportButton" />
+          </entrydata>
+          <entrydata>
+            <input optionStore="JetOptionResourceImportButton_2" type="JetOptionResourceImportButton" />
+          </entrydata>
+        </optionpage>
+      </cparameter>
+    </parameters>
+  </interaction>
+</interactions>
