@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <preview>
+    <thumbnail>thumbnail.jpg</thumbnail>
+    <title>Default</title>
+    <description><![CDATA[This interface provides a basic design style used in the styling of pages and fields. This design provides simple borders, dropshadows and other decorations to page elements.]]></description>
+    <specialNotes />
+  </preview>
+  <interaction />
+</interface>

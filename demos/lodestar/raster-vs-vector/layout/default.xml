@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <preview>
+    <thumbnail>thumbnail.jpg</thumbnail>
+    <title>Default</title>
+    <description><![CDATA[This interface provides a simple layout that has a header, with navigation, included and adjusts to the height and width of the device.]]></description>
+    <specialNotes />
+  </preview>
+  <html>
+    <bgColor>#ffffff</bgColor>
+  </html>
+  <config>
+    <isEditable>false</isEditable>
+  </config>
+  <layout>
+    <headerTopMargin>0</headerTopMargin>
+    <headerRightMargin>auto</headerRightMargin>
+    <headerBottomMargin>0</headerBottomMargin>
+    <headerLeftMargin>auto</headerLeftMargin>
+    <viewerTopMargin>0</viewerTopMargin>
+    <viewerRightMargin>auto</viewerRightMargin>
+    <viewerBottomMargin>0</viewerBottomMargin>
+    <viewerLeftMargin>auto</viewerLeftMargin>
+    <navigatorTopMargin>0</navigatorTopMargin>
+    <navigatorRightMargin>auto</navigatorRightMargin>
+    <navigatorBottomMargin>0</navigatorBottomMargin>
+    <navigatorLeftMargin>auto</navigatorLeftMargin>
+    <headerTopPadding>10</headerTopPadding>
+    <headerRightPadding>10</headerRightPadding>
+    <headerBottomPadding>0</headerBottomPadding>
+    <headerLeftPadding>10</headerLeftPadding>
+    <viewerTopPadding>10</viewerTopPadding>
+    <viewerRightPadding>10</viewerRightPadding>
+    <viewerBottomPadding>150</viewerBottomPadding>
+    <viewerLeftPadding>10</viewerLeftPadding>
+    <navigatorTopPadding>0</navigatorTopPadding>
+    <navigatorRightPadding>10</navigatorRightPadding>
+    <navigatorBottomPadding>0</navigatorBottomPadding>
+    <navigatorLeftPadding>10</navigatorLeftPadding>
+    <bgImage />
+  </layout>
+  <htmlTemplateStyle>
+    <background url="background.jpg" alpha="1" color="" repeat="yes" position="top" />
+    <titleText color="#ffffff" size="2em" fontFamily="Arial, Helvetica, sans-serif" />
+    <bodyText_1 color="#ffffff" size="1em" />
+    <bodyText_2 color="#7f807a" size="1em" />
+    <links normal="#0000FF" normalDecoration="underline" visited="#808080" visitedDecoration="underline" hover="#808080" hoverDecoration="underline" />
+    <customNav color="#7f807a" />
+  </htmlTemplateStyle>
+  <object>
+    <height>470</height>
+    <width>800</width>
+    <parameters>
+      <parameter><![CDATA[<PARAM NAME="Src" VALUE="os.swf">]]></parameter>
+    </parameters>
+  </object>
+  <interaction>
+    <!--  This is the title put in the header. Not all interfaces will have a geader, in fact, the default one will not. 	-->
+    <title />
+    <titleColor>#FFFFFF</titleColor>
+    <headerFileName>header.jpg</headerFileName>
+    <footerFileName>footer.jpg</footerFileName>
+  </interaction>
+</interface>

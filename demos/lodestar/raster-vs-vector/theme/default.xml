@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <preview>
+    <thumbnail>thumbnail.jpg</thumbnail>
+    <title>Default</title>
+    <description><![CDATA[This interface provides a simple layout that it 800x470 pixels and has squared borders. Additionaly, it support the displaying of a title in the header area.]]></description>
+    <specialNotes />
+  </preview>
+  <html>
+    <bgColor>#ffffff</bgColor>
+  </html>
+  <htmlTemplateStyle>
+    <background url="background.jpg" alpha="1" color="" repeat="yes" position="top" />
+    <titleText color="#ffffff" size="2em" fontFamily="Arial, Helvetica, sans-serif" />
+    <bodyText_1 color="#ffffff" size="1em" />
+    <bodyText_2 color="#7f807a" size="1em" />
+    <links normal="#0000FF" normalDecoration="underline" visited="#808080" visitedDecoration="underline" hover="#808080" hoverDecoration="underline" />
+    <customNav color="#7f807a" />
+  </htmlTemplateStyle>
+  <object>
+    <height>470</height>
+    <width>800</width>
+    <parameters>
+      <parameter><![CDATA[<PARAM NAME="Src" VALUE="os.swf">]]></parameter>
+    </parameters>
+  </object>
+  <interaction>
+    <!--  This is the title put in the header. Not all interfaces will have a geader, in fact, the default one will not. 	-->
+    <title />
+    <titleColor>#FFFFFF</titleColor>
+    <headerFileName />
+    <footerFileName>footer.jpg</footerFileName>
+    <headerBgColor>background: #489CD4FF; /* Old browsers */
+background: -moz-linear-gradient(top,#489CD4FF 14.249999999999998%,#489CD4FF 64.25%,#489CD4FF 100.0%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(50%,#2989d8), color-stop(51%,#207cca), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,#489CD4FF 14.249999999999998%,#489CD4FF 64.25%,#489CD4FF 100.0%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,#489CD4FF 14.249999999999998%,#489CD4FF 64.25%,#489CD4FF 100.0%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,#489CD4FF 14.249999999999998%,#489CD4FF 64.25%,#489CD4FF 100.0%); /* IE10+ */</headerBgColor>
+    <footerBgColor>background: #395DEBFF; /* Old browsers */
+background: -moz-linear-gradient(top,#395DEBFF 8.75%,#395DEBFF 50.0%,#395DEBFF 100.0%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(50%,#2989d8), color-stop(51%,#207cca), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,#395DEBFF 8.75%,#395DEBFF 50.0%,#395DEBFF 100.0%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,#395DEBFF 8.75%,#395DEBFF 50.0%,#395DEBFF 100.0%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,#395DEBFF 8.75%,#395DEBFF 50.0%,#395DEBFF 100.0%); /* IE10+ */</footerBgColor>
+    <!--  This is the HTML background color. This element is used to inform the lodeStar Theme Editor but is not used by the flash files.-->
+    <htmlBgColor>#f4f4f4</htmlBgColor>
+    <!--  This is the outer background color. Using the same color as the html bgColor would make the interaction blend into the html.-->
+    <outerBgColor>#1a1a1aff</outerBgColor>
+    <!--  This is the area within the border. It is the same space as the bgImage. -->
+    <innerBgColor>#ffffffff</innerBgColor>
+    <innerBgColorAlpha>Opaque</innerBgColorAlpha>
+    <!--  This is the image which will appear as a background within the border It could be a jpg or a swf.-->
+    <bgImage>background.jpg</bgImage>
+    <bgImageAlpha>20</bgImageAlpha>
+    <panelBgImageFileName>h_panel.jpg</panelBgImageFileName>
+    <vPanelBgImageFileName>v_panel.jpg</vPanelBgImageFileName>
+    <fontColors>
+      <panel normal="999999" over="cccccc" selected="ffffff" />
+      <button normal="ffffff" over="cccccc" selected="999999" />
+    </fontColors>
+    <!--  The options here are "Rounded" or "Squared". -->
+    <cornerOption>Rounded</cornerOption>
+  </interaction>
+</interface>

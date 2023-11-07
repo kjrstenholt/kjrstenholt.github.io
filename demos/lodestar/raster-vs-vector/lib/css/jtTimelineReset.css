@@ -1,0 +1,52 @@
+.jetTimeline div,.jetTimeline span, 
+.jetTimeline h1, .jetTimeline h2, .jetTimeline h3, .jetTimeline h4, .jetTimeline h5, .jetTimeline h6, .jetTimeline p, .jetTimeline blockquote, .jetTimeline pre,
+.jetTimeline a, .jetTimeline abbr, .jetTimeline acronym, .jetTimeline address, .jetTimeline big, .jetTimeline cite, .jetTimeline code,
+.jetTimeline del, .jetTimeline dfn, .jetTimeline em, .jetTimeline img, .jetTimeline ins, .jetTimeline kbd, .jetTimeline q, .jetTimeline s, .jetTimeline samp,
+.jetTimeline small, .jetTimeline strike, .jetTimeline strong, .jetTimeline sub, .jetTimeline sup, .jetTimeline tt, .jetTimeline var,
+.jetTimeline b, .jetTimeline u, .jetTimeline i, .jetTimeline center,
+.jetTimeline dl, .jetTimeline dt, .jetTimeline dd, .jetTimeline ol, .jetTimeline ul, .jetTimeline li,
+.jetTimeline fieldset, .jetTimeline form, .jetTimeline label, .jetTimeline legend,
+.jetTimeline table, .jetTimeline caption, .jetTimeline tbody, .jetTimeline tfoot, .jetTimeline thead, .jetTimeline tr, .jetTimeline th, .jetTimeline td,
+.jetTimeline article, .jetTimeline aside, .jetTimeline canvas, .jetTimeline details, .jetTimeline embed, 
+.jetTimeline figure, .jetTimeline figcaption, .jetTimeline footer, .jetTimeline header, .jetTimeline hgroup, 
+.jetTimeline menu, .jetTimeline nav, .jetTimeline output, .jetTimeline ruby, .jetTimeline section, .jetTimeline summary,
+.jetTimeline time, .jetTimeline mark, .jetTimeline audio, .jetTimeline video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+	 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+.jetTimeline article, .jetTimeline aside, .jetTimeline details, .jetTimeline figcaption, .jetTimeline figure, 
+.jetTimeline footer, .jetTimeline header, .jetTimeline hgroup, .jetTimeline menu, .jetTimeline nav, .jetTimeline section, .jetTimeline main {
+	display: block;
+}
+.jetTimeline *{
+	line-height: 1;
+}
+.jetTimeline ol, .jetTimeline ul {
+	list-style: none;
+}
+.jetTimeline blockquote, .jetTimeline q {
+	quotes: none;
+}
+.jetTimeline blockquote:before, .jetTimeline blockquote:after,
+.jetTimeline q:before, .jetTimeline q:after {
+	content: '';
+	content: none;
+}
+.jetTimeline table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
