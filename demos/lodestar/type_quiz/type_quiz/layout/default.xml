@@ -37,7 +37,7 @@
     <navigatorRightPadding>10</navigatorRightPadding>
     <navigatorBottomPadding>0</navigatorBottomPadding>
     <navigatorLeftPadding>10</navigatorLeftPadding>
-    <bgImage>whatthefont.png</bgImage>
+    <bgImage>background.png</bgImage>
   </layout>
   <htmlTemplateStyle>
     <background url="background.jpg" alpha="1" color="" repeat="yes" position="top" />

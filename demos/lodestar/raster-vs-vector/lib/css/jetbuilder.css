@@ -406,7 +406,7 @@ background: -ms-linear-gradient(top,#489CD4FF 14.249999999999998%,#489CD4FF 64.2
 		padding-right:10px;
 		padding-left:8px;
 		
-		background: url('../../layout/arrowRight.png'); 
+		background: url('../../layout/arrowRight.svg'); 
 		-webkit-background-size: contain; /* For WebKit*/
     	-moz-background-size: contain;    /* Mozilla*/
     	-o-background-size: contain;      /* Opera*/
@@ -427,7 +427,7 @@ background: -ms-linear-gradient(top,#489CD4FF 14.249999999999998%,#489CD4FF 64.2
 		padding-top:10px;
 		padding-right:10px;
 		padding-left:8px;
-		background: url('../../layout/arrowRight_down.png'); 
+		background: url('../../layout/arrowRight.svg'); 
 		-webkit-background-size: contain; /* For WebKit*/
     	-moz-background-size: contain;    /* Mozilla*/
     	-o-background-size: contain;      /* Opera*/

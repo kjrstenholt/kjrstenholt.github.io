@@ -1,0 +1,12 @@
+/* Sample CSS File */
+
+@font-face {
+  font-family: "Snowfall";
+  src: url("../fonts/Snowfall_Crystals.otf");
+  font-family: "Snowfall Crystals";
+  src: url("../fonts/Snowfall_Crystals.otf");
+}
+
+body {
+	font-size: 1.5rem;
+}

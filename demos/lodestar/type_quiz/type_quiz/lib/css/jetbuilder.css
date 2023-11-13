@@ -118,7 +118,7 @@ body {
   font-weight: 400;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 background-color:
-  #f4f4f4;
+  #c5e2e6;
   overflow-y:hidden !important;
  }
  
@@ -230,7 +230,7 @@ h1 {
 	background-size:100% 100%;
 	height: 70px;
 	width: 50% !important;
-	border-color: #f4f4f4;
+	border-color: #c5e2e6;
 	border-style:solid;
 	border-width:0px;
 	z-index:21 !important;
@@ -244,7 +244,7 @@ h1 {
 	background-size:100% 100%;
 	height: 70px;
 	width: 100% !important;
-	border-color: #f4f4f4;
+	border-color: #c5e2e6;
 	border-style:solid;
 	border-width:0px;
 	z-index:19 !important;
@@ -260,7 +260,7 @@ h1 {
 	
 	height: 80vh !important;
 	font-size: 1 em;
-	background-color:#ffffffff;
+	background-color:#f2e4bbff;
 	overflow: hidden !important;
 	width: 100% !important;
 	-webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
@@ -277,18 +277,18 @@ h1 {
 	background-size:100% 100%;
 	height: 70px;
 	width: 100% !important;
-	border-color: #f4f4f4;
+	border-color: #c5e2e6;
 	border-style:solid;
 	border-width:0px;
 	z-index:20 !important;
 	padding-left, padding-right: 10px !important;
 	padding-top:10px !important;
-	background: #489CD4FF; /* Old browsers */
-background: -moz-linear-gradient(top,#489CD4FF 14.249999999999998%,#489CD4FF 64.25%,#489CD4FF 100.0%); /* FF3.6+ */
+	background: #6387A6FF; /* Old browsers */
+background: -moz-linear-gradient(top,#6387A6FF 14.249999999999998%,#6387A6FF 64.25%,#6387A6FF 100.0%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(50%,#2989d8), color-stop(51%,#207cca), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,#489CD4FF 14.249999999999998%,#489CD4FF 64.25%,#489CD4FF 100.0%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,#489CD4FF 14.249999999999998%,#489CD4FF 64.25%,#489CD4FF 100.0%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,#489CD4FF 14.249999999999998%,#489CD4FF 64.25%,#489CD4FF 100.0%); /* IE10+ */
+background: -webkit-linear-gradient(top,#6387A6FF 14.249999999999998%,#6387A6FF 64.25%,#6387A6FF 100.0%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,#6387A6FF 14.249999999999998%,#6387A6FF 64.25%,#6387A6FF 100.0%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,#6387A6FF 14.249999999999998%,#6387A6FF 64.25%,#6387A6FF 100.0%); /* IE10+ */
 	
 }
 
@@ -339,7 +339,7 @@ background: -ms-linear-gradient(top,#489CD4FF 14.249999999999998%,#489CD4FF 64.2
 		padding-right:10px;
 		padding-left:8px;
 		
-		background: url('../../layout/arrowLeft.png'); 
+		background: url('../../layout/arrowLeft.svg'); 
 		-webkit-background-size: contain; /* For WebKit*/
     	-moz-background-size: contain;    /* Mozilla*/
     	-o-background-size: contain;      /* Opera*/
@@ -361,7 +361,7 @@ background: -ms-linear-gradient(top,#489CD4FF 14.249999999999998%,#489CD4FF 64.2
 		padding-top:10px;
 		padding-right:10px;
 		padding-left:8px;
-		background: url('../../layout/arrowLeft_down.png'); 
+		background: url('../../layout/arrowLeft_down.svg'); 
 		-webkit-background-size: contain; /* For WebKit*/
     	-moz-background-size: contain;    /* Mozilla*/
     	-o-background-size: contain;      /* Opera*/
@@ -381,7 +381,7 @@ background: -ms-linear-gradient(top,#489CD4FF 14.249999999999998%,#489CD4FF 64.2
 		padding-top:10px;
 		padding-right:10px;
 		padding-left:8px;
-		background: url('../../layout/arrowLeft_gray.png'); 
+		background: url('../../layout/arrowLeft_gray.svg'); 
 		-webkit-background-size: contain; /* For WebKit*/
     	-moz-background-size: contain;    /* Mozilla*/
     	-o-background-size: contain;      /* Opera*/
@@ -406,7 +406,7 @@ background: -ms-linear-gradient(top,#489CD4FF 14.249999999999998%,#489CD4FF 64.2
 		padding-right:10px;
 		padding-left:8px;
 		
-		background: url('../../layout/arrowRight.png'); 
+		background: url('../../layout/arrowRight.svg'); 
 		-webkit-background-size: contain; /* For WebKit*/
     	-moz-background-size: contain;    /* Mozilla*/
     	-o-background-size: contain;      /* Opera*/
@@ -427,7 +427,7 @@ background: -ms-linear-gradient(top,#489CD4FF 14.249999999999998%,#489CD4FF 64.2
 		padding-top:10px;
 		padding-right:10px;
 		padding-left:8px;
-		background: url('../../layout/arrowRight_down.png'); 
+		background: url('../../layout/arrowRight_down.svg'); 
 		-webkit-background-size: contain; /* For WebKit*/
     	-moz-background-size: contain;    /* Mozilla*/
     	-o-background-size: contain;      /* Opera*/
@@ -447,7 +447,7 @@ background: -ms-linear-gradient(top,#489CD4FF 14.249999999999998%,#489CD4FF 64.2
 		padding-top:10px;
 		padding-right:10px;
 		padding-left:8px;
-		background: url('../../layout/arrowRight_gray.png'); 
+		background: url('../../layout/arrowRight_gray.svg'); 
 		-webkit-background-size: contain; /* For WebKit*/
     	-moz-background-size: contain;    /* Mozilla*/
     	-o-background-size: contain;      /* Opera*/
@@ -473,7 +473,7 @@ background: -ms-linear-gradient(top,#489CD4FF 14.249999999999998%,#489CD4FF 64.2
 
 .page, .ReportPage, .mPage, .ShortAnswerPage, .LongAnswerPage, .organizerPage{
 	position:relative;
-	background-color:#ffffffff;
+	background-color:#f2e4bbff;
 	top: 0;
 	padding: 5% !important;
 	height: 100%;
@@ -579,7 +579,7 @@ background: -ms-linear-gradient(top,#489CD4FF 14.249999999999998%,#489CD4FF 64.2
 }
 
 .overlay{
-	background-color:#ffffffff;
+	background-color:#f2e4bbff;
 	border-style:outset;
 	border-width: 10 px;
 	padding: 10px;
@@ -598,21 +598,21 @@ background: -ms-linear-gradient(top,#489CD4FF 14.249999999999998%,#489CD4FF 64.2
 }
 
 .overlayContent{
-	background-color:#ffffffff;
+	background-color:#f2e4bbff;
 	height: 480px;
 	width: 880px;
 }
 
 .popup{
-	background-color: #1a1a1aff;
+	background-color: #f28157ff;
 	color: #FFFFFF;
 	
 	border-bottom-style:solid;
 	border-bottom-width: 20 px;
-	border-bottom-color:#f4f4f4;
+	border-bottom-color:#c5e2e6;
 	border-top-style:solid;
 	border-top-width: 20px;
-	border-top-color:#f4f4f4;
+	border-top-color:#c5e2e6;
 	padding: 10px;
 	width: 80%;
 	position:absolute;
@@ -972,7 +972,7 @@ input,select,textarea{
 }
 
 .distractorHost{
-	background-color: #1a1a1aff;
+	background-color: #f28157ff;
 	color: #000000;
 	padding:10px;
 	overflow:hidden;
@@ -1102,7 +1102,7 @@ first menu style
 
 nav#menu{
 	top:90px;
-	background-color: #1a1a1aff;
+	background-color: #f28157ff;
 	width: 240px;
 	height: 550px;
 	left: 0px;
@@ -1156,7 +1156,7 @@ second menu style
 	height:485px;
 	top:90px;
 	float:left;
-	background-color: #1a1a1aff;
+	background-color: #f28157ff;
 	padding: 0px !important;
 	border-top-right-radius: 20px !important; 
 	margin: 10px 10px 10px 10px;
@@ -1261,7 +1261,7 @@ background: linear-gradient(135deg,  rgba(225,255,255,1) 0%,rgba(225,255,255,1) 
   	  }
   
   .ui-tabs-anchor {
-  	background-color:#1a1a1aff !important;
+  	background-color:#f28157ff !important;
   }
   
    .colorboxDiv{
@@ -1303,7 +1303,7 @@ background-color:transparent !important;
 	}
 	
 .organizerContent .divRow{
-background-color:#ffffffff !important;
+background-color:#f2e4bbff !important;
 }
 
 p{

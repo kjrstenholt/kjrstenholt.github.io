@@ -1,0 +1,177 @@
+
+*{
+	font-family:Arial, sans-serif;
+}
+
+.d_div{
+	padding: 5px;
+    border-radius:25px;
+    border: 1px solid gray;
+/*    -webkit-box-shadow: 0 0.1em 0 rgb(0 0 0 / 30%);
+    -moz-box-shadow: 0 .1em 0 rgba(0,0,0,.3);*/
+    box-shadow: 0 0.1em 0 rgb(0 0 0 / 30%);
+   }
+
+
+.d_element{}
+
+.d_panel{
+	
+padding: 5px;
+  border-radius: 25px;
+  border: 3px solid #fff !important;
+/*  -webkit-box-shadow: 0 0.2em 0 rgb(0 0 0 / 30%);
+  -moz-box-shadow: 0 .2em 0 rgba(0,0,0,.3);*/
+  box-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.2);
+   
+}
+
+
+.d_field{
+	padding: 20px;
+	-webkit-box-shadow: 0 0.1em 0 rgb(0 0 0 / 30%);
+    -moz-box-shadow: 0 .1em 0 rgba(0,0,0,.3);
+    box-shadow: 0 0.1em 0 rgb(0 0 0 / 30%);
+}
+
+.d_header{
+	-webkit-box-shadow: 0px 20px 20px -17px rgba(0, 111, 255, 0.53);
+    -moz-box-shadow: 0px 20px 20px -17px rgba(0, 111, 255, 0.53);
+	box-shadow: 0px 20px 20px -17px rgba(0, 111, 255, 0.53);
+}
+
+.d_instructions{
+/*	font-weight:bold;*/
+}
+
+.d_stem{
+/*	font-weight:bold;*/
+}
+
+.d_distractor{
+	
+    text-align: left;
+  padding: 5px 5px 10px;
+  border-radius: 25px;
+  border: 1px solid black;
+  font-weight: 400;
+  -webkit-box-shadow: 0.25em 0.25em 0.5em rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 .1em 0 rgba(0,0,0,.3);
+  box-shadow: 0 0.1em 0 rgb(0 0 0 / 30%);
+  line-height: 1.5em;
+  text-indent: 10px;
+  border: 0 !important;
+}
+
+
+
+.d_button{
+	font-size: 1.5em;
+    line-height: 1.2;
+    margin: 0 .5em 1em;
+    padding: .5em 1.25em;
+	border: 1px black solid;
+    border-radius: 2em;
+    cursor: pointer;
+    border: none;
+    box-shadow: none;
+    -webkit-transform: translateZ(0);
+    display: inline-block;
+    text-align: center;
+    text-shadow: none;
+    text-decoration: none;
+    vertical-align: baseline;
+}
+
+.d_button:enabled:hover{
+	background-color: #66b384 !important;
+	color:white;
+}
+
+.d_image{
+	border-radius:25px;
+    border: 2px solid gray;
+    font-weight: 400;
+    -webkit-box-shadow: 0 0.1em 0 rgb(0 0 0 / 30%);
+    -moz-box-shadow: 0 .1em 0 rgba(0,0,0,.3);
+    box-shadow: 0 0.1em 0 rgb(0 0 0 / 30%);
+	
+}
+
+.viewer {
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.55) !important;
+  border: none !important;
+  border-radius: 25px;
+}
+
+.navigator {
+  border-radius: 25px;
+
+}
+
+.progressBar,
+.pagination,
+.header {
+  display: none !important;
+}
+
+.ReportPage {
+  border: none !important;
+}
+
+.popup.chip_light {
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.55) !important;
+  border: none !important;
+  border-radius: 25px !important;
+}
+
+element {
+  position: absolute;
+
+  right: 5px;
+
+  bottom: 5px;
+
+  border: 2px solid black;
+
+    border-top-color: black;
+    border-right-color: black;
+    border-bottom-color: black;
+    border-left-color: black;
+
+  border-radius: 5px;
+
+}
+.closeButton {
+  height: 35px !important;
+
+  width: 35px !important;
+
+  border-color: darkred !important;
+
+  background-color: #edbebe !important;
+
+  font-weight: bold;
+
+  font-size: 2rem !important;
+
+  color: darkred !important;
+  cursor: pointer;
+
+}
+
+
+.Category.ui-droppable {
+  border-color: #6387A6 !important;
+}
+
+.Qw_distractor.ui-draggable.ui-droppable {
+  background-color: rgba(0,0,0,0.15) !important;
+  font-size: 1.5em!important;
+  font-weight: bold!important;
+  width: 80%!important;
+}
+
+.Qw_distractor.ui-draggable.ui-droppable:hover {
+  background-color: rgba(0,0,0,0.75) !important;
+}

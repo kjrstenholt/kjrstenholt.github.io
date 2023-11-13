@@ -30,24 +30,19 @@
     <titleColor>#FFFFFF</titleColor>
     <headerFileName />
     <footerFileName>footer.jpg</footerFileName>
-    <headerBgColor>background: #489CD4FF; /* Old browsers */
-background: -moz-linear-gradient(top,#489CD4FF 14.249999999999998%,#489CD4FF 64.25%,#489CD4FF 100.0%); /* FF3.6+ */
+    <headerBgColor>background: #6387A6FF; /* Old browsers */
+background: -moz-linear-gradient(top,#6387A6FF 14.249999999999998%,#6387A6FF 64.25%,#6387A6FF 100.0%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(50%,#2989d8), color-stop(51%,#207cca), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,#489CD4FF 14.249999999999998%,#489CD4FF 64.25%,#489CD4FF 100.0%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,#489CD4FF 14.249999999999998%,#489CD4FF 64.25%,#489CD4FF 100.0%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,#489CD4FF 14.249999999999998%,#489CD4FF 64.25%,#489CD4FF 100.0%); /* IE10+ */</headerBgColor>
-    <footerBgColor>background: #395DEBFF; /* Old browsers */
-background: -moz-linear-gradient(top,#395DEBFF 8.75%,#395DEBFF 50.0%,#395DEBFF 100.0%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(50%,#2989d8), color-stop(51%,#207cca), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,#395DEBFF 8.75%,#395DEBFF 50.0%,#395DEBFF 100.0%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,#395DEBFF 8.75%,#395DEBFF 50.0%,#395DEBFF 100.0%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,#395DEBFF 8.75%,#395DEBFF 50.0%,#395DEBFF 100.0%); /* IE10+ */</footerBgColor>
+background: -webkit-linear-gradient(top,#6387A6FF 14.249999999999998%,#6387A6FF 64.25%,#6387A6FF 100.0%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,#6387A6FF 14.249999999999998%,#6387A6FF 64.25%,#6387A6FF 100.0%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,#6387A6FF 14.249999999999998%,#6387A6FF 64.25%,#6387A6FF 100.0%); /* IE10+ */</headerBgColor>
+    <footerBgColor />
     <!--  This is the HTML background color. This element is used to inform the lodeStar Theme Editor but is not used by the flash files.-->
-    <htmlBgColor>#f4f4f4</htmlBgColor>
+    <htmlBgColor>#c5e2e6</htmlBgColor>
     <!--  This is the outer background color. Using the same color as the html bgColor would make the interaction blend into the html.-->
-    <outerBgColor>#1a1a1aff</outerBgColor>
+    <outerBgColor>#f28157ff</outerBgColor>
     <!--  This is the area within the border. It is the same space as the bgImage. -->
-    <innerBgColor>#ffffffff</innerBgColor>
+    <innerBgColor>#f2e4bbff</innerBgColor>
     <innerBgColorAlpha>Opaque</innerBgColorAlpha>
     <!--  This is the image which will appear as a background within the border It could be a jpg or a swf.-->
     <bgImage>background.jpg</bgImage>

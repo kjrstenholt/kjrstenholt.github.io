@@ -413,7 +413,7 @@ h1 {
 		padding-right:10px;
 		padding-left:8px;
 		
-		background: url('../../layout/arrowRight.png'); 
+		background: url('../../layout/arrowRight.svg'); 
 		-webkit-background-size: contain; /* For WebKit*/
     	-moz-background-size: contain;    /* Mozilla*/
     	-o-background-size: contain;      /* Opera*/
@@ -434,7 +434,7 @@ h1 {
 		padding-top:10px;
 		padding-right:10px;
 		padding-left:8px;
-		background: url('../../layout/arrowRight_down.png'); 
+		background: url('../../layout/arrowRight.svg'); 
 		-webkit-background-size: contain; /* For WebKit*/
     	-moz-background-size: contain;    /* Mozilla*/
     	-o-background-size: contain;      /* Opera*/
