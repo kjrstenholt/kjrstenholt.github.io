@@ -1,0 +1,316 @@
+/* ==========================================================================
+   Online only schedule PLUS Hybrid sessions
+
+   ========================================================================== */
+
+   .instructors {
+    display: inline-block;
+}
+
+ .covid .calendar_grid td {
+     color: white!important;
+ }
+
+ .class-box{
+     overflow-y: scroll;
+ }
+
+ .class-box.pending::after {
+
+     content: " ";
+     width: 4px;
+     height: 50px;
+     background-color: red;
+     display: inline-block;
+     position: absolute;
+     top: 0;
+     right: 10px;
+ 
+ }
+ 
+
+/* ==========================================================================
+   Roy
+========================================================================== */
+.roy_wrapper {
+    /*display: none;*/
+    z-index: 35;
+}
+
+.roy_wrapper div,
+.roy-label:after {
+    background-color: #f8cb78;
+}
+
+/* ==========================================================================
+   Lina
+========================================================================== */
+.lina_wrapper {
+    /*display: none;*/
+    z-index: 45;
+}
+
+.lina_wrapper div,
+.lina-label:after {
+    background-color: #51f8ed;
+}
+
+
+/* ==========================================================================
+Kjrsten
+========================================================================== */
+
+.kjrsten-monday-5 {
+  left: 87px;
+  top: 54px;  
+  height: 60px;
+}
+
+.kjrsten-monday-6 {
+    left: 87px;
+    top: 113px;  
+    height: 60px;
+}
+
+.kjrsten-monday-1 {
+    left: 87px;
+    top: 181px;  
+    height: 60px;
+}
+
+.kjrsten-monday-2 {
+    left: 87px;
+    top: 251px;  
+    height: 60px;
+}
+
+.kjrsten-monday-3 {
+    left: 87px;
+    top: 321px;  
+    height: 60px;
+}
+
+.kjrsten-monday-4 {
+    left: 87px;
+    top: 391px;  
+    height: 60px;
+}
+
+.kjrsten-hybrid {
+ background: linear-gradient(135deg, #d3d8fb 0%,#ffffff 100%);
+}
+
+
+
+/* ==========================================================================
+Dennis
+========================================================================== */
+
+.dennis-tuesday {
+ top: 53px;
+ left: 289px;
+ height: 60px;
+}
+
+.dennis-wednesday {
+ top: 123px;
+ left: 289px;
+ height: 60px;
+}
+
+.dennis-friday-2 {
+ top: 193px;
+ left: 289px;
+ height: 90px;
+}
+
+.dennis-friday-3 {
+ top: 282px;
+ left: 289px;
+ height: 60px;
+}
+
+.dennis-friday-5 {
+ top: 351px;
+ left: 289px;
+ height: 60px;
+}
+
+.dennis-hybrid {
+ background: linear-gradient(135deg, #fdbaba 0%,#ffffff 100%);
+}
+
+
+/* ==========================================================================
+Carl
+========================================================================== */
+
+.carl-monday-1 {
+ top: 53px;
+ left: 493px;
+ height: 60px;
+}
+
+.carl-monday-2 {
+ top: 112px;
+ left: 493px;
+ height: 60px;
+}
+
+.carl-tuesday {
+ top: 193px;
+ left: 493px;
+ height: 60px;
+}
+
+.carl-wednesday-1 {
+ top: 263px;
+ left: 493px;
+ height: 60px;
+}
+
+.carl-wednesday-2 {
+ top: 333px;
+ left: 493px;
+ height: 60px;
+}
+
+.carl-wednesday-3 {
+ top: 333px;
+ left: 493px;
+ height: 60px;
+}
+
+.carl-wednesday-4 {
+ top: 403px;
+ left: 493px;
+ height: 60px;
+}
+
+.carl-wednesday-5 {
+    top: 462px;
+    left: 493px;
+    height: 60px;
+}
+
+.carl-hybrid {
+ background: linear-gradient(135deg, #c4efbc 0%,#ffffff 100%);
+}
+
+
+/* ==========================================================================
+Sam
+========================================================================== */
+
+.sam-tuesday-1 {
+ top: 53px;
+ left: 493px;
+ height: 60px;
+}
+
+.sam-tuesday-2 {
+ top: 112px;
+ left: 493px;
+ height: 60px;
+}
+
+.sam-tuesday-25 {
+ top: 181px;
+ left: 493px;
+ height: 60px;
+}
+
+
+.sam-tuesday-26 {
+ top: 250px;
+ left: 493px;
+ height: 60px;
+}
+
+.sam-tuesday-3 {
+ top: 251px;
+ left: 493px;
+ height: 60px;
+}
+
+.sam-wednesday-1 {
+ top: 321px;
+ left: 493px;
+ height: 60px;
+}
+
+.sam-friday-1 {
+ top: 391px;
+ left: 493px;
+ height: 60px;
+}
+
+.sam-hybrid {
+ background: linear-gradient(135deg, #eacafb 0%,#ffffff 100%);
+}
+
+/* ==========================================================================
+Roy
+========================================================================== */
+.roy-hybrid {
+    background: linear-gradient(135deg, #f8cb78 0%,#ffffff 100%);
+   }
+
+.roy-wed-1 {
+    top: 53px;
+    left: 697px;
+    height: 90px;
+}
+
+.roy-wed-2 {
+    top: 142px;
+    left: 697px;
+    height: 60px;
+}
+
+.roy-wed-3 {
+    top: 212px;
+    left: 697px;
+    height: 60px;
+}
+
+/* ==========================================================================
+Lina
+========================================================================== */
+.lina-hybrid {
+    background: linear-gradient(135deg, #51f8ed 0%,#ffffff 100%);
+   }
+
+.lina-wed-1 {
+    top: 53px;
+    left: 901px;
+    height: 90px;
+}
+
+.lina-wed-2 {
+    top:142px;
+    left: 901px;
+    height: 60px;
+}
+
+.lina-wed-3 {
+    top: 211px;
+    left: 901px;
+    height: 60px;
+}
+
+.lina-wed-4 {
+    top: 270px;
+    left: 901px;
+    height: 60px;
+}
+
+
+
+/*
+OVERRIDE COLOR for Staff/Staff designation
+*/
+.staff-color {
+ background: linear-gradient(135deg, #c7c7c7 0%,#ffffff 100%)!important;
+}
+
