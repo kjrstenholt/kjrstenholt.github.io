@@ -5,6 +5,9 @@
 		}
 	],
 	"settings": {
-		"git.ignoreLimitWarning": true
+		"git.ignoreLimitWarning": true,
+		"chat.sendElementsToChat.attachCSS": false,
+		"chat.sendElementsToChat.attachImages": false,
+		"chat.sendElementsToChat.enabled": false
 	}
 }
