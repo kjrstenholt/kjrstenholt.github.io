@@ -112,6 +112,8 @@ textarea {
     color: darkgray;
     font-weight: bold;
     text-align: left;
+    position: relative;
+    z-index: 1000;
 }
 
 .wrapper.menu a.latest {
